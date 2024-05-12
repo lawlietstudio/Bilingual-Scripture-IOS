@@ -103,7 +103,7 @@ struct CustomTabView: View {
                         .symbolEffect(.bounce, value: toggleDarkMode)
                         .frame(width: 40, height: 40)
                 }
-                .rect { rect in
+                .globalRect { rect in
                     buttonRect = rect
                 }
                 .padding(.top, -3.5)

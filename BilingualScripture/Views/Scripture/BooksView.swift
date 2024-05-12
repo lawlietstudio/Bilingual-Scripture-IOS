@@ -21,71 +21,49 @@ struct BooksView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 15) {
-                HStack {
-                    Text("Scripture")
-                        .font(.largeTitle.bold())
-                    
-                    Text("英中經文")
-                        .fontWeight(.semibold)
-                        .padding(.leading, 15)
-                        .foregroundColor(.gray)
-                        .offset(y: 2)
-                    
-                    Spacer(minLength: 10)
-                    
-//                    Menu {
-//                        Button("Toggle Carousel Mode (\(carouselMode ? "On" : "Off"))")
-//                        {
-//                            carouselMode.toggle()
-//                        }
-//                    } label: {
-//                        Image(systemName: "ellipsis")
-//                            .rotationEffect(.init(degrees: -90))
+                VStack(spacing: 0) {
+                    HStack {
+                        Image("Logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30)
+                            .clipShape(.rect)
+                            .cornerRadius(8)
+                        
+                        Text("Bilingual Scripture")
+                            .font(.title2.bold())
+                        
+//                        Text("英中經文")
+//                            .fontWeight(.semibold)
+//                            .padding(.leading, 15)
 //                            .foregroundColor(.gray)
-//                    }
-                    
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 15)
-                
-                GeometryReader {
-                    let size = $0.size
-                    
-                    ScrollView(.vertical, showsIndicators: false) {
-                        /// Books Card View
-                        VStack(spacing: 35) {
-                            ForEach(sampleBooks)
-                            {
-                                book in
-                                BookCardView(book)
-                                /// Opening Detail View, When Ever Card is Tapped
-                                    .onTapGesture {
-                                        withAnimation(.easeInOut(duration: 0.2))
-                                        {
-                                            animationCurrentBook = true
-                                            selectedBook = book
-                                        }
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                                            withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7))
-                                            {
-                                                showDetailView = true
-                                            }
-                                        }
-                                    }
-                            }
-                        }
-                        .padding(.horizontal, 15)
-                        .padding(.vertical, 20)
-                        .padding(.bottom, bottomPadding(size))
-                        .background {
-                            ScrollViewDetector(carouselMode: $carouselMode, totalCardCount: sampleBooks.count)
-                        }
+//                            .offset(y: 2)
+                        
+//                        Spacer(minLength: 10)
+                        
+                        //                    Menu {
+                        //                        Button("Toggle Carousel Mode (\(carouselMode ? "On" : "Off"))")
+                        //                        {
+                        //                            carouselMode.toggle()
+                        //                        }
+                        //                    } label: {
+                        //                        Image(systemName: "ellipsis")
+                        //                            .rotationEffect(.init(degrees: -90))
+                        //                            .foregroundColor(.gray)
+                        //                    }
+                        
                     }
-                    /// Since we need offset from here and not from global View
-                    .coordinateSpace(name: "SCROLLVIEW")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 5)
+                    .padding(.bottom, 5)
+                    .overlay(alignment: .bottom) {
+                        Rectangle()
+                            .fill(.gray.opacity(0.3))
+                            .frame(height: 1)
+                    }
                     
+                    ScrollableTabBar(tabContents: [buildScrollingBookView(animeBooks: sampleBooks), buildScrollingBookView(animeBooks: sampleDC)])
                 }
-                .padding(.top, 15)
             }
             .overlay {
                 if let selectedBook, showDetailView
@@ -107,6 +85,48 @@ struct BooksView: View {
                 }
             }
         }
+    }
+    
+    @ViewBuilder
+    func buildScrollingBookView(animeBooks :[AnimeBook]) -> some View {
+        GeometryReader {
+            let size = $0.size
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                /// Books Card View
+                VStack(spacing: 35) {
+                    ForEach(animeBooks)
+                    {
+                        book in
+                        BookCardView(book)
+                        /// Opening Detail View, When Ever Card is Tapped
+                            .onTapGesture {
+                                withAnimation(.easeInOut(duration: 0.2))
+                                {
+                                    animationCurrentBook = true
+                                    selectedBook = book
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                                    withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7))
+                                    {
+                                        showDetailView = true
+                                    }
+                                }
+                            }
+                    }
+                }
+                .padding(.horizontal, 15)
+                .padding(.vertical, 20)
+                .padding(.bottom, bottomPadding(size))
+                .background {
+                    ScrollViewDetector(carouselMode: $carouselMode, totalCardCount: animeBooks.count)
+                }
+            }
+            /// Since we need offset from here and not from global View
+            .coordinateSpace(name: "SCROLLVIEW")
+            
+        }
+        .padding(.top, 15)
     }
     
     /// Bottom Padding for last card to move up to the top
@@ -144,7 +164,7 @@ struct BooksView: View {
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    Spacer(minLength: 10)
+                    Spacer()
                     
                     Text(book.period)
                         .font(.caption)

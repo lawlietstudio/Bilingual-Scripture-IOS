@@ -12,6 +12,7 @@ struct Chapter: Identifiable, Decodable {
     var id: Int { number }
     let number: Int
     let introduction: MultilingualText
+    let summary: MultilingualText?
     let verses: [Verse]
 }
 
@@ -22,6 +23,7 @@ struct Verse: Identifiable, Decodable {
 }
 
 struct MultilingualText: Decodable {
+    let fr: String
     let en: String
     let zh: String
 }
@@ -51,5 +53,9 @@ var sampleBooks: [AnimeBook] = [
     .init(engTitle: "THE BOOK OF MORMON", zhoTitle: "摩爾門書", imageName: "morm", period: "About A.D. 321–26."),
     .init(engTitle: "THE BOOK OF ETHER", zhoTitle: "以帖書", imageName: "ether", period: ""),
     .init(engTitle: "THE BOOK OF MORONI", zhoTitle: "摩羅乃書", imageName: "moro", period: "About A.D. 401–21."),
+//    .init(engTitle: "THE DOCTRINE AND COVENANTS", zhoTitle: "教義和聖約", imageName: "dc", period: "")
+]
+
+var sampleDC: [AnimeBook] = [
     .init(engTitle: "THE DOCTRINE AND COVENANTS", zhoTitle: "教義和聖約", imageName: "dc", period: "")
 ]

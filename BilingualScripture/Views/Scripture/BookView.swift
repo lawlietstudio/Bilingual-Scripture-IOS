@@ -11,7 +11,7 @@ struct BookView: View {
     
     @State private var selectedSegment = 1
     
-    @State private var book: Book = Book(book: MultilingualText(en: "", zh: ""), theme: MultilingualText(en: "", zh: ""), introduction: MultilingualText(en: "", zh: ""), chapters: [])
+    @State private var book: Book = Book(book: MultilingualText(fr: "", en: "", zh: ""), theme: MultilingualText(fr: "", en: "", zh: ""), introduction: MultilingualText(fr: "", en: "", zh: ""), chapters: [])
     
     private let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5)
     
@@ -61,7 +61,6 @@ struct BookView: View {
                         
                         SpeakButton(text: book.book.zh, speechLang: .zh, font: .title2)
                         
-                        
                         SpeakButton(text: animeBook.period, speechLang: .en, font: .caption)
                             .foregroundColor(.gray)
                         
@@ -91,9 +90,7 @@ struct BookView: View {
                 .overlay(alignment: .top, content: {
                     if selectedSegment == 0 {
                         List {
-                            SpeakButton(text: showThemeOrIntro(theme: book.theme.en, intro: book.introduction.en), speechLang: .en)
-                            
-                            SpeakButton(text: showThemeOrIntro(theme: book.theme.zh, intro: book.introduction.zh), speechLang: .zh)
+                            SpeakSection(multilingualText: showThemeOrIntro(theme: book.theme, intro: book.introduction))
                         }
                         .listStyle(.plain)
                     } else {
@@ -155,6 +152,10 @@ struct BookView: View {
     
     func showThemeOrIntro(theme: String, intro: String) -> String {
         return theme.count > intro.count ? theme : intro
+    }
+    
+    func showThemeOrIntro(theme: MultilingualText, intro: MultilingualText) -> MultilingualText {
+        return theme.en.count > intro.en.count ? theme : intro
     }
     
     func loadChapters() {

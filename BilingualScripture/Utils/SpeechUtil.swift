@@ -1,9 +1,10 @@
 import Foundation
 import AVFoundation
 
-enum SpeechLang {
-    case en
-    case zh
+enum SpeechLang: String, Codable {
+    case fr = "French"
+    case en = "English"
+    case zh = "Chinese"
 }
 
 class SpeechUtil {
@@ -20,6 +21,13 @@ class SpeechUtil {
         
         let utterance = AVSpeechUtterance(string: text)
         switch speechLang {
+        case .fr:
+            if let voiceIdentifier = UserDefaults.standard.string(forKey: "fraVoiceIdentifier"),
+               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
+                utterance.voice = voice
+            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "fr-CA" && $0.name == "Samantha" }) { // fr-CA || fr-FR
+                utterance.voice = voice
+            }
         case .en:
             if let voiceIdentifier = UserDefaults.standard.string(forKey: "engVoiceIdentifier"),
                let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {

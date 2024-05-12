@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */; };
+		4D0160882BE06FAA00892516 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160872BE06FAA00892516 /* TabModel.swift */; };
+		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
 		4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39967E2BBD10DF00DA530B /* BooksView.swift */; };
 		4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */; };
 		4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996822BBD159600DA530B /* CustomCorners.swift */; };
+		4D414FCF2BF0E881000486C3 /* AnimatedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D414FCE2BF0E880000486C3 /* AnimatedTab.swift */; };
+		4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D414FD02BF0E91C000486C3 /* View+SetupTab.swift */; };
 		4D8B84FC2BBF79EC003D1D7F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B84FB2BBF79EC003D1D7F /* BackButton.swift */; };
-		4D8B85202BC26586003D1D7F /* View_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B851F2BC26586003D1D7F /* View_Extensions.swift */; };
+		4D8B85202BC26586003D1D7F /* View+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B851F2BC26586003D1D7F /* View+Rect.swift */; };
 		4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B85212BC265A4003D1D7F /* RectKey.swift */; };
+		4DCDBFA62BDE450500F32D8C /* LanguageVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA52BDE450500F32D8C /* LanguageVisibility.swift */; };
+		4DCDBFA82BDE455600F32D8C /* LanguageVisibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA72BDE455600F32D8C /* LanguageVisibilityView.swift */; };
+		4DCDBFAA2BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */; };
+		4DCDBFAC2BDE497100F32D8C /* SpeakSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFAB2BDE497100F32D8C /* SpeakSection.swift */; };
 		4DE07DA32BBCF12B001719A7 /* BilingualScriptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DA22BBCF12B001719A7 /* BilingualScriptureApp.swift */; };
 		4DE07DA72BBCF12D001719A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE07DA62BBCF12D001719A7 /* Assets.xcassets */; };
 		4DE07DAA2BBCF12D001719A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE07DA92BBCF12D001719A7 /* Preview Assets.xcassets */; };
@@ -27,12 +36,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Interpolate.swift"; sourceTree = "<group>"; };
+		4D0160872BE06FAA00892516 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 		4D39967E2BBD10DF00DA530B /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		4D3996822BBD159600DA530B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		4D414FCE2BF0E880000486C3 /* AnimatedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTab.swift; sourceTree = "<group>"; };
+		4D414FD02BF0E91C000486C3 /* View+SetupTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SetupTab.swift"; sourceTree = "<group>"; };
 		4D8B84FB2BBF79EC003D1D7F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		4D8B851F2BC26586003D1D7F /* View_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extensions.swift; sourceTree = "<group>"; };
+		4D8B851F2BC26586003D1D7F /* View+Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Rect.swift"; sourceTree = "<group>"; };
 		4D8B85212BC265A4003D1D7F /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
+		4DCDBFA52BDE450500F32D8C /* LanguageVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVisibility.swift; sourceTree = "<group>"; };
+		4DCDBFA72BDE455600F32D8C /* LanguageVisibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVisibilityView.swift; sourceTree = "<group>"; };
+		4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+LangVisibilityStorage.swift"; sourceTree = "<group>"; };
+		4DCDBFAB2BDE497100F32D8C /* SpeakSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSection.swift; sourceTree = "<group>"; };
 		4DE07D9F2BBCF12B001719A7 /* BilingualScripture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BilingualScripture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE07DA22BBCF12B001719A7 /* BilingualScriptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilingualScriptureApp.swift; sourceTree = "<group>"; };
 		4DE07DA62BBCF12D001719A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4DE07DC02BBCFDA6001719A7 /* SettingView.swift */,
+				4DCDBFA72BDE455600F32D8C /* LanguageVisibilityView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -79,8 +98,11 @@
 		4D8B851E2BC26566003D1D7F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4D8B851F2BC26586003D1D7F /* View_Extensions.swift */,
+				4D8B851F2BC26586003D1D7F /* View+Rect.swift */,
+				4D414FD02BF0E91C000486C3 /* View+SetupTab.swift */,
 				4D8B85212BC265A4003D1D7F /* RectKey.swift */,
+				4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */,
+				4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				4DE07DB42BBCF173001719A7 /* Chapter.swift */,
+				4DCDBFA52BDE450500F32D8C /* LanguageVisibility.swift */,
+				4D0160872BE06FAA00892516 /* TabModel.swift */,
+				4D414FCE2BF0E880000486C3 /* AnimatedTab.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +183,8 @@
 				4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */,
 				4D3996822BBD159600DA530B /* CustomCorners.swift */,
 				4D8B84FB2BBF79EC003D1D7F /* BackButton.swift */,
+				4DCDBFAB2BDE497100F32D8C /* SpeakSection.swift */,
+				4D0160892BE0705E00892516 /* ScrollableTabBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -233,20 +260,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D414FCF2BF0E881000486C3 /* AnimatedTab.swift in Sources */,
+				4DCDBFAC2BDE497100F32D8C /* SpeakSection.swift in Sources */,
 				4DE07DBF2BBCF750001719A7 /* SpeakButton.swift in Sources */,
+				4DCDBFA62BDE450500F32D8C /* LanguageVisibility.swift in Sources */,
+				4DCDBFAA2BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift in Sources */,
 				4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */,
+				4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */,
 				4DE07DB52BBCF173001719A7 /* ChapterView.swift in Sources */,
 				4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */,
 				4DE07DA32BBCF12B001719A7 /* BilingualScriptureApp.swift in Sources */,
-				4D8B85202BC26586003D1D7F /* View_Extensions.swift in Sources */,
+				4D0160882BE06FAA00892516 /* TabModel.swift in Sources */,
+				4D8B85202BC26586003D1D7F /* View+Rect.swift in Sources */,
 				4DE07DC32BBCFDBA001719A7 /* CustomTabView.swift in Sources */,
 				4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */,
 				4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */,
 				4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */,
+				4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */,
 				4D8B84FC2BBF79EC003D1D7F /* BackButton.swift in Sources */,
 				4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */,
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
+				4DCDBFA82BDE455600F32D8C /* LanguageVisibilityView.swift in Sources */,
 				4DE07DBC2BBCF671001719A7 /* SpeechUtil.swift in Sources */,
+				4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +429,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LawlietStudio.BilingualScripture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LawlietStudio.BilingualScripture.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -425,7 +461,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LawlietStudio.BilingualScripture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LawlietStudio.BilingualScripture.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

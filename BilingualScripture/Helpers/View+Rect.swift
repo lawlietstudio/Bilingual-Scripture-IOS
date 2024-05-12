@@ -10,7 +10,7 @@ import SwiftUI
 /// Custom View Extensions
 extension View {
     @ViewBuilder
-    func rect(value: @escaping (CGRect) -> ()) -> some View {
+    func globalRect(value: @escaping (CGRect) -> ()) -> some View {
         // Returns View's Position in the Screen Coordinate Space
         self.overlay {
             GeometryReader(content: { geometry in
@@ -23,6 +23,20 @@ extension View {
                     })
             })
         }
+    }
+    
+    @ViewBuilder
+    func rect(completion: @escaping (CGRect) -> ()) -> some View {
+        self
+            .overlay {
+                GeometryReader {
+                    let rect = $0.frame(in: .scrollView(axis: .horizontal))
+
+                    Color.clear
+                        .preference(key: RectKey.self, value: rect)
+                        .onPreferenceChange(RectKey.self, perform: completion)
+                }
+            }
     }
     
     @MainActor
@@ -42,7 +56,7 @@ extension View {
                         window.addSubview(imageView)
                         
                         if let rootView = window.rootViewController?.view {
-                            let sleepTime = 0.03
+                            let sleepTime = 0.2
                             let frameSize = rootView.frame.size
                             /// Creating Snapshots
                             activeateDarkMode.wrappedValue = !newValue

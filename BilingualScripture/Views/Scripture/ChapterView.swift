@@ -8,24 +8,14 @@ struct ChapterView: View {
 
     var body: some View {
         List {
-            Text("Intro")
-                .foregroundStyle(.gray)
-                .font(.caption2)
-                .textCase(.uppercase)
+            SpeakSection(title: "Intro", multilingualText: chapter.introduction)
             
-            SpeakButton(text: chapter.introduction.en, speechLang: .en)
-                
-            SpeakButton(text: chapter.introduction.zh, speechLang: .zh)
+            if let summary = chapter.summary {
+                SpeakSection(title: "Summary", multilingualText: summary)
+            }
                 
             ForEach(chapter.verses, id: \.key) { verse in
-                Text("Verse \(verse.key)")
-                    .foregroundStyle(.gray)
-                    .font(.caption2)
-                    .textCase(.uppercase)
-                    
-                SpeakButton(text: verse.text.en, speechLang: .en)
-                
-                SpeakButton(text: verse.text.zh, speechLang: .zh)
+                SpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
             }
         }
         .listStyle(.plain)
