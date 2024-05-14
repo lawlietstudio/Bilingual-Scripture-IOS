@@ -34,9 +34,6 @@ struct SettingView: View {
                             }
                         }
                         .pickerStyle(.wheel)
-//                        .onChange(of: selectedEngVoiceIdentifier) { _, newIdentifier in
-//                            UserDefaults.standard.set(newIdentifier, forKey: "engVoiceIdentifier")
-//                        }
                     }
                 }
                 HStack {
