@@ -52,8 +52,7 @@ var sampleBooks: [AnimeBook] = [
     .init(engTitle: "FOURTH NEPHI", zhoTitle: "尼腓四書", imageName: "4-ne", period: "About A.D. 35–321."),
     .init(engTitle: "THE BOOK OF MORMON", zhoTitle: "摩爾門書", imageName: "morm", period: "About A.D. 321–26."),
     .init(engTitle: "THE BOOK OF ETHER", zhoTitle: "以帖書", imageName: "ether", period: ""),
-    .init(engTitle: "THE BOOK OF MORONI", zhoTitle: "摩羅乃書", imageName: "moro", period: "About A.D. 401–21."),
-//    .init(engTitle: "THE DOCTRINE AND COVENANTS", zhoTitle: "教義和聖約", imageName: "dc", period: "")
+    .init(engTitle: "THE BOOK OF MORONI", zhoTitle: "摩羅乃書", imageName: "moro", period: "About A.D. 401–21.")
 ]
 
 var sampleDC: [AnimeBook] = [

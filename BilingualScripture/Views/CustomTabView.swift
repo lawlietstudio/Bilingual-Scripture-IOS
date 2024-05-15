@@ -97,7 +97,8 @@ struct CustomTabView: View {
                 .ignoresSafeArea()
             })
             .overlay(alignment: .topTrailing) {
-                if activeTab == .setting {
+//                if activeTab == .setting {
+                if false {
                     Button {
                         toggleDarkMode.toggle()
                     } label: {

@@ -15,7 +15,6 @@ struct TabModel: Identifiable {
     
     enum Tab: String, CaseIterable {
         case bofm = "Book of Mormon"
-//        case dc = "dc"
         case dc = "Doctrine and Covenants"
         case analytics = "Analytics"
         case audience = "Audience"
