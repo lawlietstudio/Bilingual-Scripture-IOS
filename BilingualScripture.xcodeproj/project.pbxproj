@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21E0D6272BF79FA9009F153B /* ChapterSpeakSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D6262BF79FA9009F153B /* ChapterSpeakSection.swift */; };
+		21E0D6292BF7D862009F153B /* CheckmarkToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */; };
 		4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */; };
 		4D0160882BE06FAA00892516 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160872BE06FAA00892516 /* TabModel.swift */; };
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		21E0D6262BF79FA9009F153B /* ChapterSpeakSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSpeakSection.swift; sourceTree = "<group>"; };
+		21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkToggleStyle.swift; sourceTree = "<group>"; };
 		4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Interpolate.swift"; sourceTree = "<group>"; };
 		4D0160872BE06FAA00892516 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				4D8B85212BC265A4003D1D7F /* RectKey.swift */,
 				4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */,
 				4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */,
+				21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */,
 				4DE07DB52BBCF173001719A7 /* ChapterView.swift in Sources */,
 				4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */,
+				21E0D6292BF7D862009F153B /* CheckmarkToggleStyle.swift in Sources */,
 				4DE07DA32BBCF12B001719A7 /* BilingualScriptureApp.swift in Sources */,
 				4D0160882BE06FAA00892516 /* TabModel.swift in Sources */,
 				4D8B85202BC26586003D1D7F /* View+Rect.swift in Sources */,

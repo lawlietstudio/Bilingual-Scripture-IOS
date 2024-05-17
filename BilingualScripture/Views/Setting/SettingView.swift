@@ -6,6 +6,13 @@ struct SectionData: Identifiable {
     let voices: [AVSpeechSynthesisVoice]
     let speechLang: SpeechLang
     var isShow: Bool = false
+    
+    init(voices: [AVSpeechSynthesisVoice], speechLang: SpeechLang) {
+        self.voices = voices
+        self.speechLang = speechLang
+        let languageVisibilities = UserDefaults.standard.load()
+        self.isShow = languageVisibilities.first { $0.speechLang == self.speechLang }?.isShow ?? false
+    }
 }
 
 struct SettingView: View {
@@ -22,7 +29,8 @@ struct SettingView: View {
     ]
     
     @State private var isEditing = false
-
+    
+    @StateObject private var itemStore = ItemStore()
 
     var body: some View {
         NavigationStack {
@@ -34,6 +42,13 @@ struct SettingView: View {
                 ForEach($sections) { $section in
                     Section(header: Text(section.speechLang.rawValue)) {
                         Toggle("Show/Hide", isOn: $section.isShow)
+                            .toggleStyle(CheckmarkToggleStyle())
+                            .onChange(of: section.isShow) { _, newValue in
+                                if let index = itemStore.languageVisibilities.firstIndex(where: { $0.speechLang == section.speechLang }) {
+                                    itemStore.languageVisibilities[index].isShow = newValue
+                                    itemStore.saveItems()
+                                }
+                            }
                         
                         Picker("Voice", selection: selectionBinding(for: section.speechLang)) {
                             ForEach(section.voices.map { $0.identifier }, id: \.self) { identifier in
