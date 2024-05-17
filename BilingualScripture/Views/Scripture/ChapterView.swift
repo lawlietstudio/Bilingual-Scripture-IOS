@@ -8,18 +8,17 @@ struct ChapterView: View {
 
     var body: some View {
         List {
-            SpeakSection(title: "Intro", multilingualText: chapter.introduction)
+            ChapterSpeakSection(title: "Intro", multilingualText: chapter.introduction)
             
             if let summary = chapter.summary {
-                SpeakSection(title: "Summary", multilingualText: summary)
+                ChapterSpeakSection(title: "Summary", multilingualText: summary)
             }
                 
             ForEach(chapter.verses, id: \.key) { verse in
-                SpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
+                ChapterSpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
             }
         }
-        .listStyle(.plain)
-//        .navigationTitle("\(bookTitle) - 第 \(chapter.number) 章")
+//        .listStyle(.plain)
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack(spacing: 0) {

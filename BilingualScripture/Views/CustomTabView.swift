@@ -3,7 +3,7 @@ import SwiftUI
 struct CustomTabView: View {
 //    @State private var activeTab: Int = 0
     /// View Properties
-    @State private var activeTab: Tab = .scripture
+    @State private var activeTab: Tab = .setting
     /// All Tab's
     @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab in
         return .init(tab: tab)
@@ -97,8 +97,7 @@ struct CustomTabView: View {
                 .ignoresSafeArea()
             })
             .overlay(alignment: .topTrailing) {
-//                if activeTab == .setting {
-                if false {
+                if activeTab == .setting {
                     Button {
                         toggleDarkMode.toggle()
                     } label: {

@@ -10,5 +10,5 @@ import Foundation
 struct LanguageVisibility:Identifiable, Codable {
     var id = UUID()
     var speechLang: SpeechLang
-    var isShow: Bool
+    var isShow: Bool = true
 }

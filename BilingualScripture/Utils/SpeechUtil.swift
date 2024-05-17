@@ -2,9 +2,9 @@ import Foundation
 import AVFoundation
 
 enum SpeechLang: String, Codable {
-    case fr = "French"
+    case fr = "Française"
     case en = "English"
-    case zh = "Chinese"
+    case zh = "中文"
 }
 
 class SpeechUtil {
@@ -45,15 +45,4 @@ class SpeechUtil {
         }
         synthesizer.speak(utterance)
     }
-    
-    //    private func speak(text: String, speechLang: SpeechLang) {
-    //        let utterance = AVSpeechUtterance(string: text)
-    //        switch speechLang {
-    //        case .en:
-    //            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-    //        case .zh:
-    //            utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
-    //        }
-    //        synthesizer.speak(utterance)
-    //    }
 }

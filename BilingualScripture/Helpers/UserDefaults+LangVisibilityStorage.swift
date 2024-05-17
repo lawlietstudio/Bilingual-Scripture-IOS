@@ -20,9 +20,9 @@ extension UserDefaults {
             return decodedItems
         }
         return [
-            LanguageVisibility(speechLang: .fr, isShow: true),
-            LanguageVisibility(speechLang: .en, isShow: true),
-            LanguageVisibility(speechLang: .zh, isShow: true)
+            LanguageVisibility(speechLang: .fr),
+            LanguageVisibility(speechLang: .en),
+            LanguageVisibility(speechLang: .zh)
         ] // default list if nothing is stored
     }
 }

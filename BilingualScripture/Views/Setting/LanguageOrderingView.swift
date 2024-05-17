@@ -1,5 +1,5 @@
 //
-//  LanguageVisibilityView.swift
+//  LanguageOrderingView.swift
 //  BilingualScripture
 //
 //  Created by mark on 2024-04-28.
@@ -23,29 +23,25 @@ class ItemStore: ObservableObject {
     }
 }
 
-struct LanguageVisibilityView: View {
+struct LanguageOrderingView: View {
     @StateObject private var itemStore = ItemStore()
+    @State private var editMode: EditMode = .active
     
     var body: some View {
-        NavigationView {
-            List {
-                EditButton()
-                ForEach($itemStore.languageVisibilities) { $item in
-                    HStack {
-                        Text(item.speechLang.rawValue)
-                            .foregroundColor(item.isShow ? .black : .gray)
-                        Spacer()
-                        Toggle("Show", isOn: $item.isShow)
-                            .labelsHidden()
-                    }
+        List {
+            ForEach($itemStore.languageVisibilities) { $item in
+                HStack {
+                    Text(item.speechLang.rawValue)
                 }
-                .onMove(perform: move)
             }
-            .navigationTitle("Languages")
-//            .toolbar(.hidden)
-//            .toolbar {
-//                EditButton()
-//            }
+            .onMove(perform: move)
+        }
+        .environment(\.editMode, $editMode)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Display Order")
+                    .bold()
+            }
         }
     }
     
