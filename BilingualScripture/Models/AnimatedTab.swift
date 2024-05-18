@@ -9,8 +9,8 @@ import SwiftUI
 
 
 enum Tab: String, CaseIterable {
-    case scripture = "books.vertical"
-    case setting = "gearshape"
+    case scripture = "books.vertical.fill"
+    case setting = "gearshape.fill"
     
     var title: String {
         switch self {

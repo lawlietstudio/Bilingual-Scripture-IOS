@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		21E0D6272BF79FA9009F153B /* ChapterSpeakSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D6262BF79FA9009F153B /* ChapterSpeakSection.swift */; };
 		21E0D6292BF7D862009F153B /* CheckmarkToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */; };
+		21E0D62B2BF7E7E8009F153B /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D62A2BF7E7E8009F153B /* TabPosition.swift */; };
+		21E0D62D2BF7E812009F153B /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0D62C2BF7E812009F153B /* TabShape.swift */; };
 		4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */; };
 		4D0160882BE06FAA00892516 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160872BE06FAA00892516 /* TabModel.swift */; };
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		21E0D6262BF79FA9009F153B /* ChapterSpeakSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSpeakSection.swift; sourceTree = "<group>"; };
 		21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkToggleStyle.swift; sourceTree = "<group>"; };
+		21E0D62A2BF7E7E8009F153B /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		21E0D62C2BF7E812009F153B /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
 		4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Interpolate.swift"; sourceTree = "<group>"; };
 		4D0160872BE06FAA00892516 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */,
 				4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */,
 				21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */,
+				21E0D62A2BF7E7E8009F153B /* TabPosition.swift */,
+				21E0D62C2BF7E812009F153B /* TabShape.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 				4DCDBFA62BDE450500F32D8C /* LanguageVisibility.swift in Sources */,
 				4DCDBFAA2BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift in Sources */,
 				4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */,
+				21E0D62B2BF7E7E8009F153B /* TabPosition.swift in Sources */,
 				4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */,
 				4DE07DB52BBCF173001719A7 /* ChapterView.swift in Sources */,
 				4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */,
@@ -286,6 +293,7 @@
 				4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */,
 				4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */,
 				4D8B84FC2BBF79EC003D1D7F /* BackButton.swift in Sources */,
+				21E0D62D2BF7E812009F153B /* TabShape.swift in Sources */,
 				4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */,
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
 				4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */,
@@ -424,7 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BilingualScripture/Preview Content\"";
-				DEVELOPMENT_TEAM = 44Y5KSFRJB;
+				DEVELOPMENT_TEAM = DSA696T89C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bilingual Scripture";

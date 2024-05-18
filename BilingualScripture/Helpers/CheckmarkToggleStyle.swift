@@ -20,12 +20,12 @@ struct CheckmarkToggleStyle: ToggleStyle {
                     Circle()
                         .foregroundColor(.background)
                         .padding(.all, 3)
-                        .overlay(
-                            ZStack {
-                                IconImage(systemName: "checkmark", isOn: configuration.isOn, visibleWhenOn: true)
-                                IconImage(systemName: "xmark", isOn: configuration.isOn, visibleWhenOn: false)
-                            }
-                        )
+//                        .overlay(
+//                            ZStack {
+//                                IconImage(systemName: "checkmark", isOn: configuration.isOn, visibleWhenOn: true)
+//                                IconImage(systemName: "xmark", isOn: configuration.isOn, visibleWhenOn: false)
+//                            }
+//                        )
                         .offset(x: configuration.isOn ? 11 : -11, y: 0)
                 )
                 .cornerRadius(20)
