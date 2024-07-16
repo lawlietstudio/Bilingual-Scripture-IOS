@@ -19,11 +19,15 @@ struct SettingView: View {
     @AppStorage("fraVoiceIdentifier") private var selectedFraVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "fr-CA")!.identifier
     @AppStorage("engVoiceIdentifier") private var selectedEngVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "en-US")!.identifier
     @AppStorage("zhoVoiceIdentifier") private var selectedZhoVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "zh-TW")!.identifier
+    @AppStorage("jpnVoiceIdentifier") private var selectedJpnVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ja-JP")!.identifier
+    @AppStorage("korVoiceIdentifier") private var selectedKorVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ko-KR")!.identifier
     
     @State private var sections: [SectionData] = [
         SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("fr") }, speechLang: .fr),
         SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("en") }, speechLang: .en),
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("zh") }, speechLang: .zh)
+        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("zh") }, speechLang: .zh),
+        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("ja") }, speechLang: .jp),
+        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("ko") }, speechLang: .kr)
     ]
     
     @State private var isEditing = false
@@ -59,6 +63,7 @@ struct SettingView: View {
                     }
                 }
             }
+            .safeAreaPadding(.bottom, 16)
             .navigationTitle("Setting")
         }
     }
@@ -71,6 +76,10 @@ struct SettingView: View {
             return $selectedEngVoiceIdentifier
         case .zh:
             return $selectedZhoVoiceIdentifier
+        case .jp:
+            return $selectedJpnVoiceIdentifier
+        case .kr:
+            return $selectedKorVoiceIdentifier
         }
     }
 }

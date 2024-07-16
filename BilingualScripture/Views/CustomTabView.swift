@@ -3,7 +3,7 @@ import SwiftUI
 struct CustomTabView: View {
 //    @State private var activeTab: Int = 0
     /// View Properties
-    @State private var activeTab: Tab = .setting
+    @State private var activeTab: Tab = .scripture
     /// All Tab's
     @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab in
         return .init(tab: tab)

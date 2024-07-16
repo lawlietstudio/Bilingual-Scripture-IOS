@@ -11,6 +11,7 @@ extension UserDefaults {
     func save(_ items: [LanguageVisibility]) {
         if let encoded = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encoded, forKey: "Items")
+            NotificationCenter.default.post(name: .itemsDataDidChange, object: nil)
         }
     }
     
@@ -20,9 +21,15 @@ extension UserDefaults {
             return decodedItems
         }
         return [
-            LanguageVisibility(speechLang: .fr),
+            LanguageVisibility(speechLang: .fr, isShow: false),
             LanguageVisibility(speechLang: .en),
-            LanguageVisibility(speechLang: .zh)
+            LanguageVisibility(speechLang: .zh),
+            LanguageVisibility(speechLang: .jp, isShow: false),
+            LanguageVisibility(speechLang: .kr, isShow: false)
         ] // default list if nothing is stored
     }
+}
+
+extension Notification.Name {
+    static let itemsDataDidChange = Notification.Name("itemsDataDidChange")
 }

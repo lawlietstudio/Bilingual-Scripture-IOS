@@ -5,6 +5,8 @@ enum SpeechLang: String, Codable {
     case fr = "Française"
     case en = "English"
     case zh = "中文"
+    case jp = "日本語"
+    case kr = "한국어"
 }
 
 class SpeechUtil {
@@ -40,6 +42,20 @@ class SpeechUtil {
                let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
                 utterance.voice = voice
             } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "zh-HK" && $0.name == "Sinji" }) {
+                utterance.voice = voice
+            }
+        case .jp:
+            if let voiceIdentifier = UserDefaults.standard.string(forKey: "jpnVoiceIdentifier"),
+               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
+                utterance.voice = voice
+            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "ja-JP"}) {
+                utterance.voice = voice
+            }
+        case .kr:
+            if let voiceIdentifier = UserDefaults.standard.string(forKey: "korVoiceIdentifier"),
+               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
+                utterance.voice = voice
+            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "ko-KR" }) {
                 utterance.voice = voice
             }
         }

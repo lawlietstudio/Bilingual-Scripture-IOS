@@ -18,6 +18,9 @@ struct BooksView: View {
     @State private var selectedBook: AnimeBook?
     @State private var animationCurrentBook: Bool = false
     
+    @AppStorage("isShowLDS") private var isShowLDSAppStorage: Bool = false
+    @State private var isShowLDS: Bool = false
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 15) {
@@ -29,9 +32,27 @@ struct BooksView: View {
                             .frame(width: 30)
                             .clipShape(.rect)
                             .cornerRadius(8)
+                            .onTapGesture(perform: {
+                                withAnimation {
+                                    isShowLDS.toggle()
+                                    isShowLDSAppStorage = isShowLDS
+                                }
+                            })
+                            .onAppear {
+                                isShowLDS = isShowLDSAppStorage
+                            }
+//                            .onLongPressGesture(minimumDuration: 2) {
+//                                withAnimation {
+//                                    isShowLDS.toggle()
+//                                }
+//                            }
                         
                         Text("Bilingual Scripture")
                             .font(.title2.bold())
+
+//                            .onTapGesture {
+//                                isShowLDS.toggle()
+//                            }
                         
 //                        Text("英中經文")
 //                            .fontWeight(.semibold)
@@ -62,13 +83,35 @@ struct BooksView: View {
                             .frame(height: 1)
                     }
                     
-                    ScrollableTabBar(tabContents: [buildScrollingBookView(animeBooks: sampleBooks), buildScrollingBookView(animeBooks: sampleDC)])
+                    if isShowLDS {
+                        ScrollableTabBar(tabContents: [
+                            buildScrollingBookView(animeBooks: sampleBOFM),
+                            buildScrollingBookView(animeBooks: sampleDC),
+                            buildScrollingBookView(animeBooks: samplePGP),
+                            buildScrollingBookView(animeBooks: sampleOT),
+                            buildScrollingBookView(animeBooks: sampleNT)
+                        ], tabs: [
+                            .init(id: TabModel.Tab.bofm),
+                            .init(id: TabModel.Tab.dc),
+                            .init(id: TabModel.Tab.pgp),
+                            .init(id: TabModel.Tab.ot),
+                            .init(id: TabModel.Tab.nt)
+                        ])
+                    } else {
+                        ScrollableTabBar(tabContents: [
+                            buildScrollingBookView(animeBooks: sampleOT),
+                            buildScrollingBookView(animeBooks: sampleNT)
+                        ], tabs: [
+                            .init(id: TabModel.Tab.ot),
+                            .init(id: TabModel.Tab.nt)
+                        ])
+                    }
                 }
             }
             .overlay {
                 if let selectedBook, showDetailView
                 {
-                    BookView(show: $showDetailView, animation: animation, animeBook: selectedBook, fileName: selectedBook.imageName)
+                    BookView(show: $showDetailView, animation: animation, animeBook: selectedBook)
                     //                DetailView(show: $showDetailView, animation: animation, book: selectedBook)
                     /// For More Fluent Animation Transition
                         .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
@@ -177,8 +220,8 @@ struct BooksView: View {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(Color.background)
                     /// Applying Shadow
-                        .shadow(color: .primary.opacity(0.08), radius: 8, x: 5, y: 5)
-                        .shadow(color: .primary.opacity(0.08), radius: 8, x: -5, y: -5)
+                        .shadow(color: .primary.opacity(0.12), radius: 8, x: 5, y: 5)
+                        .shadow(color: .primary.opacity(0.12), radius: 8, x: -5, y: -5)
                 }
                 .zIndex(1)
                 /// Moving the book, if it's tapped
@@ -190,7 +233,7 @@ struct BooksView: View {
                 /// Book Cover Image
                 ZStack {
                     if !(showDetailView && selectedBook?.id == book.id) {
-                        Image(book.imageName)
+                        Image(book.bookName)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: size.width / 2, height: size.height)

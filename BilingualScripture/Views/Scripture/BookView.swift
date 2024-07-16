@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 struct BookView: View {
     @State private var animatoinContent: Bool = false
@@ -7,11 +8,10 @@ struct BookView: View {
     @Binding var show: Bool
     var animation: Namespace.ID
     var animeBook: AnimeBook
-    let fileName: String
     
     @State private var selectedSegment = 1
     
-    @State private var book: Book = Book(book: MultilingualText(fr: "", en: "", zh: ""), theme: MultilingualText(fr: "", en: "", zh: ""), introduction: MultilingualText(fr: "", en: "", zh: ""), chapters: [])
+    @State private var book: Book = Book(book: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), theme: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), introduction: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), chapters: [])
     
     private let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5)
     
@@ -45,7 +45,7 @@ struct BookView: View {
                 let size = $0.size
                 
                 HStack(spacing: 20) {
-                    Image(animeBook.imageName)
+                    Image(animeBook.bookName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                     /// Since padding horizontal is 15, which means 15 on the left and 15 on the right, the total is 30
@@ -57,9 +57,9 @@ struct BookView: View {
                     
                     /// Book Details
                     VStack(alignment: .leading, spacing: 8) {
-                        SpeakButton(text: book.book.en, speechLang: .en, font: .title2)
+                        SpeakButton(text: animeBook.engTitle, speechLang: .en, font: .title2)
                         
-                        SpeakButton(text: book.book.zh, speechLang: .zh, font: .title2)
+                        SpeakButton(text: animeBook.zhoTitle, speechLang: .zh, font: .title2)
                         
                         SpeakButton(text: animeBook.period, speechLang: .en, font: .caption)
                             .foregroundColor(.gray)
@@ -90,14 +90,14 @@ struct BookView: View {
                 .overlay(alignment: .top, content: {
                     if selectedSegment == 0 {
                         List {
-                            SpeakSection(multilingualText: showThemeOrIntro(theme: book.theme, intro: book.introduction))
+                            SpeakSection(themeMultilingualText: book.theme, introMultilingualText: book.introduction)
                         }
                         .listStyle(.plain)
                     } else {
                         ScrollView(showsIndicators: false) {
                             LazyVGrid(columns: columns) {
                                 ForEach(book.chapters) { chapter in
-                                    NavigationLink(destination: ChapterView(chapter: chapter, bookTitle: book.book)) {
+                                    NavigationLink(destination: ChapterView(chapter: chapter, animeBook: animeBook)) {
                                         Text("\(chapter.number)")
                                             .frame(minWidth: 50, maxWidth: .infinity, minHeight: 50)
                                             .foregroundColor(Color(UIColor.systemBackground))
@@ -120,6 +120,15 @@ struct BookView: View {
                 .zIndex(0)
                 .opacity(animatoinContent ? 1 : 0)
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 150 {
+                        dismissBook()
+                    }
+                }
+        )
+        .safeAreaPadding(.bottom, 16)
         .animation(.linear, value: selectedSegment)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background {
@@ -144,23 +153,32 @@ struct BookView: View {
             UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "BackgroundColor") ?? .black], for: .selected)
             UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "AccentColor") ?? .black], for: .normal)
             /// The book details use different animations rather than opacity ones, so why a new variable? Since we need to display the details with a little delay, we introduced a new state rather than mixing the old one.
+            
         }
         .onDisappear {
             SpeechUtil.share.stopSpeaking()
         }
     }
     
-    func showThemeOrIntro(theme: String, intro: String) -> String {
-        return theme.count > intro.count ? theme : intro
-    }
-    
     func showThemeOrIntro(theme: MultilingualText, intro: MultilingualText) -> MultilingualText {
         return theme.en.count > intro.en.count ? theme : intro
     }
     
+    func dismissBook() {
+        withAnimation(.easeOut(duration: 0.2)) {
+            offsetAnimation = false
+        }
+        
+        /// Closing Detail View
+        withAnimation(.easeInOut(duration: 0.35).delay(0.1)) {
+            animatoinContent = false
+            show = false
+        }
+    }
+    
     func loadChapters() {
-        guard let fileUrl = Bundle.main.url(forResource: fileName, withExtension: "json", subdirectory: "Scriptures/BookOfMormon") else {
-            print("File \(fileName) not found in the bundle.")
+        guard let fileUrl = Bundle.main.url(forResource: animeBook.bookName, withExtension: "json", subdirectory: "Scriptures/\(animeBook.scriptureName)") else {
+            print("File \(animeBook.bookName) not found in the bundle.")
             return
         }
         

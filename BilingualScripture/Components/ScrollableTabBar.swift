@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ScrollableTabBar<content: View>: View {
     /// View Properties
-    @State private var tabs: [TabModel] = [
-        .init(id: TabModel.Tab.bofm),
-        .init(id: TabModel.Tab.dc),
-//        .init(id: TabModel.Tab.analytics),
-//        .init(id: TabModel.Tab.audience),
-//        .init(id: TabModel.Tab.privacy)
-    ]
-    @State private var activeTab: TabModel.Tab = .bofm
+    @State private var activeTab: TabModel.Tab
     @State private var tabBarScrollState: TabModel.Tab?
     @State private var mainViewScrollState: TabModel.Tab?
     @State private var progress : CGFloat = .zero
     var tabContents: [content]
+    @State var tabs: [TabModel]
+    
+    init(tabContents: [content], tabs: [TabModel]) {
+        self.tabContents = tabContents
+        self._tabs = State(initialValue: tabs)
+        if let firstTab = tabs.first?.id {
+            activeTab = firstTab
+        } else {
+            activeTab = .ot
+        }
+    }
     
     var body: some View {
         CustomTabBar()
