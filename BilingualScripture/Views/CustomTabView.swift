@@ -34,6 +34,7 @@ struct CustomTabView: View {
                     .setUpTab(.setting)
                     .opacity(activeTab == .setting ? 1 : 0)
             }
+            .animation(.spring, value: activeTab)
             .createImages(
                 toggleDarkMode: toggleDarkMode,
                 currentImage: $currentImage,

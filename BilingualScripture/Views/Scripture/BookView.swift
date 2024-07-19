@@ -19,15 +19,7 @@ struct BookView: View {
         
         VStack(alignment: .leading, spacing: 10) {
             Button {
-                withAnimation(.easeOut(duration: 0.2)) {
-                    offsetAnimation = false
-                }
-                
-                /// Closing Detail View
-                withAnimation(.easeInOut(duration: 0.35).delay(0.1)) {
-                    animatoinContent = false
-                    show = false
-                }
+                dismissBook()
             } label: {
                 Image(systemName: "multiply")
                     .font(.title)
@@ -97,7 +89,7 @@ struct BookView: View {
                         ScrollView(showsIndicators: false) {
                             LazyVGrid(columns: columns) {
                                 ForEach(book.chapters) { chapter in
-                                    NavigationLink(destination: ChapterView(chapter: chapter, animeBook: animeBook)) {
+                                    NavigationLink(destination: ChapterTabview(chapters: book.chapters, animeBook: animeBook, selectedTab: chapter.number)) {
                                         Text("\(chapter.number)")
                                             .frame(minWidth: 50, maxWidth: .infinity, minHeight: 50)
                                             .foregroundColor(Color(UIColor.systemBackground))
@@ -123,9 +115,9 @@ struct BookView: View {
         .gesture(
             DragGesture()
                 .onEnded { value in
-                    if value.translation.width > 150 {
+//                    if value.translation.width > 150 {
                         dismissBook()
-                    }
+//                    }
                 }
         )
         .safeAreaPadding(.bottom, 16)
