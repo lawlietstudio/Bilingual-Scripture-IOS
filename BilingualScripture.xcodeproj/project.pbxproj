@@ -15,6 +15,7 @@
 		4D0160882BE06FAA00892516 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160872BE06FAA00892516 /* TabModel.swift */; };
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
 		4D392F3C2C4651A300A68D17 /* ChapterTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */; };
+		4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */; };
 		4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39967E2BBD10DF00DA530B /* BooksView.swift */; };
 		4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */; };
 		4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996822BBD159600DA530B /* CustomCorners.swift */; };
@@ -49,6 +50,7 @@
 		4D0160872BE06FAA00892516 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 		4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTabview.swift; sourceTree = "<group>"; };
+		4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
 		4D39967E2BBD10DF00DA530B /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		4D3996822BBD159600DA530B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				21E0D6282BF7D862009F153B /* CheckmarkToggleStyle.swift */,
 				21E0D62A2BF7E7E8009F153B /* TabPosition.swift */,
 				21E0D62C2BF7E812009F153B /* TabShape.swift */,
+				4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
 				4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */,
 				4DE07DBC2BBCF671001719A7 /* SpeechUtil.swift in Sources */,
+				4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */,
 				4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

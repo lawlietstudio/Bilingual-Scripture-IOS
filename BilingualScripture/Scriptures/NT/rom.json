@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "ROMAINS",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "羅馬書",
     "jp": "ローマ人びとへの手紙てがみ",
     "kr": "로마서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "ROMANS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "The gospel is the power of God unto salvation through Jesus Christ—The wrath of God rests on those guilty of murder, homosexual practices, fornication, and other sins if the guilty do not repent.",
+        "fr": "-",
         "en": "The gospel is the power of God unto salvation through Jesus Christ—The wrath of God rests on those guilty of murder, homosexual practices, fornication, and other sins if the guilty do not repent.",
-        "zh": "The gospel is the power of God unto salvation through Jesus Christ—The wrath of God rests on those guilty of murder, homosexual practices, fornication, and other sins if the guilty do not repent.",
-        "jp": "The gospel is the power of God unto salvation through Jesus Christ—The wrath of God rests on those guilty of murder, homosexual practices, fornication, and other sins if the guilty do not repent.",
-        "kr": "The gospel is the power of God unto salvation through Jesus Christ—The wrath of God rests on those guilty of murder, homosexual practices, fornication, and other sins if the guilty do not repent."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -356,11 +356,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "God will render to every person according to his or her deeds—Both Jews and Gentiles will be judged by gospel laws.",
+        "fr": "-",
         "en": "God will render to every person according to his or her deeds—Both Jews and Gentiles will be judged by gospel laws.",
-        "zh": "God will render to every person according to his or her deeds—Both Jews and Gentiles will be judged by gospel laws.",
-        "jp": "God will render to every person according to his or her deeds—Both Jews and Gentiles will be judged by gospel laws.",
-        "kr": "God will render to every person according to his or her deeds—Both Jews and Gentiles will be judged by gospel laws."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -658,11 +658,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Man is not justified by the law of Moses—He is justified through righteousness, which comes through faith in Christ, made possible through Christ’s atoning sacrifice.",
+        "fr": "-",
         "en": "Man is not justified by the law of Moses—He is justified through righteousness, which comes through faith in Christ, made possible through Christ’s atoning sacrifice.",
-        "zh": "Man is not justified by the law of Moses—He is justified through righteousness, which comes through faith in Christ, made possible through Christ’s atoning sacrifice.",
-        "jp": "Man is not justified by the law of Moses—He is justified through righteousness, which comes through faith in Christ, made possible through Christ’s atoning sacrifice.",
-        "kr": "Man is not justified by the law of Moses—He is justified through righteousness, which comes through faith in Christ, made possible through Christ’s atoning sacrifice."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -980,11 +980,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "Abraham’s faith was accounted to him for righteousness—Man is justified by faith, righteous works, and grace.",
+        "fr": "-",
         "en": "Abraham’s faith was accounted to him for righteousness—Man is justified by faith, righteous works, and grace.",
-        "zh": "Abraham’s faith was accounted to him for righteousness—Man is justified by faith, righteous works, and grace.",
-        "jp": "Abraham’s faith was accounted to him for righteousness—Man is justified by faith, righteous works, and grace.",
-        "kr": "Abraham’s faith was accounted to him for righteousness—Man is justified by faith, righteous works, and grace."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1242,11 +1242,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "Man is justified through the blood of Christ—Adam fell, and Christ atoned that man might be saved.",
+        "fr": "-",
         "en": "Man is justified through the blood of Christ—Adam fell, and Christ atoned that man might be saved.",
-        "zh": "Man is justified through the blood of Christ—Adam fell, and Christ atoned that man might be saved.",
-        "jp": "Man is justified through the blood of Christ—Adam fell, and Christ atoned that man might be saved.",
-        "kr": "Man is justified through the blood of Christ—Adam fell, and Christ atoned that man might be saved."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1464,11 +1464,11 @@
     {
       "number": 6,
       "introduction": {
-        "fr": "Baptism is in similitude of the death, burial, and resurrection of Christ—The wages of sin is death—Christ brings eternal life.",
+        "fr": "-",
         "en": "Baptism is in similitude of the death, burial, and resurrection of Christ—The wages of sin is death—Christ brings eternal life.",
-        "zh": "Baptism is in similitude of the death, burial, and resurrection of Christ—The wages of sin is death—Christ brings eternal life.",
-        "jp": "Baptism is in similitude of the death, burial, and resurrection of Christ—The wages of sin is death—Christ brings eternal life.",
-        "kr": "Baptism is in similitude of the death, burial, and resurrection of Christ—The wages of sin is death—Christ brings eternal life."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1706,11 +1706,11 @@
     {
       "number": 7,
       "introduction": {
-        "fr": "The law of Moses is fulfilled in Christ—Paul delights in the law of God after the inward man.",
+        "fr": "-",
         "en": "The law of Moses is fulfilled in Christ—Paul delights in the law of God after the inward man.",
-        "zh": "The law of Moses is fulfilled in Christ—Paul delights in the law of God after the inward man.",
-        "jp": "The law of Moses is fulfilled in Christ—Paul delights in the law of God after the inward man.",
-        "kr": "The law of Moses is fulfilled in Christ—Paul delights in the law of God after the inward man."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1968,11 +1968,11 @@
     {
       "number": 8,
       "introduction": {
-        "fr": "The law of Christ brings life and peace—Those adopted as children of God become joint heirs with Christ—God’s elect are foreordained to eternal life—Christ makes intercession for man.",
+        "fr": "-",
         "en": "The law of Christ brings life and peace—Those adopted as children of God become joint heirs with Christ—God’s elect are foreordained to eternal life—Christ makes intercession for man.",
-        "zh": "The law of Christ brings life and peace—Those adopted as children of God become joint heirs with Christ—God’s elect are foreordained to eternal life—Christ makes intercession for man.",
-        "jp": "The law of Christ brings life and peace—Those adopted as children of God become joint heirs with Christ—God’s elect are foreordained to eternal life—Christ makes intercession for man.",
-        "kr": "The law of Christ brings life and peace—Those adopted as children of God become joint heirs with Christ—God’s elect are foreordained to eternal life—Christ makes intercession for man."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2370,11 +2370,11 @@
     {
       "number": 9,
       "introduction": {
-        "fr": "Paul explains how the law of election (foreordination) operates—The people of Israel are chosen (foreordained) to receive the adoption, covenants, promises, and blessings of the gospel; yet they are not all Israel who are of Israel—They must seek their blessings by faith—The Gentiles also attain to righteousness and salvation by faith.",
+        "fr": "-",
         "en": "Paul explains how the law of election (foreordination) operates—The people of Israel are chosen (foreordained) to receive the adoption, covenants, promises, and blessings of the gospel; yet they are not all Israel who are of Israel—They must seek their blessings by faith—The Gentiles also attain to righteousness and salvation by faith.",
-        "zh": "Paul explains how the law of election (foreordination) operates—The people of Israel are chosen (foreordained) to receive the adoption, covenants, promises, and blessings of the gospel; yet they are not all Israel who are of Israel—They must seek their blessings by faith—The Gentiles also attain to righteousness and salvation by faith.",
-        "jp": "Paul explains how the law of election (foreordination) operates—The people of Israel are chosen (foreordained) to receive the adoption, covenants, promises, and blessings of the gospel; yet they are not all Israel who are of Israel—They must seek their blessings by faith—The Gentiles also attain to righteousness and salvation by faith.",
-        "kr": "Paul explains how the law of election (foreordination) operates—The people of Israel are chosen (foreordained) to receive the adoption, covenants, promises, and blessings of the gospel; yet they are not all Israel who are of Israel—They must seek their blessings by faith—The Gentiles also attain to righteousness and salvation by faith."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2712,11 +2712,11 @@
     {
       "number": 10,
       "introduction": {
-        "fr": "Salvation comes through righteousness to those who believe in Christ—Faith comes by hearing the gospel taught by legal administrators sent of God.",
+        "fr": "-",
         "en": "Salvation comes through righteousness to those who believe in Christ—Faith comes by hearing the gospel taught by legal administrators sent of God.",
-        "zh": "Salvation comes through righteousness to those who believe in Christ—Faith comes by hearing the gospel taught by legal administrators sent of God.",
-        "jp": "Salvation comes through righteousness to those who believe in Christ—Faith comes by hearing the gospel taught by legal administrators sent of God.",
-        "kr": "Salvation comes through righteousness to those who believe in Christ—Faith comes by hearing the gospel taught by legal administrators sent of God."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2934,11 +2934,11 @@
     {
       "number": 11,
       "introduction": {
-        "fr": "Israel was chosen (foreordained) according to the election of grace—But some harden their hearts against it—The Gentiles are adopted into the house of Israel—The gospel goes preferentially to the Gentiles until the fulness of the Gentiles.",
+        "fr": "-",
         "en": "Israel was chosen (foreordained) according to the election of grace—But some harden their hearts against it—The Gentiles are adopted into the house of Israel—The gospel goes preferentially to the Gentiles until the fulness of the Gentiles.",
-        "zh": "Israel was chosen (foreordained) according to the election of grace—But some harden their hearts against it—The Gentiles are adopted into the house of Israel—The gospel goes preferentially to the Gentiles until the fulness of the Gentiles.",
-        "jp": "Israel was chosen (foreordained) according to the election of grace—But some harden their hearts against it—The Gentiles are adopted into the house of Israel—The gospel goes preferentially to the Gentiles until the fulness of the Gentiles.",
-        "kr": "Israel was chosen (foreordained) according to the election of grace—But some harden their hearts against it—The Gentiles are adopted into the house of Israel—The gospel goes preferentially to the Gentiles until the fulness of the Gentiles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3306,11 +3306,11 @@
     {
       "number": 12,
       "introduction": {
-        "fr": "Paul counsels the Saints to present their bodies as a living sacrifice, to use their own grace-given gifts, and to live as Saints should live.",
+        "fr": "-",
         "en": "Paul counsels the Saints to present their bodies as a living sacrifice, to use their own grace-given gifts, and to live as Saints should live.",
-        "zh": "Paul counsels the Saints to present their bodies as a living sacrifice, to use their own grace-given gifts, and to live as Saints should live.",
-        "jp": "Paul counsels the Saints to present their bodies as a living sacrifice, to use their own grace-given gifts, and to live as Saints should live.",
-        "kr": "Paul counsels the Saints to present their bodies as a living sacrifice, to use their own grace-given gifts, and to live as Saints should live."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3528,11 +3528,11 @@
     {
       "number": 13,
       "introduction": {
-        "fr": "Paul counsels, Be subject unto God’s ministers; keep the commandments; love one another; righteousness leads to salvation.",
+        "fr": "-",
         "en": "Paul counsels, Be subject unto God’s ministers; keep the commandments; love one another; righteousness leads to salvation.",
-        "zh": "Paul counsels, Be subject unto God’s ministers; keep the commandments; love one another; righteousness leads to salvation.",
-        "jp": "Paul counsels, Be subject unto God’s ministers; keep the commandments; love one another; righteousness leads to salvation.",
-        "kr": "Paul counsels, Be subject unto God’s ministers; keep the commandments; love one another; righteousness leads to salvation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3680,11 +3680,11 @@
     {
       "number": 14,
       "introduction": {
-        "fr": "Avoid quarreling about opinions and making unrighteous judgment of each other—Every knee will bow to Christ—The kingdom of God embraces righteousness, peace, and joy in the Holy Ghost.",
+        "fr": "-",
         "en": "Avoid quarreling about opinions and making unrighteous judgment of each other—Every knee will bow to Christ—The kingdom of God embraces righteousness, peace, and joy in the Holy Ghost.",
-        "zh": "Avoid quarreling about opinions and making unrighteous judgment of each other—Every knee will bow to Christ—The kingdom of God embraces righteousness, peace, and joy in the Holy Ghost.",
-        "jp": "Avoid quarreling about opinions and making unrighteous judgment of each other—Every knee will bow to Christ—The kingdom of God embraces righteousness, peace, and joy in the Holy Ghost.",
-        "kr": "Avoid quarreling about opinions and making unrighteous judgment of each other—Every knee will bow to Christ—The kingdom of God embraces righteousness, peace, and joy in the Holy Ghost."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3922,11 +3922,11 @@
     {
       "number": 15,
       "introduction": {
-        "fr": "True Saints fellowship one another—Paul recounts his diligence in preaching the gospel—The gifts of the Spirit are poured out upon the Gentiles.",
+        "fr": "-",
         "en": "True Saints fellowship one another—Paul recounts his diligence in preaching the gospel—The gifts of the Spirit are poured out upon the Gentiles.",
-        "zh": "True Saints fellowship one another—Paul recounts his diligence in preaching the gospel—The gifts of the Spirit are poured out upon the Gentiles.",
-        "jp": "True Saints fellowship one another—Paul recounts his diligence in preaching the gospel—The gifts of the Spirit are poured out upon the Gentiles.",
-        "kr": "True Saints fellowship one another—Paul recounts his diligence in preaching the gospel—The gifts of the Spirit are poured out upon the Gentiles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4264,11 +4264,11 @@
     {
       "number": 16,
       "introduction": {
-        "fr": "Paul sends greetings to various Saints—He counsels the Saints to avoid those who cause divisions—The Saints should be wise concerning good and innocent concerning evil.",
+        "fr": "-",
         "en": "Paul sends greetings to various Saints—He counsels the Saints to avoid those who cause divisions—The Saints should be wise concerning good and innocent concerning evil.",
-        "zh": "Paul sends greetings to various Saints—He counsels the Saints to avoid those who cause divisions—The Saints should be wise concerning good and innocent concerning evil.",
+        "zh": "-",
         "jp": "〔24 わたしたちの主しゅイエス・キリストの恵めぐみが、あなたがた一同いちどうと共ともにあるように、アァメン。〕",
-        "kr": "Paul sends greetings to various Saints—He counsels the Saints to avoid those who cause divisions—The Saints should be wise concerning good and innocent concerning evil."
+        "kr": "-"
       },
       "verses": [
         {

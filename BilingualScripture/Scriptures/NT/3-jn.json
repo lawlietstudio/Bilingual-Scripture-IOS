@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "3 JEAN",
-    "en": "THE THIRD EPISTLE OF",
+    "en": "THE THIRD EPISTLE OF JOHN",
     "zh": "約翰三書",
     "jp": "ヨハネの第だい三の手紙てがみ",
     "kr": "요한3서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "John commends Gaius for his help to those who love the truth.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "John commends Gaius for his help to those who love the truth.",
+        "fr": "-",
         "en": "John commends Gaius for his help to those who love the truth.",
-        "zh": "John commends Gaius for his help to those who love the truth.",
-        "jp": "John commends Gaius for his help to those who love the truth.",
-        "kr": "John commends Gaius for his help to those who love the truth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

@@ -1,24 +1,24 @@
 {
   "book": {
     "fr": "ÉVANGILE SELON MATTHIEU",
-    "en": "THE GOSPEL ACCORDING TO",
+    "en": "THE GOSPEL ACCORDING TO ST MATTHEW",
     "zh": "馬太福音",
     "jp": "マタイによる福音ふくいん書しょ",
     "kr": "마태복음"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
     "fr": "Le Christ est né de Marie. Elle l’a conçu par le Saint-Esprit. Notre Seigneur a pour nom Jésus.",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "en": "Christ is born of Mary—She conceives by the power of the Holy Ghost—Our Lord is named Jesus.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
@@ -26,9 +26,9 @@
       "introduction": {
         "fr": "Le Christ est né de Marie. Elle l’a conçu par le Saint-Esprit. Notre Seigneur a pour nom Jésus.",
         "en": "Christ is born of Mary—She conceives by the power of the Holy Ghost—Our Lord is named Jesus.",
-        "zh": "Christ is born of Mary—She conceives by the power of the Holy Ghost—Our Lord is named Jesus.",
-        "jp": "Christ is born of Mary—She conceives by the power of the Holy Ghost—Our Lord is named Jesus.",
-        "kr": "Christ is born of Mary—She conceives by the power of the Holy Ghost—Our Lord is named Jesus."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -288,9 +288,9 @@
       "introduction": {
         "fr": "Les mages sont guidés par une étoile jusqu’à Jésus. Joseph emmène le petit enfant en Égypte. Hérode tue les enfants à Bethléem. Jésus est emmené à Nazareth pour y demeurer.",
         "en": "The wise men are directed by a star to Jesus—Joseph takes the child to Egypt—Herod slays the children in Bethlehem—Jesus is taken to Nazareth to dwell.",
-        "zh": "The wise men are directed by a star to Jesus—Joseph takes the child to Egypt—Herod slays the children in Bethlehem—Jesus is taken to Nazareth to dwell.",
-        "jp": "The wise men are directed by a star to Jesus—Joseph takes the child to Egypt—Herod slays the children in Bethlehem—Jesus is taken to Nazareth to dwell.",
-        "kr": "The wise men are directed by a star to Jesus—Joseph takes the child to Egypt—Herod slays the children in Bethlehem—Jesus is taken to Nazareth to dwell."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -530,9 +530,9 @@
       "introduction": {
         "fr": "Jean-Baptiste prêche dans la Judée. Jésus est baptisé et le Père le reconnaît comme son Fils bien-aimé.",
         "en": "John the Baptist preaches in Judæa—Jesus is baptized, and the Father acclaims Him as His Beloved Son.",
-        "zh": "John the Baptist preaches in Judæa—Jesus is baptized, and the Father acclaims Him as His Beloved Son.",
-        "jp": "John the Baptist preaches in Judæa—Jesus is baptized, and the Father acclaims Him as His Beloved Son.",
-        "kr": "John the Baptist preaches in Judæa—Jesus is baptized, and the Father acclaims Him as His Beloved Son."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -712,9 +712,9 @@
       "introduction": {
         "fr": "Jésus jeûne pendant quarante jours puis il est tenté. Il débute son ministère, appelle des disciples et guérit les malades.",
         "en": "Jesus fasts forty days and is tempted—He begins His ministry, calls disciples, and heals the sick.",
-        "zh": "Jesus fasts forty days and is tempted—He begins His ministry, calls disciples, and heals the sick.",
-        "jp": "Jesus fasts forty days and is tempted—He begins His ministry, calls disciples, and heals the sick.",
-        "kr": "Jesus fasts forty days and is tempted—He begins His ministry, calls disciples, and heals the sick."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -974,9 +974,9 @@
       "introduction": {
         "fr": "Jésus enseigne le sermon sur la montagne. Ses paroles remplacent et dépassent certains aspects de la loi de Moïse. Il est commandé à tous d’être parfaits comme le Père.",
         "en": "Jesus preaches the Sermon on the Mount—Its teachings replace and transcend some aspects of the law of Moses—All are commanded to be perfect like their Father in Heaven.",
-        "zh": "Jesus preaches the Sermon on the Mount—Its teachings replace and transcend some aspects of the law of Moses—All are commanded to be perfect like their Father in Heaven.",
-        "jp": "Jesus preaches the Sermon on the Mount—Its teachings replace and transcend some aspects of the law of Moses—All are commanded to be perfect like their Father in Heaven.",
-        "kr": "Jesus preaches the Sermon on the Mount—Its teachings replace and transcend some aspects of the law of Moses—All are commanded to be perfect like their Father in Heaven."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1466,9 +1466,9 @@
       "introduction": {
         "fr": "Jésus poursuit le sermon sur la montagne. Il enseigne à ses disciples à prier leur Père céleste. Ceux-ci doivent rechercher premièrement le royaume et la justice de Dieu.",
         "en": "Jesus continues the Sermon on the Mount—He teaches the disciples the Lord’s Prayer—They are commanded to seek first the kingdom of God and His righteousness.",
-        "zh": "Jesus continues the Sermon on the Mount—He teaches the disciples the Lord’s Prayer—They are commanded to seek first the kingdom of God and His righteousness.",
-        "jp": "Jesus continues the Sermon on the Mount—He teaches the disciples the Lord’s Prayer—They are commanded to seek first the kingdom of God and His righteousness.",
-        "kr": "Jesus continues the Sermon on the Mount—He teaches the disciples the Lord’s Prayer—They are commanded to seek first the kingdom of God and His righteousness."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1818,9 +1818,9 @@
       "introduction": {
         "fr": "Jésus termine le sermon sur la montagne. Il nous commande de ne pas juger, de présenter nos demandes à Dieu et de nous méfier des faux prophètes. Il promet le salut à ceux qui font la volonté du Père.",
         "en": "Jesus concludes the Sermon on the Mount—He commands, Judge not; ask of God; beware of false prophets—He promises salvation to those who do the will of the Father.",
-        "zh": "Jesus concludes the Sermon on the Mount—He commands, Judge not; ask of God; beware of false prophets—He promises salvation to those who do the will of the Father.",
-        "jp": "Jesus concludes the Sermon on the Mount—He commands, Judge not; ask of God; beware of false prophets—He promises salvation to those who do the will of the Father.",
-        "kr": "Jesus concludes the Sermon on the Mount—He commands, Judge not; ask of God; beware of false prophets—He promises salvation to those who do the will of the Father."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2120,9 +2120,9 @@
       "introduction": {
         "fr": "Jésus guérit un lépreux, le serviteur du centurion et d’autres, calme la tempête et chasse des démons. Les démons entrent dans un troupeau de cochons.",
         "en": "Jesus heals a leper, cures the centurion’s servant and others, stills the tempest, and casts out devils—The devils enter a herd of swine.",
-        "zh": "Jesus heals a leper, cures the centurion’s servant and others, stills the tempest, and casts out devils—The devils enter a herd of swine.",
-        "jp": "Jesus heals a leper, cures the centurion’s servant and others, stills the tempest, and casts out devils—The devils enter a herd of swine.",
-        "kr": "Jesus heals a leper, cures the centurion’s servant and others, stills the tempest, and casts out devils—The devils enter a herd of swine."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2472,9 +2472,9 @@
       "introduction": {
         "fr": "Jésus pardonne les péchés, guérit un paralytique et appelle Matthieu à le suivre. Jésus mange avec les pécheurs, guérit une femme qui touche son vêtement et rend la vie à la fille de Jaïrus. Il rend la vue aux aveugles, chasse les démons et prêche l’Évangile.",
         "en": "Jesus forgives sins, heals a paralytic, and calls Matthew—Jesus eats with sinners, heals a woman who touches His garments, and raises Jairus’s daughter to life—He opens the eyes of the blind, casts out a devil, and preaches the gospel.",
-        "zh": "Jesus forgives sins, heals a paralytic, and calls Matthew—Jesus eats with sinners, heals a woman who touches His garments, and raises Jairus’s daughter to life—He opens the eyes of the blind, casts out a devil, and preaches the gospel.",
-        "jp": "Jesus forgives sins, heals a paralytic, and calls Matthew—Jesus eats with sinners, heals a woman who touches His garments, and raises Jairus’s daughter to life—He opens the eyes of the blind, casts out a devil, and preaches the gospel.",
-        "kr": "Jesus forgives sins, heals a paralytic, and calls Matthew—Jesus eats with sinners, heals a woman who touches His garments, and raises Jairus’s daughter to life—He opens the eyes of the blind, casts out a devil, and preaches the gospel."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2864,9 +2864,9 @@
       "introduction": {
         "fr": "Jésus instruit les douze apôtres, leur donne du pouvoir et les envoie prêcher, servir et guérir les malades. Ceux qui reçoivent les Douze reçoivent le Seigneur.",
         "en": "Jesus instructs and empowers the Twelve Apostles and sends them forth to preach, minister, and heal the sick—Those who receive the Twelve receive the Lord.",
-        "zh": "Jesus instructs and empowers the Twelve Apostles and sends them forth to preach, minister, and heal the sick—Those who receive the Twelve receive the Lord.",
-        "jp": "Jesus instructs and empowers the Twelve Apostles and sends them forth to preach, minister, and heal the sick—Those who receive the Twelve receive the Lord.",
-        "kr": "Jesus instructs and empowers the Twelve Apostles and sends them forth to preach, minister, and heal the sick—Those who receive the Twelve receive the Lord."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3296,9 +3296,9 @@
       "introduction": {
         "fr": "Jésus déclare que Jean est plus qu’un prophète. Il reproche aux villes de Chorazin, Bethsaïda et Capernaüm leur incrédulité. Le Fils fait connaître le Père. Le joug du Christ est doux et son fardeau léger.",
         "en": "Jesus acclaims John as more than a prophet—The cities of Chorazin, Bethsaida, and Capernaum are rebuked for unbelief—The Son reveals the Father—The yoke of Christ is easy, and His burden is light.",
-        "zh": "Jesus acclaims John as more than a prophet—The cities of Chorazin, Bethsaida, and Capernaum are rebuked for unbelief—The Son reveals the Father—The yoke of Christ is easy, and His burden is light.",
-        "jp": "Jesus acclaims John as more than a prophet—The cities of Chorazin, Bethsaida, and Capernaum are rebuked for unbelief—The Son reveals the Father—The yoke of Christ is easy, and His burden is light.",
-        "kr": "Jesus acclaims John as more than a prophet—The cities of Chorazin, Bethsaida, and Capernaum are rebuked for unbelief—The Son reveals the Father—The yoke of Christ is easy, and His burden is light."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3608,9 +3608,9 @@
       "introduction": {
         "fr": "Jésus se proclame Seigneur du sabbat et opère une guérison le jour du sabbat. Il est accusé de chasser les démons par le pouvoir de Béelzébul. Il parle du blasphème contre le Saint-Esprit et dit qu’une génération méchante et adultère demande des miracles.",
         "en": "Jesus proclaims Himself Lord of the Sabbath and heals on the Sabbath day—He is accused of casting out devils through the power of Beelzebub—He speaks of blasphemy against the Holy Ghost and says that an evil and adulterous generation seeks signs.",
-        "zh": "Jesus proclaims Himself Lord of the Sabbath and heals on the Sabbath day—He is accused of casting out devils through the power of Beelzebub—He speaks of blasphemy against the Holy Ghost and says that an evil and adulterous generation seeks signs.",
-        "jp": "Jesus proclaims Himself Lord of the Sabbath and heals on the Sabbath day—He is accused of casting out devils through the power of Beelzebub—He speaks of blasphemy against the Holy Ghost and says that an evil and adulterous generation seeks signs.",
-        "kr": "Jesus proclaims Himself Lord of the Sabbath and heals on the Sabbath day—He is accused of casting out devils through the power of Beelzebub—He speaks of blasphemy against the Holy Ghost and says that an evil and adulterous generation seeks signs."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4120,9 +4120,9 @@
       "introduction": {
         "fr": "Jésus explique pourquoi il enseigne en paraboles. Il donne la parabole du semeur, celle du bon grain et de l’ivraie, celle de la graine de moutarde, celle du levain, celle du trésor caché dans un champ, celle de la perle de grand prix et celle du filet jeté dans la mer. Un prophète est méprisé dans son propre pays.",
         "en": "Jesus explains why He teaches with parables—He gives the parables of the sower, the wheat and the tares, the grain of mustard seed, the leaven, the treasure hidden in the field, the pearl of great price, and the net cast into the sea—A prophet is not honored by his own people.",
-        "zh": "Jesus explains why He teaches with parables—He gives the parables of the sower, the wheat and the tares, the grain of mustard seed, the leaven, the treasure hidden in the field, the pearl of great price, and the net cast into the sea—A prophet is not honored by his own people.",
-        "jp": "Jesus explains why He teaches with parables—He gives the parables of the sower, the wheat and the tares, the grain of mustard seed, the leaven, the treasure hidden in the field, the pearl of great price, and the net cast into the sea—A prophet is not honored by his own people.",
-        "kr": "Jesus explains why He teaches with parables—He gives the parables of the sower, the wheat and the tares, the grain of mustard seed, the leaven, the treasure hidden in the field, the pearl of great price, and the net cast into the sea—A prophet is not honored by his own people."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4712,9 +4712,9 @@
       "introduction": {
         "fr": "Jean-Baptiste est décapité. Jésus nourrit cinq mille hommes et marche sur la mer. Ceux qui touchent le bord de son vêtement sont guéris.",
         "en": "John the Baptist is beheaded—Jesus feeds the five thousand and walks on the sea—Those who touch the hem of His garment are made whole.",
-        "zh": "John the Baptist is beheaded—Jesus feeds the five thousand and walks on the sea—Those who touch the hem of His garment are made whole.",
-        "jp": "John the Baptist is beheaded—Jesus feeds the five thousand and walks on the sea—Those who touch the hem of His garment are made whole.",
-        "kr": "John the Baptist is beheaded—Jesus feeds the five thousand and walks on the sea—Those who touch the hem of His garment are made whole."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5084,9 +5084,9 @@
       "introduction": {
         "fr": "Les scribes et les pharisiens s’opposent à Jésus. Il guérit la fille d’une femme étrangère. Il nourrit quatre mille hommes.",
         "en": "The scribes and Pharisees contend against Jesus—He heals the daughter of a gentile woman—He feeds the four thousand.",
-        "zh": "The scribes and Pharisees contend against Jesus—He heals the daughter of a gentile woman—He feeds the four thousand.",
-        "jp": "The scribes and Pharisees contend against Jesus—He heals the daughter of a gentile woman—He feeds the four thousand.",
-        "kr": "The scribes and Pharisees contend against Jesus—He heals the daughter of a gentile woman—He feeds the four thousand."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5486,9 +5486,9 @@
       "introduction": {
         "fr": "Jésus met en garde contre l’enseignement des Pharisiens et des Saducéens. Pierre témoigne que Jésus est le Christ et les clés du royaume lui sont promises. Jésus annonce sa mort et sa résurrection.",
         "en": "Jesus warns against the doctrine of the Pharisees and Sadducees—Peter testifies that Jesus is the Christ and is promised the keys of the kingdom—Jesus foretells His death and resurrection.",
-        "zh": "Jesus warns against the doctrine of the Pharisees and Sadducees—Peter testifies that Jesus is the Christ and is promised the keys of the kingdom—Jesus foretells His death and resurrection.",
-        "jp": "Jesus warns against the doctrine of the Pharisees and Sadducees—Peter testifies that Jesus is the Christ and is promised the keys of the kingdom—Jesus foretells His death and resurrection.",
-        "kr": "Jesus warns against the doctrine of the Pharisees and Sadducees—Peter testifies that Jesus is the Christ and is promised the keys of the kingdom—Jesus foretells His death and resurrection."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5778,9 +5778,9 @@
       "introduction": {
         "fr": "Jésus est transfiguré sur la montagne devant Pierre, Jacques et Jean. Jésus guérit un épileptique, parle de sa mort à venir et paie l’impôt par un miracle.",
         "en": "Jesus is transfigured before Peter, James, and John on the mount—Jesus heals a lunatic, tells of His coming death, and pays taxes in a miraculous manner.",
-        "zh": "Jesus is transfigured before Peter, James, and John on the mount—Jesus heals a lunatic, tells of His coming death, and pays taxes in a miraculous manner.",
+        "zh": "-",
         "jp": "〔21 しかし、このたぐいは、祈いのりと断食だんじきとによらなければ、追おい出だすことはできない〕」。",
-        "kr": "Jesus is transfigured before Peter, James, and John on the mount—Jesus heals a lunatic, tells of His coming death, and pays taxes in a miraculous manner."
+        "kr": "-"
       },
       "verses": [
         {
@@ -6060,9 +6060,9 @@
       "introduction": {
         "fr": "Jésus explique comment nous devons traiter les frères qui nous offensent. Le Fils de l’homme est venu pour sauver ce qui était perdu. Chacun des Douze reçoit les clés du royaume. Jésus explique pourquoi nous devons pardonner.",
         "en": "Jesus explains how we are to treat our offending brethren—The Son of Man came to save that which was lost—All of the Twelve receive the keys of the kingdom—Jesus explains why we should forgive.",
-        "zh": "Jesus explains how we are to treat our offending brethren—The Son of Man came to save that which was lost—All of the Twelve receive the keys of the kingdom—Jesus explains why we should forgive.",
+        "zh": "-",
         "jp": "〔11 人ひとの子こは、滅ほろびる者ものを救すくうためにきたのである。〕",
-        "kr": "Jesus explains how we are to treat our offending brethren—The Son of Man came to save that which was lost—All of the Twelve receive the keys of the kingdom—Jesus explains why we should forgive."
+        "kr": "-"
       },
       "verses": [
         {
@@ -6422,9 +6422,9 @@
       "introduction": {
         "fr": "Enseignements de Jésus sur le mariage et le divorce. La vie éternelle appartient à ceux qui gardent les commandements. Les douze apôtres jugeront la maison d’Israël.",
         "en": "Jesus teaches about marriage and divorce—Eternal life is for those who keep the commandments—The Twelve Apostles will judge the house of Israel.",
-        "zh": "Jesus teaches about marriage and divorce—Eternal life is for those who keep the commandments—The Twelve Apostles will judge the house of Israel.",
-        "jp": "Jesus teaches about marriage and divorce—Eternal life is for those who keep the commandments—The Twelve Apostles will judge the house of Israel.",
-        "kr": "Jesus teaches about marriage and divorce—Eternal life is for those who keep the commandments—The Twelve Apostles will judge the house of Israel."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6734,9 +6734,9 @@
       "introduction": {
         "fr": "Jésus enseigne la parabole des ouvriers dans la vigne. Il annonce sa crucifixion et sa résurrection. Il est venu pour donner sa vie en rançon pour beaucoup.",
         "en": "Jesus gives the parable of the laborers in the vineyard—He foretells His crucifixion and resurrection—He came to give His life as a ransom for many.",
-        "zh": "Jesus gives the parable of the laborers in the vineyard—He foretells His crucifixion and resurrection—He came to give His life as a ransom for many.",
-        "jp": "Jesus gives the parable of the laborers in the vineyard—He foretells His crucifixion and resurrection—He came to give His life as a ransom for many.",
-        "kr": "Jesus gives the parable of the laborers in the vineyard—He foretells His crucifixion and resurrection—He came to give His life as a ransom for many."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7086,9 +7086,9 @@
       "introduction": {
         "fr": "Jésus entre triomphalement à Jérusalem. Il purifie le temple, maudit le figuier et parle de l’autorité. Il enseigne la parabole des deux fils et celle des méchants vignerons.",
         "en": "Jesus rides in triumph into Jerusalem—He cleanses the temple, curses the fig tree, and discusses authority—He gives the parables of the two sons and the wicked husbandmen.",
-        "zh": "Jesus rides in triumph into Jerusalem—He cleanses the temple, curses the fig tree, and discusses authority—He gives the parables of the two sons and the wicked husbandmen.",
-        "jp": "Jesus rides in triumph into Jerusalem—He cleanses the temple, curses the fig tree, and discusses authority—He gives the parables of the two sons and the wicked husbandmen.",
-        "kr": "Jesus rides in triumph into Jerusalem—He cleanses the temple, curses the fig tree, and discusses authority—He gives the parables of the two sons and the wicked husbandmen."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7558,9 +7558,9 @@
       "introduction": {
         "fr": "Jésus enseigne la parabole des noces du fils du roi. Il faut payer le tribut à César et à Dieu. Les mariages terrestres ne durent que pendant cette vie. Le premier commandement est d’aimer le Seigneur. Jésus demande : “Que pensez-vous du Christ ?”",
         "en": "Jesus gives the parable of the marriage of the king’s son—Pay tribute to Cæsar and to God—Worldly marriages endure in this life only—The first commandment is to love the Lord—Jesus asks, What think ye of Christ?",
-        "zh": "Jesus gives the parable of the marriage of the king’s son—Pay tribute to Cæsar and to God—Worldly marriages endure in this life only—The first commandment is to love the Lord—Jesus asks, What think ye of Christ?",
-        "jp": "Jesus gives the parable of the marriage of the king’s son—Pay tribute to Cæsar and to God—Worldly marriages endure in this life only—The first commandment is to love the Lord—Jesus asks, What think ye of Christ?",
-        "kr": "Jesus gives the parable of the marriage of the king’s son—Pay tribute to Cæsar and to God—Worldly marriages endure in this life only—The first commandment is to love the Lord—Jesus asks, What think ye of Christ?"
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8030,9 +8030,9 @@
       "introduction": {
         "fr": "Jésus condamne les scribes et les pharisiens. Ils seront tenus responsables du meurtre des prophètes. Ils n’échapperont pas à la damnation de l’enfer.",
         "en": "Jesus pronounces woes upon the scribes and Pharisees—They will be held responsible for killing the prophets—They will not escape the damnation of hell.",
-        "zh": "Jesus pronounces woes upon the scribes and Pharisees—They will be held responsible for killing the prophets—They will not escape the damnation of hell.",
+        "zh": "-",
         "jp": "〔14 偽善ぎぜんな律法りっぽう学者がくしゃ、パリサイ人びとたちよ。あなたがたは、わざわいである。あなたがたは、やもめたちの家いえを食くい倒たおし、見みえのために長ながい祈いのりをする。だから、もっときびしいさばきを受うけるに違ちがいない。〕",
-        "kr": "Jesus pronounces woes upon the scribes and Pharisees—They will be held responsible for killing the prophets—They will not escape the damnation of hell."
+        "kr": "-"
       },
       "verses": [
         {
@@ -8432,9 +8432,9 @@
       "introduction": {
         "fr": "Jésus annonce la chute de Jérusalem et la destruction du Temple. De grandes calamités précéderont la Seconde Venue. Il enseigne la parabole du figuier.",
         "en": "Jesus foretells the doom of Jerusalem and the destruction of the temple—Great calamities will precede His Second Coming—He gives the parable of the fig tree.",
-        "zh": "Jesus foretells the doom of Jerusalem and the destruction of the temple—Great calamities will precede His Second Coming—He gives the parable of the fig tree.",
-        "jp": "Jesus foretells the doom of Jerusalem and the destruction of the temple—Great calamities will precede His Second Coming—He gives the parable of the fig tree.",
-        "kr": "Jesus foretells the doom of Jerusalem and the destruction of the temple—Great calamities will precede His Second Coming—He gives the parable of the fig tree."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8954,9 +8954,9 @@
       "introduction": {
         "fr": "Jésus enseigne la parabole des dix vierges, celle des talents ainsi que celle des brebis et des boucs.",
         "en": "Jesus gives the parables of the ten virgins, the talents, and the sheep and the goats.",
-        "zh": "Jesus gives the parables of the ten virgins, the talents, and the sheep and the goats.",
-        "jp": "Jesus gives the parables of the ten virgins, the talents, and the sheep and the goats.",
-        "kr": "Jesus gives the parables of the ten virgins, the talents, and the sheep and the goats."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -9426,9 +9426,9 @@
       "introduction": {
         "fr": "Jésus est oint. Il célèbre la Pâque et institue la sainte-cène. Il souffre à Gethsémané, est trahi par Judas et est emmené devant Caïphe. Pierre nie connaître Jésus.",
         "en": "Jesus is anointed—He keeps the Passover and institutes the sacrament—He suffers in Gethsemane, is betrayed by Judas, and is taken before Caiaphas—Peter denies that he knows Jesus.",
-        "zh": "Jesus is anointed—He keeps the Passover and institutes the sacrament—He suffers in Gethsemane, is betrayed by Judas, and is taken before Caiaphas—Peter denies that he knows Jesus.",
-        "jp": "Jesus is anointed—He keeps the Passover and institutes the sacrament—He suffers in Gethsemane, is betrayed by Judas, and is taken before Caiaphas—Peter denies that he knows Jesus.",
-        "kr": "Jesus is anointed—He keeps the Passover and institutes the sacrament—He suffers in Gethsemane, is betrayed by Judas, and is taken before Caiaphas—Peter denies that he knows Jesus."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -10188,9 +10188,9 @@
       "introduction": {
         "fr": "Jésus est accusé et condamné devant Pilate. Barabbas est relâché. Jésus est l’objet de moqueries, puis crucifié et inhumé dans le tombeau de Joseph d’Arimathée.",
         "en": "Jesus is accused and condemned before Pilate—Barabbas is released—Jesus is mocked, crucified, and buried in the tomb of Joseph of Arimathæa.",
-        "zh": "Jesus is accused and condemned before Pilate—Barabbas is released—Jesus is mocked, crucified, and buried in the tomb of Joseph of Arimathæa.",
-        "jp": "Jesus is accused and condemned before Pilate—Barabbas is released—Jesus is mocked, crucified, and buried in the tomb of Joseph of Arimathæa.",
-        "kr": "Jesus is accused and condemned before Pilate—Barabbas is released—Jesus is mocked, crucified, and buried in the tomb of Joseph of Arimathæa."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -10860,9 +10860,9 @@
       "introduction": {
         "fr": "Christ, le Seigneur, est ressuscité. Il apparaît à de nombreuses personnes. Il a tout pouvoir dans le ciel et sur la terre. Il envoie ses apôtres enseigner et baptiser toutes les nations.",
         "en": "Christ the Lord is risen—He appears to many—He has all power in heaven and earth—He sends the Apostles to teach and baptize all nations.",
-        "zh": "Christ the Lord is risen—He appears to many—He has all power in heaven and earth—He sends the Apostles to teach and baptize all nations.",
-        "jp": "Christ the Lord is risen—He appears to many—He has all power in heaven and earth—He sends the Apostles to teach and baptize all nations.",
-        "kr": "Christ the Lord is risen—He appears to many—He has all power in heaven and earth—He sends the Apostles to teach and baptize all nations."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

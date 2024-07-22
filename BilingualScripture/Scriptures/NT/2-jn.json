@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "2 JEAN",
-    "en": "THE SECOND EPISTLE OF",
+    "en": "THE SECOND EPISTLE OF JOHN",
     "zh": "約翰二書",
     "jp": "ヨハネの第だい二の手紙てがみ",
     "kr": "요한2서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "John rejoices because the children of the elect lady are true and faithful.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "John rejoices because the children of the elect lady are true and faithful.",
+        "fr": "-",
         "en": "John rejoices because the children of the elect lady are true and faithful.",
-        "zh": "John rejoices because the children of the elect lady are true and faithful.",
-        "jp": "John rejoices because the children of the elect lady are true and faithful.",
-        "kr": "John rejoices because the children of the elect lady are true and faithful."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

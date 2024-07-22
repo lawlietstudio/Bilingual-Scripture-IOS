@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "JACQUES",
-    "en": "THE GENERAL EPISTLE OF",
+    "en": "THE GENERAL EPISTLE OF JAMES",
     "zh": "雅各書",
     "jp": "ヤコブの手紙てがみ",
     "kr": "야고보서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.",
+        "fr": "-",
         "en": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.",
-        "zh": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.",
-        "jp": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.",
-        "kr": "If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -306,11 +306,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead.",
+        "fr": "-",
         "en": "God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead.",
-        "zh": "God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead.",
-        "jp": "God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead.",
-        "kr": "God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -578,11 +578,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy.",
+        "fr": "-",
         "en": "By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy.",
-        "zh": "By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy.",
-        "jp": "By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy.",
-        "kr": "By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -770,11 +770,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received.",
+        "fr": "-",
         "en": "Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received.",
-        "zh": "Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received.",
-        "jp": "Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received.",
-        "kr": "Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -952,11 +952,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick.",
+        "fr": "-",
         "en": "Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick.",
-        "zh": "Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick.",
-        "jp": "Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick.",
-        "kr": "Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

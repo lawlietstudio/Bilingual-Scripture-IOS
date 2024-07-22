@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "PHILIPPIENS",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "腓立比書",
     "jp": "ピリピ人びとへの手紙てがみ",
     "kr": "빌립보서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "PHILIPPIANS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel.",
+        "fr": "-",
         "en": "All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel.",
-        "zh": "All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel.",
-        "jp": "All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel.",
-        "kr": "All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -336,11 +336,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy.",
+        "fr": "-",
         "en": "Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy.",
-        "zh": "Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy.",
-        "jp": "Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy.",
-        "kr": "Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -648,11 +648,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Paul sacrifices all things for Christ—True ministers set examples of righteousness.",
+        "fr": "-",
         "en": "Paul sacrifices all things for Christ—True ministers set examples of righteousness.",
-        "zh": "Paul sacrifices all things for Christ—True ministers set examples of righteousness.",
-        "jp": "Paul sacrifices all things for Christ—True ministers set examples of righteousness.",
-        "kr": "Paul sacrifices all things for Christ—True ministers set examples of righteousness."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -870,11 +870,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "Stand fast in the Lord—We believe in being honest, true, and chaste.",
+        "fr": "-",
         "en": "Stand fast in the Lord—We believe in being honest, true, and chaste.",
-        "zh": "Stand fast in the Lord—We believe in being honest, true, and chaste.",
-        "jp": "Stand fast in the Lord—We believe in being honest, true, and chaste.",
-        "kr": "Stand fast in the Lord—We believe in being honest, true, and chaste."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

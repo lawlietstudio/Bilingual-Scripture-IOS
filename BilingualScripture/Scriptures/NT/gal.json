@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "GALATES",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "加拉太書",
     "jp": "ガラテヤ人びとへの手紙てがみ",
     "kr": "갈라디아서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "GALATIANS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles.",
+        "fr": "-",
         "en": "Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles.",
-        "zh": "Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles.",
-        "jp": "Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles.",
-        "kr": "Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -276,11 +276,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ.",
+        "fr": "-",
         "en": "Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ.",
-        "zh": "Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ.",
-        "jp": "Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ.",
-        "kr": "Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -498,11 +498,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed.",
+        "fr": "-",
         "en": "God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed.",
-        "zh": "God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed.",
-        "jp": "God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed.",
-        "kr": "God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -800,11 +800,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants.",
+        "fr": "-",
         "en": "The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants.",
-        "zh": "The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants.",
-        "jp": "The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants.",
-        "kr": "The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1122,11 +1122,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named.",
+        "fr": "-",
         "en": "Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named.",
-        "zh": "Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named.",
-        "jp": "Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named.",
-        "kr": "Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1394,11 +1394,11 @@
     {
       "number": 6,
       "introduction": {
-        "fr": "Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing.",
+        "fr": "-",
         "en": "Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing.",
-        "zh": "Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing.",
-        "jp": "Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing.",
-        "kr": "Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

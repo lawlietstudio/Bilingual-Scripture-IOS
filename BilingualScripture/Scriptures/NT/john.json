@@ -1,24 +1,24 @@
 {
   "book": {
     "fr": "ÉVANGILE SELON JEAN",
-    "en": "THE GOSPEL ACCORDING TO",
+    "en": "THE GOSPEL ACCORDING TO ST JOHN",
     "zh": "約翰福音",
     "jp": "ヨハネによる福音ふくいん書しょ",
     "kr": "요한복음"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
     "fr": "Le Christ est la Parole de Dieu. Il a créé toutes choses et a été fait chair. Jean baptise Jésus et témoigne qu’il est l’Agneau de Dieu. Jean, André, Simon, Philippe et Nathanaël croient au Christ, et le suivent.",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "en": "Christ is the Word of God—He created all things and was made flesh—John baptizes Jesus and testifies that He is the Lamb of God—John, Andrew, Simon, Philip, and Nathanael believe in Christ and follow Him.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
@@ -26,9 +26,9 @@
       "introduction": {
         "fr": "Le Christ est la Parole de Dieu. Il a créé toutes choses et a été fait chair. Jean baptise Jésus et témoigne qu’il est l’Agneau de Dieu. Jean, André, Simon, Philippe et Nathanaël croient au Christ, et le suivent.",
         "en": "Christ is the Word of God—He created all things and was made flesh—John baptizes Jesus and testifies that He is the Lamb of God—John, Andrew, Simon, Philip, and Nathanael believe in Christ and follow Him.",
-        "zh": "Christ is the Word of God—He created all things and was made flesh—John baptizes Jesus and testifies that He is the Lamb of God—John, Andrew, Simon, Philip, and Nathanael believe in Christ and follow Him.",
-        "jp": "Christ is the Word of God—He created all things and was made flesh—John baptizes Jesus and testifies that He is the Lamb of God—John, Andrew, Simon, Philip, and Nathanael believe in Christ and follow Him.",
-        "kr": "Christ is the Word of God—He created all things and was made flesh—John baptizes Jesus and testifies that He is the Lamb of God—John, Andrew, Simon, Philip, and Nathanael believe in Christ and follow Him."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -548,9 +548,9 @@
       "introduction": {
         "fr": "Jésus change l’eau en vin à Cana. Il assiste à la Pâque, purifie le temple, prédit sa mort et sa résurrection et accomplit des miracles.",
         "en": "Jesus turns water into wine in Cana—He attends the Passover, cleanses the temple, foretells His death and resurrection, and performs miracles.",
-        "zh": "Jesus turns water into wine in Cana—He attends the Passover, cleanses the temple, foretells His death and resurrection, and performs miracles.",
-        "jp": "Jesus turns water into wine in Cana—He attends the Passover, cleanses the temple, foretells His death and resurrection, and performs miracles.",
-        "kr": "Jesus turns water into wine in Cana—He attends the Passover, cleanses the temple, foretells His death and resurrection, and performs miracles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -810,9 +810,9 @@
       "introduction": {
         "fr": "Jésus enseigne à Nicodème que l’homme doit naître de nouveau. Dieu a tant aimé le monde qu’il a envoyé son Fils unique pour sauver le genre humain. Jean-Baptiste rend témoignage que celui qui croit au Fils a la vie éternelle.",
         "en": "Jesus tells Nicodemus that men must be born again—God so loved the world that He sent His Only Begotten Son to save men—John the Baptist testifies that he that believes on the Son has everlasting life.",
-        "zh": "Jesus tells Nicodemus that men must be born again—God so loved the world that He sent His Only Begotten Son to save men—John the Baptist testifies that he that believes on the Son has everlasting life.",
-        "jp": "Jesus tells Nicodemus that men must be born again—God so loved the world that He sent His Only Begotten Son to save men—John the Baptist testifies that he that believes on the Son has everlasting life.",
-        "kr": "Jesus tells Nicodemus that men must be born again—God so loved the world that He sent His Only Begotten Son to save men—John the Baptist testifies that he that believes on the Son has everlasting life."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1182,9 +1182,9 @@
       "introduction": {
         "fr": "Jésus enseigne une femme samaritaine. Tous doivent adorer le Père en esprit et en vérité. Ceux qui moissonnent des âmes reçoivent la vie éternelle. De nombreux samaritains croient. Jésus guérit le fils d’un officier.",
         "en": "Jesus teaches a woman of Samaria—All must worship the Father in spirit and truth—Those who harvest souls gain eternal life—Many Samaritans believe—Jesus heals a nobleman’s son.",
-        "zh": "Jesus teaches a woman of Samaria—All must worship the Father in spirit and truth—Those who harvest souls gain eternal life—Many Samaritans believe—Jesus heals a nobleman’s son.",
-        "jp": "Jesus teaches a woman of Samaria—All must worship the Father in spirit and truth—Those who harvest souls gain eternal life—Many Samaritans believe—Jesus heals a nobleman’s son.",
-        "kr": "Jesus teaches a woman of Samaria—All must worship the Father in spirit and truth—Those who harvest souls gain eternal life—Many Samaritans believe—Jesus heals a nobleman’s son."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1734,9 +1734,9 @@
       "introduction": {
         "fr": "Jésus guérit un invalide le jour de sabbat. Il explique pourquoi tous doivent honorer le Fils. Jésus promet de porter l’Évangile aux morts. C’est par le Fils que l’homme ressuscite, est jugé et reçoit une gloire. Jésus se conforme à la loi divine des témoins.",
         "en": "Jesus heals an invalid on the Sabbath—He explains why men must honor the Son—Jesus promises to take the gospel to the dead—Man is resurrected, judged, and assigned his glory by the Son—Jesus obeys the divine law of witnesses.",
-        "zh": "Jesus heals an invalid on the Sabbath—He explains why men must honor the Son—Jesus promises to take the gospel to the dead—Man is resurrected, judged, and assigned his glory by the Son—Jesus obeys the divine law of witnesses.",
-        "jp": "Jesus heals an invalid on the Sabbath—He explains why men must honor the Son—Jesus promises to take the gospel to the dead—Man is resurrected, judged, and assigned his glory by the Son—Jesus obeys the divine law of witnesses.",
-        "kr": "Jesus heals an invalid on the Sabbath—He explains why men must honor the Son—Jesus promises to take the gospel to the dead—Man is resurrected, judged, and assigned his glory by the Son—Jesus obeys the divine law of witnesses."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2216,9 +2216,9 @@
       "introduction": {
         "fr": "Jésus nourrit cinq mille hommes. Il marche sur l’eau. Il est la manne vivante envoyée de Dieu. On obtient le salut en mangeant le pain de vie. Jésus explique comment les êtres humains mangent sa chair et boivent son sang. Pierre témoigne que Jésus est le Messie.",
         "en": "Jesus feeds the five thousand—He walks on the sea—He is the living manna sent from God—Salvation is gained by eating living bread—Jesus explains how men eat His flesh and drink His blood—Peter testifies that Jesus is the Messiah.",
-        "zh": "Jesus feeds the five thousand—He walks on the sea—He is the living manna sent from God—Salvation is gained by eating living bread—Jesus explains how men eat His flesh and drink His blood—Peter testifies that Jesus is the Messiah.",
-        "jp": "Jesus feeds the five thousand—He walks on the sea—He is the living manna sent from God—Salvation is gained by eating living bread—Jesus explains how men eat His flesh and drink His blood—Peter testifies that Jesus is the Messiah.",
-        "kr": "Jesus feeds the five thousand—He walks on the sea—He is the living manna sent from God—Salvation is gained by eating living bread—Jesus explains how men eat His flesh and drink His blood—Peter testifies that Jesus is the Messiah."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2938,9 +2938,9 @@
       "introduction": {
         "fr": "Les frères de Jésus ne croient pas. Il donne les enseignements de son Père et proclame sa filiation divine. La vérité est révélée par l’obéissance. Jésus offre l’eau vive à tous. Les gens expriment diverses opinions à son sujet.",
         "en": "Jesus’ kinsmen do not believe—He teaches His Father’s doctrine and proclaims His divine sonship—Truth may be known through obedience—Jesus offers living water to all people—The people have various opinions concerning Him.",
-        "zh": "Jesus’ kinsmen do not believe—He teaches His Father’s doctrine and proclaims His divine sonship—Truth may be known through obedience—Jesus offers living water to all people—The people have various opinions concerning Him.",
+        "zh": "-",
         "jp": "〔53 そして、人々ひとびとはおのおの家いえに帰かえって行いった。",
-        "kr": "Jesus’ kinsmen do not believe—He teaches His Father’s doctrine and proclaims His divine sonship—Truth may be known through obedience—Jesus offers living water to all people—The people have various opinions concerning Him."
+        "kr": "-"
       },
       "verses": [
         {
@@ -3480,9 +3480,9 @@
       "introduction": {
         "fr": "Une femme surprise en adultère est amenée devant Jésus. Jésus est la lumière du monde. Il proclame à nouveau qu’il est le Messie. Les véritables enfants d’Abraham croient en Christ. Jésus dit : Avant qu’Abraham fût, Je Suis, Jéhovah.",
         "en": "The woman taken in adultery is brought before Christ—Christ is the Light of the world—He again proclaims that He is the Messiah—The true children of Abraham believe in Christ—Jesus says, Before Abraham was I, Jehovah.",
-        "zh": "The woman taken in adultery is brought before Christ—Christ is the Light of the world—He again proclaims that He is the Messiah—The true children of Abraham believe in Christ—Jesus says, Before Abraham was I, Jehovah.",
-        "jp": "The woman taken in adultery is brought before Christ—Christ is the Light of the world—He again proclaims that He is the Messiah—The true children of Abraham believe in Christ—Jesus says, Before Abraham was I, Jehovah.",
-        "kr": "The woman taken in adultery is brought before Christ—Christ is the Light of the world—He again proclaims that He is the Messiah—The true children of Abraham believe in Christ—Jesus says, Before Abraham was I, Jehovah."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4082,9 +4082,9 @@
       "introduction": {
         "fr": "Le jour de Sabbat, Jésus guérit un aveugle de naissance. Les Juifs l’accusent de profaner le Sabbat. Il donne un sermon sur l’aveuglement spirituel.",
         "en": "Jesus, on the Sabbath, heals a man born blind—The Jews accuse Him of Sabbath violation—He lectures them on spiritual blindness.",
-        "zh": "Jesus, on the Sabbath, heals a man born blind—The Jews accuse Him of Sabbath violation—He lectures them on spiritual blindness.",
-        "jp": "Jesus, on the Sabbath, heals a man born blind—The Jews accuse Him of Sabbath violation—He lectures them on spiritual blindness.",
-        "kr": "Jesus, on the Sabbath, heals a man born blind—The Jews accuse Him of Sabbath violation—He lectures them on spiritual blindness."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4504,9 +4504,9 @@
       "introduction": {
         "fr": "Jésus est le bon berger. Il a obtenu de son Père le pouvoir sur la mort. Il promet de rendre visite à ses autres brebis. Il proclame : « Je suis le Fils de Dieu. »",
         "en": "Jesus is the Good Shepherd—He gained power over death from His Father—He promises to visit His other sheep—He proclaims, I am the Son of God.",
-        "zh": "Jesus is the Good Shepherd—He gained power over death from His Father—He promises to visit His other sheep—He proclaims, I am the Son of God.",
-        "jp": "Jesus is the Good Shepherd—He gained power over death from His Father—He promises to visit His other sheep—He proclaims, I am the Son of God.",
-        "kr": "Jesus is the Good Shepherd—He gained power over death from His Father—He promises to visit His other sheep—He proclaims, I am the Son of God."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4936,9 +4936,9 @@
       "introduction": {
         "fr": "Jésus témoigne qu’il est la résurrection et la vie. Marie et Marthe rendent témoignage de lui. Il ramène Lazare à la vie. Caïphe prophétise la mort de Jésus.",
         "en": "Jesus testifies that He is the Resurrection and the Life—Mary and Martha testify of Him—He raises Lazarus from the dead—Caiaphas speaks prophetically of the death of Jesus.",
-        "zh": "Jesus testifies that He is the Resurrection and the Life—Mary and Martha testify of Him—He raises Lazarus from the dead—Caiaphas speaks prophetically of the death of Jesus.",
-        "jp": "Jesus testifies that He is the Resurrection and the Life—Mary and Martha testify of Him—He raises Lazarus from the dead—Caiaphas speaks prophetically of the death of Jesus.",
-        "kr": "Jesus testifies that He is the Resurrection and the Life—Mary and Martha testify of Him—He raises Lazarus from the dead—Caiaphas speaks prophetically of the death of Jesus."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5518,9 +5518,9 @@
       "introduction": {
         "fr": "Marie oint les pieds de Jésus. Récit de l’entrée triomphale de Jésus dans Jérusalem. Il annonce sa mort. Recevoir le Christ, c’est recevoir le Père.",
         "en": "Mary anoints Jesus’ feet—His triumphal entry into Jerusalem is recounted—He foretells His death—To receive Christ is to receive the Father.",
-        "zh": "Mary anoints Jesus’ feet—His triumphal entry into Jerusalem is recounted—He foretells His death—To receive Christ is to receive the Father.",
-        "jp": "Mary anoints Jesus’ feet—His triumphal entry into Jerusalem is recounted—He foretells His death—To receive Christ is to receive the Father.",
-        "kr": "Mary anoints Jesus’ feet—His triumphal entry into Jerusalem is recounted—He foretells His death—To receive Christ is to receive the Father."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6030,9 +6030,9 @@
       "introduction": {
         "fr": "Jésus lave les pieds des Douze. Il identifie Judas comme celui qui va le trahir. Il commande à ses disciples de s’aimer les uns les autres.",
         "en": "Jesus washes the feet of the Twelve—He identifies Judas as His betrayer—He commands them to love one another.",
-        "zh": "Jesus washes the feet of the Twelve—He identifies Judas as His betrayer—He commands them to love one another.",
-        "jp": "Jesus washes the feet of the Twelve—He identifies Judas as His betrayer—He commands them to love one another.",
-        "kr": "Jesus washes the feet of the Twelve—He identifies Judas as His betrayer—He commands them to love one another."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6422,9 +6422,9 @@
       "introduction": {
         "fr": "Jésus parle de beaucoup de demeures. Il dit qu’il est le chemin, la vérité et la vie et que le voir, c’est voir le Père. Il fait la promesse d’un premier et d’un second Consolateur.",
         "en": "Jesus speaks of many mansions—He says that He is the way, the truth, and the life and that to see Him is to see the Father—He promises the first and second Comforters.",
-        "zh": "Jesus speaks of many mansions—He says that He is the way, the truth, and the life and that to see Him is to see the Father—He promises the first and second Comforters.",
-        "jp": "Jesus speaks of many mansions—He says that He is the way, the truth, and the life and that to see Him is to see the Father—He promises the first and second Comforters.",
-        "kr": "Jesus speaks of many mansions—He says that He is the way, the truth, and the life and that to see Him is to see the Father—He promises the first and second Comforters."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6744,9 +6744,9 @@
       "introduction": {
         "fr": "Jésus est le cep, ses disciples sont les sarments. Il nous enseigne la loi d’amour parfaite. Il a choisi et ordonné ses serviteurs. Le monde hait et combat la vraie religion. Jésus promet de donner le consolateur, l’Esprit de vérité.",
         "en": "Jesus is the vine; His disciples are the branches—He discourses on the perfect law of love—His servants have been chosen and ordained by Him—The world hates and fights true religion—He promises the Comforter, the Spirit of Truth.",
-        "zh": "Jesus is the vine; His disciples are the branches—He discourses on the perfect law of love—His servants have been chosen and ordained by Him—The world hates and fights true religion—He promises the Comforter, the Spirit of Truth.",
-        "jp": "Jesus is the vine; His disciples are the branches—He discourses on the perfect law of love—His servants have been chosen and ordained by Him—The world hates and fights true religion—He promises the Comforter, the Spirit of Truth.",
-        "kr": "Jesus is the vine; His disciples are the branches—He discourses on the perfect law of love—His servants have been chosen and ordained by Him—The world hates and fights true religion—He promises the Comforter, the Spirit of Truth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7026,9 +7026,9 @@
       "introduction": {
         "fr": "Jésus explique la mission du Saint-Esprit. Il parle de sa mort et de sa résurrection, il annonce qu’il est le Fils de Dieu et qu’il a vaincu le monde.",
         "en": "Jesus discourses on the mission of the Holy Ghost—He tells of His death and resurrection, announces that He is the Son of God, and says that He has overcome the world.",
-        "zh": "Jesus discourses on the mission of the Holy Ghost—He tells of His death and resurrection, announces that He is the Son of God, and says that He has overcome the world.",
-        "jp": "Jesus discourses on the mission of the Holy Ghost—He tells of His death and resurrection, announces that He is the Son of God, and says that He has overcome the world.",
-        "kr": "Jesus discourses on the mission of the Holy Ghost—He tells of His death and resurrection, announces that He is the Son of God, and says that He has overcome the world."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7368,9 +7368,9 @@
       "introduction": {
         "fr": "Jésus fait la prière sacerdotale. Il est glorifié en obtenant la vie éternelle. Il prie pour ses apôtres et pour tous les saints. Il explique de quelle manière le Père et le Fils sont un.",
         "en": "Jesus offers the great Intercessory Prayer—He is glorified by gaining eternal life—He prays for His Apostles and all the Saints—He explains how the Father and Son are one.",
-        "zh": "Jesus offers the great Intercessory Prayer—He is glorified by gaining eternal life—He prays for His Apostles and all the Saints—He explains how the Father and Son are one.",
-        "jp": "Jesus offers the great Intercessory Prayer—He is glorified by gaining eternal life—He prays for His Apostles and all the Saints—He explains how the Father and Son are one.",
-        "kr": "Jesus offers the great Intercessory Prayer—He is glorified by gaining eternal life—He prays for His Apostles and all the Saints—He explains how the Father and Son are one."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7640,9 +7640,9 @@
       "introduction": {
         "fr": "Jésus est trahi et arrêté. Il est questionné et maltraité tout d’abord devant Anne, puis devant Caïphe. Pierre nie connaître Jésus. Jésus comparaît devant Pilate.",
         "en": "Jesus is betrayed and arrested—He is examined and maltreated first before Annas, then before Caiaphas—Peter denies knowing Jesus—Jesus is arraigned before Pilate.",
-        "zh": "Jesus is betrayed and arrested—He is examined and maltreated first before Annas, then before Caiaphas—Peter denies knowing Jesus—Jesus is arraigned before Pilate.",
-        "jp": "Jesus is betrayed and arrested—He is examined and maltreated first before Annas, then before Caiaphas—Peter denies knowing Jesus—Jesus is arraigned before Pilate.",
-        "kr": "Jesus is betrayed and arrested—He is examined and maltreated first before Annas, then before Caiaphas—Peter denies knowing Jesus—Jesus is arraigned before Pilate."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8052,9 +8052,9 @@
       "introduction": {
         "fr": "Jésus est fouetté et crucifié. Il charge Jean de prendre soin de sa mère. Il meurt et son côté est transpercé par une lance. Il est enseveli dans le tombeau de Joseph d’Arimathée.",
         "en": "Jesus is scourged and crucified—He places His mother in John’s care—He dies and His side is pierced with a spear—He is buried in the tomb of Joseph of Arimathæa.",
-        "zh": "Jesus is scourged and crucified—He places His mother in John’s care—He dies and His side is pierced with a spear—He is buried in the tomb of Joseph of Arimathæa.",
-        "jp": "Jesus is scourged and crucified—He places His mother in John’s care—He dies and His side is pierced with a spear—He is buried in the tomb of Joseph of Arimathæa.",
-        "kr": "Jesus is scourged and crucified—He places His mother in John’s care—He dies and His side is pierced with a spear—He is buried in the tomb of Joseph of Arimathæa."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8484,9 +8484,9 @@
       "introduction": {
         "fr": "Marie-Madeleine, Pierre et Jean trouvent le tombeau vide. Le Christ ressuscité apparaît à Marie-Madeleine dans le jardin. Il apparaît aux disciples et montre son corps ressuscité. Thomas touche les blessures dans les mains, les pieds et le côté de Jésus. Jésus est le Christ, le Fils de Dieu.",
         "en": "Mary Magdalene, Peter, and John find the empty tomb—The risen Christ appears to Mary Magdalene in the garden—He appears to the disciples and shows His resurrected body—Thomas feels the wounds in Jesus’ hands, feet, and side—Jesus is the Christ, the Son of God.",
-        "zh": "Mary Magdalene, Peter, and John find the empty tomb—The risen Christ appears to Mary Magdalene in the garden—He appears to the disciples and shows His resurrected body—Thomas feels the wounds in Jesus’ hands, feet, and side—Jesus is the Christ, the Son of God.",
-        "jp": "Mary Magdalene, Peter, and John find the empty tomb—The risen Christ appears to Mary Magdalene in the garden—He appears to the disciples and shows His resurrected body—Thomas feels the wounds in Jesus’ hands, feet, and side—Jesus is the Christ, the Son of God.",
-        "kr": "Mary Magdalene, Peter, and John find the empty tomb—The risen Christ appears to Mary Magdalene in the garden—He appears to the disciples and shows His resurrected body—Thomas feels the wounds in Jesus’ hands, feet, and side—Jesus is the Christ, the Son of God."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8806,9 +8806,9 @@
       "introduction": {
         "fr": "Jésus apparaît aux disciples près du lac de Tibériade. Il dit : « fais paître mes brebis. » Il prédit le martyre de Pierre et prophétise que Jean ne mourra pas.",
         "en": "Jesus appears to the disciples at the sea of Tiberias—He says, Feed my sheep—He foretells Peter’s martyrdom and that John will not die.",
-        "zh": "Jesus appears to the disciples at the sea of Tiberias—He says, Feed my sheep—He foretells Peter’s martyrdom and that John will not die.",
-        "jp": "Jesus appears to the disciples at the sea of Tiberias—He says, Feed my sheep—He foretells Peter’s martyrdom and that John will not die.",
-        "kr": "Jesus appears to the disciples at the sea of Tiberias—He says, Feed my sheep—He foretells Peter’s martyrdom and that John will not die."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

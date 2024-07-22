@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "JUDE",
-    "en": "THE GENERAL EPISTLE OF",
+    "en": "THE GENERAL EPISTLE OF JUDE",
     "zh": "猶大書",
     "jp": "ユダの手紙てがみ",
     "kr": "유다서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.",
+        "fr": "-",
         "en": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.",
-        "zh": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.",
-        "jp": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.",
-        "kr": "Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

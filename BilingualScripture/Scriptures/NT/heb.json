@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "HÉBREUX",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "希伯來書",
     "jp": "ヘブル人びとへの手紙てがみ",
     "kr": "히브리서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "HEBREWS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "The Son is in the express image of the person of the Father—Christ is the Only Begotten Son and thus above the angels.",
+        "fr": "-",
         "en": "The Son is in the express image of the person of the Father—Christ is the Only Begotten Son and thus above the angels.",
-        "zh": "The Son is in the express image of the person of the Father—Christ is the Only Begotten Son and thus above the angels.",
-        "jp": "The Son is in the express image of the person of the Father—Christ is the Only Begotten Son and thus above the angels.",
-        "kr": "The Son is in the express image of the person of the Father—Christ is the Only Begotten Son and thus above the angels."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -176,11 +176,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "Jesus came to suffer death and save men—He came to make reconciliation for the sins of the people.",
+        "fr": "-",
         "en": "Jesus came to suffer death and save men—He came to make reconciliation for the sins of the people.",
-        "zh": "Jesus came to suffer death and save men—He came to make reconciliation for the sins of the people.",
-        "jp": "Jesus came to suffer death and save men—He came to make reconciliation for the sins of the people.",
-        "kr": "Jesus came to suffer death and save men—He came to make reconciliation for the sins of the people."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -368,11 +368,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Christ is the Apostle and High Priest of our profession—Jesus, being the Son, is more than a servant—Now is the time and the day of our salvation.",
+        "fr": "-",
         "en": "Christ is the Apostle and High Priest of our profession—Jesus, being the Son, is more than a servant—Now is the time and the day of our salvation.",
-        "zh": "Christ is the Apostle and High Priest of our profession—Jesus, being the Son, is more than a servant—Now is the time and the day of our salvation.",
-        "jp": "Christ is the Apostle and High Priest of our profession—Jesus, being the Son, is more than a servant—Now is the time and the day of our salvation.",
-        "kr": "Christ is the Apostle and High Priest of our profession—Jesus, being the Son, is more than a servant—Now is the time and the day of our salvation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -570,11 +570,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "The gospel was offered to ancient Israel—Saints enter into the rest of the Lord—Though tempted in all points, Jesus was without sin.",
+        "fr": "-",
         "en": "The gospel was offered to ancient Israel—Saints enter into the rest of the Lord—Though tempted in all points, Jesus was without sin.",
-        "zh": "The gospel was offered to ancient Israel—Saints enter into the rest of the Lord—Though tempted in all points, Jesus was without sin.",
-        "jp": "The gospel was offered to ancient Israel—Saints enter into the rest of the Lord—Though tempted in all points, Jesus was without sin.",
-        "kr": "The gospel was offered to ancient Israel—Saints enter into the rest of the Lord—Though tempted in all points, Jesus was without sin."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -742,11 +742,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "For a man to hold the priesthood, he must be called of God as was Aaron—Christ was a priest forever after the order of Melchizedek—Jesus Christ is the Author of eternal salvation.",
+        "fr": "-",
         "en": "For a man to hold the priesthood, he must be called of God as was Aaron—Christ was a priest forever after the order of Melchizedek—Jesus Christ is the Author of eternal salvation.",
-        "zh": "For a man to hold the priesthood, he must be called of God as was Aaron—Christ was a priest forever after the order of Melchizedek—Jesus Christ is the Author of eternal salvation.",
-        "jp": "For a man to hold the priesthood, he must be called of God as was Aaron—Christ was a priest forever after the order of Melchizedek—Jesus Christ is the Author of eternal salvation.",
-        "kr": "For a man to hold the priesthood, he must be called of God as was Aaron—Christ was a priest forever after the order of Melchizedek—Jesus Christ is the Author of eternal salvation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -894,11 +894,11 @@
     {
       "number": 6,
       "introduction": {
-        "fr": "Let us go on to perfection—The sons of perdition crucify Christ anew—God swears with an oath that the faithful will be saved.",
+        "fr": "-",
         "en": "Let us go on to perfection—The sons of perdition crucify Christ anew—God swears with an oath that the faithful will be saved.",
-        "zh": "Let us go on to perfection—The sons of perdition crucify Christ anew—God swears with an oath that the faithful will be saved.",
-        "jp": "Let us go on to perfection—The sons of perdition crucify Christ anew—God swears with an oath that the faithful will be saved.",
-        "kr": "Let us go on to perfection—The sons of perdition crucify Christ anew—God swears with an oath that the faithful will be saved."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1106,11 +1106,11 @@
     {
       "number": 7,
       "introduction": {
-        "fr": "The Melchizedek Priesthood brings exaltation and administers the gospel—It is received with an oath and covenant—The superiority of the Melchizedek Priesthood over the Aaronic Priesthood is explained—Salvation comes through the intercession of Christ.",
+        "fr": "-",
         "en": "The Melchizedek Priesthood brings exaltation and administers the gospel—It is received with an oath and covenant—The superiority of the Melchizedek Priesthood over the Aaronic Priesthood is explained—Salvation comes through the intercession of Christ.",
-        "zh": "The Melchizedek Priesthood brings exaltation and administers the gospel—It is received with an oath and covenant—The superiority of the Melchizedek Priesthood over the Aaronic Priesthood is explained—Salvation comes through the intercession of Christ.",
-        "jp": "The Melchizedek Priesthood brings exaltation and administers the gospel—It is received with an oath and covenant—The superiority of the Melchizedek Priesthood over the Aaronic Priesthood is explained—Salvation comes through the intercession of Christ.",
-        "kr": "The Melchizedek Priesthood brings exaltation and administers the gospel—It is received with an oath and covenant—The superiority of the Melchizedek Priesthood over the Aaronic Priesthood is explained—Salvation comes through the intercession of Christ."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1398,11 +1398,11 @@
     {
       "number": 8,
       "introduction": {
-        "fr": "Christ offered Himself as a sacrifice for sin—God promised to make a new covenant with Israel.",
+        "fr": "-",
         "en": "Christ offered Himself as a sacrifice for sin—God promised to make a new covenant with Israel.",
-        "zh": "Christ offered Himself as a sacrifice for sin—God promised to make a new covenant with Israel.",
-        "jp": "Christ offered Himself as a sacrifice for sin—God promised to make a new covenant with Israel.",
-        "kr": "Christ offered Himself as a sacrifice for sin—God promised to make a new covenant with Israel."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1540,11 +1540,11 @@
     {
       "number": 9,
       "introduction": {
-        "fr": "The Mosaic ordinances prefigured Christ’s ministry—Christ is the Mediator of the new covenant.",
+        "fr": "-",
         "en": "The Mosaic ordinances prefigured Christ’s ministry—Christ is the Mediator of the new covenant.",
-        "zh": "The Mosaic ordinances prefigured Christ’s ministry—Christ is the Mediator of the new covenant.",
-        "jp": "The Mosaic ordinances prefigured Christ’s ministry—Christ is the Mediator of the new covenant.",
-        "kr": "The Mosaic ordinances prefigured Christ’s ministry—Christ is the Mediator of the new covenant."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1832,11 +1832,11 @@
     {
       "number": 10,
       "introduction": {
-        "fr": "We are sanctified by the shedding of the blood of Christ—The superiority of His sacrifice is explained—Those who fall from grace through willful sin are damned—The just will live by faith.",
+        "fr": "-",
         "en": "We are sanctified by the shedding of the blood of Christ—The superiority of His sacrifice is explained—Those who fall from grace through willful sin are damned—The just will live by faith.",
-        "zh": "We are sanctified by the shedding of the blood of Christ—The superiority of His sacrifice is explained—Those who fall from grace through willful sin are damned—The just will live by faith.",
-        "jp": "We are sanctified by the shedding of the blood of Christ—The superiority of His sacrifice is explained—Those who fall from grace through willful sin are damned—The just will live by faith.",
-        "kr": "We are sanctified by the shedding of the blood of Christ—The superiority of His sacrifice is explained—Those who fall from grace through willful sin are damned—The just will live by faith."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2234,11 +2234,11 @@
     {
       "number": 11,
       "introduction": {
-        "fr": "By faith we understand the word and work of God—The faith of the ancients was centered in Christ—By faith, men subdued kingdoms, wrought righteousness, and worked miracles.",
+        "fr": "-",
         "en": "By faith we understand the word and work of God—The faith of the ancients was centered in Christ—By faith, men subdued kingdoms, wrought righteousness, and worked miracles.",
-        "zh": "By faith we understand the word and work of God—The faith of the ancients was centered in Christ—By faith, men subdued kingdoms, wrought righteousness, and worked miracles.",
-        "jp": "By faith we understand the word and work of God—The faith of the ancients was centered in Christ—By faith, men subdued kingdoms, wrought righteousness, and worked miracles.",
-        "kr": "By faith we understand the word and work of God—The faith of the ancients was centered in Christ—By faith, men subdued kingdoms, wrought righteousness, and worked miracles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2646,11 +2646,11 @@
     {
       "number": 12,
       "introduction": {
-        "fr": "Whom the Lord loves He chastens—God is the Father of spirits—To see God, follow peace and holiness—Exalted Saints belong to the Church of the Firstborn.",
+        "fr": "-",
         "en": "Whom the Lord loves He chastens—God is the Father of spirits—To see God, follow peace and holiness—Exalted Saints belong to the Church of the Firstborn.",
-        "zh": "Whom the Lord loves He chastens—God is the Father of spirits—To see God, follow peace and holiness—Exalted Saints belong to the Church of the Firstborn.",
-        "jp": "Whom the Lord loves He chastens—God is the Father of spirits—To see God, follow peace and holiness—Exalted Saints belong to the Church of the Firstborn.",
-        "kr": "Whom the Lord loves He chastens—God is the Father of spirits—To see God, follow peace and holiness—Exalted Saints belong to the Church of the Firstborn."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2948,11 +2948,11 @@
     {
       "number": 13,
       "introduction": {
-        "fr": "Marriage is honorable—Christ is the same everlastingly—Paul explains how the Saints are to offer acceptable sacrifices.",
+        "fr": "-",
         "en": "Marriage is honorable—Christ is the same everlastingly—Paul explains how the Saints are to offer acceptable sacrifices.",
-        "zh": "Marriage is honorable—Christ is the same everlastingly—Paul explains how the Saints are to offer acceptable sacrifices.",
-        "jp": "Marriage is honorable—Christ is the same everlastingly—Paul explains how the Saints are to offer acceptable sacrifices.",
-        "kr": "Marriage is honorable—Christ is the same everlastingly—Paul explains how the Saints are to offer acceptable sacrifices."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

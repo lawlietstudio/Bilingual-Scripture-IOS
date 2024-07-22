@@ -40,8 +40,35 @@ struct SpeakSection: View {
         }
     }
     
+    func matchChapter(line: String) -> String? {
+        let patterns = [
+            "^Chapitre (\\d+)",
+            "^CHAPTER (\\d+)",
+            "^Chapter (\\d+)",
+            "^PSALM (\\d+)",
+            "^第(\\d+)篇",
+            "^第(\\d+)章",
+            "^제 (\\d+) 장",
+            "^제 (\\d+) 편"
+        ]
+        
+        for pattern in patterns {
+            if let match = line.range(of: pattern, options: .regularExpression) {
+                return String(line[match])
+            }
+        }
+        
+        return nil
+    }
+    
     func showThemeOrIntro(theme: String, intro: String) -> String {
-        return theme.count > intro.count ? theme : intro
+        var result = theme.count > intro.count ? theme : intro
+        if let matched = matchChapter(line: result) {
+            return "-"
+        }
+        else {
+            return result
+        }
     }
 }
 

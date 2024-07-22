@@ -33,6 +33,12 @@ struct SettingView: View {
     @State private var isEditing = false
     
     @StateObject private var itemStore = ItemStore()
+    
+    @AppStorage("isHighlighted") private var isHighlightedStorage: Bool = true
+    @State private var isHighlighted: Bool = true
+    
+    @AppStorage("highlightColor") private var highlightColorHex: String = "#0000FF" // Default to blue
+    @State private var highlightColor: Color = .blue
 
     var body: some View {
         NavigationStack {
@@ -40,6 +46,27 @@ struct SettingView: View {
                 NavigationLink("Display Order") {
                     LanguageOrderingView()
                 }
+                
+                Section(header: Text("Highlight")) {
+                    Toggle("Show/Hide", isOn: $isHighlighted)
+                        .toggleStyle(CheckmarkToggleStyle())
+                        .onChange(of: isHighlighted) { _, newValue in
+                            isHighlightedStorage = newValue
+                            NotificationCenter.default.post(name: .highlightColorDidChange, object: nil)
+                        }
+                    
+                    ColorPicker("Color", selection: $highlightColor)
+                        .onChange(of: highlightColor, { _, newValue in
+                            highlightColorHex = newValue.hexString
+                            NotificationCenter.default.post(name: .highlightColorDidChange, object: nil)
+                            print(highlightColorHex)
+                        })
+                        .onAppear {
+                            print("onAppear\(highlightColorHex)")
+                            highlightColor = Color(hex: highlightColorHex)
+                        }
+                }
+                
                 
                 ForEach($sections) { $section in
                     Section(header: Text(section.speechLang.rawValue)) {
@@ -62,10 +89,20 @@ struct SettingView: View {
                         .pickerStyle(.navigationLink)
                     }
                 }
+                
+                Text(getAppVersion())
+                    .frame(alignment: .center)
+                    .font(.subheadline)
             }
             .safeAreaPadding(.bottom, 16)
             .navigationTitle("Setting")
         }
+    }
+    
+    func getAppVersion() -> String {
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
+        return "Version \(version) (Build \(build))"
     }
     
     private func selectionBinding(for speechLang: SpeechLang) -> Binding<String> {

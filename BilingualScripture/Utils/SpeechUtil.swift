@@ -9,16 +9,31 @@ enum SpeechLang: String, Codable {
     case kr = "한국어"
 }
 
-class SpeechUtil {
+protocol SpeechUtilDelegate: AnyObject {
+    func didStartSpeaking()
+    func didFinishSpeaking()
+}
+
+class SpeechUtil: NSObject, AVSpeechSynthesizerDelegate {
     static var share = SpeechUtil()
     
     let synthesizer = AVSpeechSynthesizer()
+    weak var delegate: SpeechUtilDelegate?
+    private var isInterrupted = false
+    
+    override init() {
+        super.init()
+        synthesizer.delegate = self
+    }
     
     public func stopSpeaking() {
+        isInterrupted = true
+        delegate?.didFinishSpeaking()
+        delegate = nil
         synthesizer.stopSpeaking(at: .word)
     }
     
-    public func speak(text: String, speechLang: SpeechLang) {
+    public func speak(text: String, speechLang: SpeechLang, newDelegate: SpeechUtilDelegate) {
         self.stopSpeaking()
         
         let utterance = AVSpeechUtterance(string: text)
@@ -59,6 +74,20 @@ class SpeechUtil {
                 utterance.voice = voice
             }
         }
+
         synthesizer.speak(utterance)
+        self.delegate = newDelegate
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
+        delegate?.didStartSpeaking()
+        isInterrupted = false
+    }
+    
+    // AVSpeechSynthesizerDelegate method
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        if !isInterrupted {
+            delegate?.didFinishSpeaking()
+        }
     }
 }

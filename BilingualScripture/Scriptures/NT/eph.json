@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "ÉPHÉSIENS",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "以弗所書",
     "jp": "エペソ人びとへの手紙てがみ",
     "kr": "에베소서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "EPHESIANS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation.",
+        "fr": "-",
         "en": "The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation.",
-        "zh": "The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation.",
-        "jp": "The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation.",
-        "kr": "The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -266,11 +266,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets.",
+        "fr": "-",
         "en": "We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets.",
-        "zh": "We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets.",
-        "jp": "We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets.",
-        "kr": "We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -498,11 +498,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding.",
+        "fr": "-",
         "en": "The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding.",
-        "zh": "The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding.",
-        "jp": "The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding.",
-        "kr": "The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -720,11 +720,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption.",
+        "fr": "-",
         "en": "There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption.",
-        "zh": "There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption.",
-        "jp": "There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption.",
-        "kr": "There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1052,11 +1052,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other.",
+        "fr": "-",
         "en": "The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other.",
-        "zh": "The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other.",
-        "jp": "The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other.",
-        "kr": "The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1394,11 +1394,11 @@
     {
       "number": 6,
       "introduction": {
-        "fr": "Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God.",
+        "fr": "-",
         "en": "Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God.",
-        "zh": "Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God.",
-        "jp": "Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God.",
-        "kr": "Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

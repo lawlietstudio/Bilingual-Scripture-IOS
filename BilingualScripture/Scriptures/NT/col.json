@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "COLOSSIENS",
-    "en": "THE EPISTLE OF PAUL THE APOSTLE",
+    "en": "THE EPISTLE OF PAUL THE APOSTLE TO THE",
     "zh": "歌羅西書",
     "jp": "コロサイ人びとへの手紙てがみ",
     "kr": "골로새서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "COLOSSIANS",
+    "en": "",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "",
-    "zh": "",
-    "jp": "",
-    "kr": ""
+    "fr": "-",
+    "en": "Chapter 1",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father.",
+        "fr": "-",
         "en": "Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father.",
-        "zh": "Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father.",
-        "jp": "Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father.",
-        "kr": "Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -326,11 +326,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ.",
+        "fr": "-",
         "en": "The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ.",
-        "zh": "The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ.",
-        "jp": "The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ.",
-        "kr": "The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -568,11 +568,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ.",
+        "fr": "-",
         "en": "Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ.",
-        "zh": "Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ.",
-        "jp": "Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ.",
-        "kr": "Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -830,11 +830,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "The Saints are told to be wise in all things—Luke and others greet the Colossians.",
+        "fr": "-",
         "en": "The Saints are told to be wise in all things—Luke and others greet the Colossians.",
-        "zh": "The Saints are told to be wise in all things—Luke and others greet the Colossians.",
-        "jp": "The Saints are told to be wise in all things—Luke and others greet the Colossians.",
-        "kr": "The Saints are told to be wise in all things—Luke and others greet the Colossians."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

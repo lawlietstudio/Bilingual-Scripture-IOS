@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "APOCALYPSE DE JEAN",
-    "en": "THE REVELATION",
+    "en": "THE REVELATION OF ST JOHN THE DIVINE",
     "zh": "啟示錄",
     "jp": "ヨハネの黙示録もくしろく",
     "kr": "요한계시록"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.",
+        "fr": "-",
         "en": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.",
-        "zh": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.",
-        "jp": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.",
-        "kr": "Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -236,11 +236,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms.",
+        "fr": "-",
         "en": "He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms.",
-        "zh": "He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms.",
-        "jp": "He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms.",
-        "kr": "He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -538,11 +538,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father.",
+        "fr": "-",
         "en": "He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father.",
-        "zh": "He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father.",
-        "jp": "He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father.",
-        "kr": "He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -770,11 +770,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "John sees the celestial earth, the throne of God, and all created things worshipping the Lord.",
+        "fr": "-",
         "en": "John sees the celestial earth, the throne of God, and all created things worshipping the Lord.",
-        "zh": "John sees the celestial earth, the throne of God, and all created things worshipping the Lord.",
-        "jp": "John sees the celestial earth, the throne of God, and all created things worshipping the Lord.",
-        "kr": "John sees the celestial earth, the throne of God, and all created things worshipping the Lord."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -892,11 +892,11 @@
     {
       "number": 5,
       "introduction": {
-        "fr": "John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb.",
+        "fr": "-",
         "en": "John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb.",
-        "zh": "John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb.",
-        "jp": "John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb.",
-        "kr": "John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1044,11 +1044,11 @@
     {
       "number": 6,
       "introduction": {
-        "fr": "Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times.",
+        "fr": "-",
         "en": "Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times.",
-        "zh": "Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times.",
-        "jp": "Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times.",
-        "kr": "Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1226,11 +1226,11 @@
     {
       "number": 7,
       "introduction": {
-        "fr": "John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations.",
+        "fr": "-",
         "en": "John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations.",
-        "zh": "John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations.",
-        "jp": "John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations.",
-        "kr": "John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1408,11 +1408,11 @@
     {
       "number": 8,
       "introduction": {
-        "fr": "John sees fire and desolation poured out during the seventh seal and preceding the Second Coming.",
+        "fr": "-",
         "en": "John sees fire and desolation poured out during the seventh seal and preceding the Second Coming.",
-        "zh": "John sees fire and desolation poured out during the seventh seal and preceding the Second Coming.",
-        "jp": "John sees fire and desolation poured out during the seventh seal and preceding the Second Coming.",
-        "kr": "John sees fire and desolation poured out during the seventh seal and preceding the Second Coming."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1550,11 +1550,11 @@
     {
       "number": 9,
       "introduction": {
-        "fr": "John also sees the wars and plagues poured out during the seventh seal and before the Lord comes.",
+        "fr": "-",
         "en": "John also sees the wars and plagues poured out during the seventh seal and before the Lord comes.",
-        "zh": "John also sees the wars and plagues poured out during the seventh seal and before the Lord comes.",
-        "jp": "John also sees the wars and plagues poured out during the seventh seal and before the Lord comes.",
-        "kr": "John also sees the wars and plagues poured out during the seventh seal and before the Lord comes."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1772,11 +1772,11 @@
     {
       "number": 10,
       "introduction": {
-        "fr": "John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things.",
+        "fr": "-",
         "en": "John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things.",
-        "zh": "John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things.",
-        "jp": "John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things.",
-        "kr": "John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1894,11 +1894,11 @@
     {
       "number": 11,
       "introduction": {
-        "fr": "In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth.",
+        "fr": "-",
         "en": "In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth.",
-        "zh": "In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth.",
-        "jp": "In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth.",
-        "kr": "In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2096,11 +2096,11 @@
     {
       "number": 12,
       "introduction": {
-        "fr": "John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth.",
+        "fr": "-",
         "en": "John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth.",
-        "zh": "John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth.",
-        "jp": "John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth.",
-        "kr": "John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2278,11 +2278,11 @@
     {
       "number": 13,
       "introduction": {
-        "fr": "John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men.",
+        "fr": "-",
         "en": "John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men.",
-        "zh": "John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men.",
-        "jp": "John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men.",
-        "kr": "John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2470,11 +2470,11 @@
     {
       "number": 14,
       "introduction": {
-        "fr": "The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth.",
+        "fr": "-",
         "en": "The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth.",
-        "zh": "The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth.",
-        "jp": "The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth.",
-        "kr": "The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2682,11 +2682,11 @@
     {
       "number": 15,
       "introduction": {
-        "fr": "Exalted Saints praise God in celestial glory forever.",
+        "fr": "-",
         "en": "Exalted Saints praise God in celestial glory forever.",
-        "zh": "Exalted Saints praise God in celestial glory forever.",
-        "jp": "Exalted Saints praise God in celestial glory forever.",
-        "kr": "Exalted Saints praise God in celestial glory forever."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2774,11 +2774,11 @@
     {
       "number": 16,
       "introduction": {
-        "fr": "God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease.",
+        "fr": "-",
         "en": "God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease.",
-        "zh": "God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease.",
-        "jp": "God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease.",
-        "kr": "God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2996,11 +2996,11 @@
     {
       "number": 17,
       "introduction": {
-        "fr": "John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth.",
+        "fr": "-",
         "en": "John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth.",
-        "zh": "John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth.",
-        "jp": "John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth.",
-        "kr": "John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3188,11 +3188,11 @@
     {
       "number": 18,
       "introduction": {
-        "fr": "The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters.",
+        "fr": "-",
         "en": "The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters.",
-        "zh": "The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters.",
-        "jp": "The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters.",
-        "kr": "The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3440,11 +3440,11 @@
     {
       "number": 19,
       "introduction": {
-        "fr": "The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords.",
+        "fr": "-",
         "en": "The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords.",
-        "zh": "The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords.",
-        "jp": "The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords.",
-        "kr": "The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3662,11 +3662,11 @@
     {
       "number": 20,
       "introduction": {
-        "fr": "Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works.",
+        "fr": "-",
         "en": "Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works.",
-        "zh": "Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works.",
-        "jp": "Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works.",
-        "kr": "Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3824,11 +3824,11 @@
     {
       "number": 21,
       "introduction": {
-        "fr": "Those who overcome will be sons of God—The earth attains its celestial glory.",
+        "fr": "-",
         "en": "Those who overcome will be sons of God—The earth attains its celestial glory.",
-        "zh": "Those who overcome will be sons of God—The earth attains its celestial glory.",
-        "jp": "Those who overcome will be sons of God—The earth attains its celestial glory.",
-        "kr": "Those who overcome will be sons of God—The earth attains its celestial glory."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4106,11 +4106,11 @@
     {
       "number": 22,
       "introduction": {
-        "fr": "The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments.",
+        "fr": "-",
         "en": "The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments.",
-        "zh": "The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments.",
-        "jp": "The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments.",
-        "kr": "The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

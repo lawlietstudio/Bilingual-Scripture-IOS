@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "TITE",
-    "en": "THE EPISTLE OF PAUL TO",
+    "en": "THE EPISTLE OF PAUL TO TITUS",
     "zh": "提多書",
     "jp": "テトスヘの手紙てがみ",
     "kr": "디도서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure.",
+        "fr": "-",
         "en": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure.",
-        "zh": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure.",
-        "jp": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure.",
-        "kr": "Eternal life was promised before the world began—The qualifications of bishops are given—Unto the pure, all things are pure."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -196,11 +196,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "Saints should live righteously, deny ungodliness, and seek the Lord.",
+        "fr": "-",
         "en": "Saints should live righteously, deny ungodliness, and seek the Lord.",
-        "zh": "Saints should live righteously, deny ungodliness, and seek the Lord.",
-        "jp": "Saints should live righteously, deny ungodliness, and seek the Lord.",
-        "kr": "Saints should live righteously, deny ungodliness, and seek the Lord."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -358,11 +358,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Saints must live righteously after baptism.",
+        "fr": "-",
         "en": "Saints must live righteously after baptism.",
-        "zh": "Saints must live righteously after baptism.",
-        "jp": "Saints must live righteously after baptism.",
-        "kr": "Saints must live righteously after baptism."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

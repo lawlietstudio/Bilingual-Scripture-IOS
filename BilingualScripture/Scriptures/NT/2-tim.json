@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "2 TIMOTHÉE",
-    "en": "THE SECOND EPISTLE OF PAUL THE APOSTLE TO",
+    "en": "THE SECOND EPISTLE OF PAUL THE APOSTLE TO TIMOTHY",
     "zh": "提摩太後書",
     "jp": "テモテヘの第だい二の手紙てがみ",
     "kr": "디모데후서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "Christ brings immortality and eternal life through the gospel—Be strong in the faith.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "Christ brings immortality and eternal life through the gospel—Be strong in the faith.",
+        "fr": "-",
         "en": "Christ brings immortality and eternal life through the gospel—Be strong in the faith.",
-        "zh": "Christ brings immortality and eternal life through the gospel—Be strong in the faith.",
-        "jp": "Christ brings immortality and eternal life through the gospel—Be strong in the faith.",
-        "kr": "Christ brings immortality and eternal life through the gospel—Be strong in the faith."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -216,11 +216,11 @@
     {
       "number": 2,
       "introduction": {
-        "fr": "Christ gives eternal glory to the elect—Shun contention and seek godliness.",
+        "fr": "-",
         "en": "Christ gives eternal glory to the elect—Shun contention and seek godliness.",
-        "zh": "Christ gives eternal glory to the elect—Shun contention and seek godliness.",
-        "jp": "Christ gives eternal glory to the elect—Shun contention and seek godliness.",
-        "kr": "Christ gives eternal glory to the elect—Shun contention and seek godliness."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -488,11 +488,11 @@
     {
       "number": 3,
       "introduction": {
-        "fr": "Paul describes the apostasy and perilous times of the last days—The scriptures guide man to salvation.",
+        "fr": "-",
         "en": "Paul describes the apostasy and perilous times of the last days—The scriptures guide man to salvation.",
-        "zh": "Paul describes the apostasy and perilous times of the last days—The scriptures guide man to salvation.",
-        "jp": "Paul describes the apostasy and perilous times of the last days—The scriptures guide man to salvation.",
-        "kr": "Paul describes the apostasy and perilous times of the last days—The scriptures guide man to salvation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -670,11 +670,11 @@
     {
       "number": 4,
       "introduction": {
-        "fr": "Paul gives a solemn charge to preach the gospel in a day of apostasy—Paul and all Saints are assured of exaltation.",
+        "fr": "-",
         "en": "Paul gives a solemn charge to preach the gospel in a day of apostasy—Paul and all Saints are assured of exaltation.",
-        "zh": "Paul gives a solemn charge to preach the gospel in a day of apostasy—Paul and all Saints are assured of exaltation.",
-        "jp": "Paul gives a solemn charge to preach the gospel in a day of apostasy—Paul and all Saints are assured of exaltation.",
-        "kr": "Paul gives a solemn charge to preach the gospel in a day of apostasy—Paul and all Saints are assured of exaltation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

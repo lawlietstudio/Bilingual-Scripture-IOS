@@ -32,24 +32,25 @@ struct BooksView: View {
                             .frame(width: 30)
                             .clipShape(.rect)
                             .cornerRadius(8)
-                            .onTapGesture(perform: {
+//                            .onTapGesture(perform: {
+//                                withAnimation {
+//                                    isShowLDS.toggle()
+//                                    isShowLDSAppStorage = isShowLDS
+//                                }
+//                            })
+                            .onAppear {
+                                isShowLDS = isShowLDSAppStorage
+                            }
+
+                        
+                        Text("Bilingual Scripture")
+                            .font(.title2.bold())
+                            .onLongPressGesture(minimumDuration: 5) {
                                 withAnimation {
                                     isShowLDS.toggle()
                                     isShowLDSAppStorage = isShowLDS
                                 }
-                            })
-                            .onAppear {
-                                isShowLDS = isShowLDSAppStorage
                             }
-//                            .onLongPressGesture(minimumDuration: 2) {
-//                                withAnimation {
-//                                    isShowLDS.toggle()
-//                                }
-//                            }
-                        
-                        Text("Bilingual Scripture")
-                            .font(.title2.bold())
-
 //                            .onTapGesture {
 //                                isShowLDS.toggle()
 //                            }

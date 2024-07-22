@@ -1,24 +1,24 @@
 {
   "book": {
     "fr": "ÉVANGILE SELON LUC",
-    "en": "THE GOSPEL ACCORDING TO",
+    "en": "THE GOSPEL ACCORDING TO ST LUKE",
     "zh": "路加福音",
     "jp": "ルカによる福音ふくいん書しょ",
     "kr": "누가복음"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
     "fr": "Gabriel promet à Zacharie qu’Élisabeth enfantera un fils qu’ils appelleront Jean. Il annonce aussi à Marie qu’elle sera la mère du Fils de Dieu. Marie rend visite à Élisabeth et prononce un cantique de louanges. Naissance de Jean-Baptiste. Zacharie prophétise la mission de Jean.",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "en": "Gabriel promises Zacharias that Elisabeth will bear a son, whom they will name John—He also tells Mary that she will be the mother of the Son of God—Mary visits Elisabeth and utters a psalm of praise—John the Baptist is born—Zacharias prophesies of John’s mission.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
@@ -26,9 +26,9 @@
       "introduction": {
         "fr": "Gabriel promet à Zacharie qu’Élisabeth enfantera un fils qu’ils appelleront Jean. Il annonce aussi à Marie qu’elle sera la mère du Fils de Dieu. Marie rend visite à Élisabeth et prononce un cantique de louanges. Naissance de Jean-Baptiste. Zacharie prophétise la mission de Jean.",
         "en": "Gabriel promises Zacharias that Elisabeth will bear a son, whom they will name John—He also tells Mary that she will be the mother of the Son of God—Mary visits Elisabeth and utters a psalm of praise—John the Baptist is born—Zacharias prophesies of John’s mission.",
-        "zh": "Gabriel promises Zacharias that Elisabeth will bear a son, whom they will name John—He also tells Mary that she will be the mother of the Son of God—Mary visits Elisabeth and utters a psalm of praise—John the Baptist is born—Zacharias prophesies of John’s mission.",
-        "jp": "Gabriel promises Zacharias that Elisabeth will bear a son, whom they will name John—He also tells Mary that she will be the mother of the Son of God—Mary visits Elisabeth and utters a psalm of praise—John the Baptist is born—Zacharias prophesies of John’s mission.",
-        "kr": "Gabriel promises Zacharias that Elisabeth will bear a son, whom they will name John—He also tells Mary that she will be the mother of the Son of God—Mary visits Elisabeth and utters a psalm of praise—John the Baptist is born—Zacharias prophesies of John’s mission."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -838,9 +838,9 @@
       "introduction": {
         "fr": "Des messagers célestes annoncent la naissance de Jésus à Bethléhem. Il est circoncis, et Siméon et Anne prophétisent sa mission. À l’âge de douze ans, il s’occupe des affaires de son Père.",
         "en": "Heavenly messengers herald the birth of Jesus in Bethlehem—He is circumcised, and Simeon and Anna prophesy of His mission—At twelve years of age, He goes about His Father’s business.",
-        "zh": "Heavenly messengers herald the birth of Jesus in Bethlehem—He is circumcised, and Simeon and Anna prophesy of His mission—At twelve years of age, He goes about His Father’s business.",
-        "jp": "Heavenly messengers herald the birth of Jesus in Bethlehem—He is circumcised, and Simeon and Anna prophesy of His mission—At twelve years of age, He goes about His Father’s business.",
-        "kr": "Heavenly messengers herald the birth of Jesus in Bethlehem—He is circumcised, and Simeon and Anna prophesy of His mission—At twelve years of age, He goes about His Father’s business."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1370,9 +1370,9 @@
       "introduction": {
         "fr": "Jean-Baptiste prêche et baptise. Jésus est baptisé, et Dieu déclare qu’il est son Fils. Généalogie de Jésus juqu’à Adam.",
         "en": "John the Baptist preaches and baptizes—Jesus is baptized, and God acclaims Him as His Son—Jesus’ genealogy back to Adam is given.",
-        "zh": "John the Baptist preaches and baptizes—Jesus is baptized, and God acclaims Him as His Son—Jesus’ genealogy back to Adam is given.",
-        "jp": "John the Baptist preaches and baptizes—Jesus is baptized, and God acclaims Him as His Son—Jesus’ genealogy back to Adam is given.",
-        "kr": "John the Baptist preaches and baptizes—Jesus is baptized, and God acclaims Him as His Son—Jesus’ genealogy back to Adam is given."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -1762,9 +1762,9 @@
       "introduction": {
         "fr": "Jésus jeûne pendant quarante jours puis il est tenté par le diable. Jésus annonce sa filiation divine à Nazareth et il est rejeté. Il chasse un démon à Capernaüm et il guérit la belle-mère de Pierre. Il prêche et guérit les malades dans toute la Galilée.",
         "en": "Jesus fasts forty days and is tempted by the devil—Jesus announces His divine sonship in Nazareth and is rejected—He casts out a devil in Capernaum, heals Peter’s mother-in-law, and preaches and heals throughout Galilee.",
-        "zh": "Jesus fasts forty days and is tempted by the devil—Jesus announces His divine sonship in Nazareth and is rejected—He casts out a devil in Capernaum, heals Peter’s mother-in-law, and preaches and heals throughout Galilee.",
-        "jp": "Jesus fasts forty days and is tempted by the devil—Jesus announces His divine sonship in Nazareth and is rejected—He casts out a devil in Capernaum, heals Peter’s mother-in-law, and preaches and heals throughout Galilee.",
-        "kr": "Jesus fasts forty days and is tempted by the devil—Jesus announces His divine sonship in Nazareth and is rejected—He casts out a devil in Capernaum, heals Peter’s mother-in-law, and preaches and heals throughout Galilee."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2214,9 +2214,9 @@
       "introduction": {
         "fr": "Pierre, le pêcheur, est appelé à être pêcheur d’hommes. Jésus guérit un lépreux. Il pardonne les péchés à un paralytique et le guérit. Appel de Matthieu. Ce sont les malades qui ont besoin d’un médecin. Le vin nouveau doit être mis dans des outres neuves.",
         "en": "Peter, the fisherman, is called to catch men—Jesus heals a leper—He forgives sins and heals a paralytic—Matthew is called—The sick need a physician—New wine must be put in new bottles.",
-        "zh": "Peter, the fisherman, is called to catch men—Jesus heals a leper—He forgives sins and heals a paralytic—Matthew is called—The sick need a physician—New wine must be put in new bottles.",
-        "jp": "Peter, the fisherman, is called to catch men—Jesus heals a leper—He forgives sins and heals a paralytic—Matthew is called—The sick need a physician—New wine must be put in new bottles.",
-        "kr": "Peter, the fisherman, is called to catch men—Jesus heals a leper—He forgives sins and heals a paralytic—Matthew is called—The sick need a physician—New wine must be put in new bottles."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -2616,9 +2616,9 @@
       "introduction": {
         "fr": "Jésus guérit un homme le jour de sabbat. Il choisit les douze apôtres. Il énonce des bénédictions sur ceux qui obéissent et des malédictions sur les méchants.",
         "en": "Jesus heals on the Sabbath—He chooses the Twelve Apostles—He pronounces blessings upon the obedient and woes upon the wicked.",
-        "zh": "Jesus heals on the Sabbath—He chooses the Twelve Apostles—He pronounces blessings upon the obedient and woes upon the wicked.",
-        "jp": "Jesus heals on the Sabbath—He chooses the Twelve Apostles—He pronounces blessings upon the obedient and woes upon the wicked.",
-        "kr": "Jesus heals on the Sabbath—He chooses the Twelve Apostles—He pronounces blessings upon the obedient and woes upon the wicked."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3118,9 +3118,9 @@
       "introduction": {
         "fr": "Jésus guérit le serviteur du centurion. Il ramène à la vie le fils de la veuve de Naïn. Il déclare que Jean-Baptiste est plus qu’un prophète. Une femme oint les pieds de Jésus et il lui pardonne ses péchés.",
         "en": "Jesus heals the centurion’s servant—Jesus raises from death the son of the widow of Nain—He praises John the Baptist as more than a prophet—A woman anoints Jesus’ feet, and He forgives her sins.",
-        "zh": "Jesus heals the centurion’s servant—Jesus raises from death the son of the widow of Nain—He praises John the Baptist as more than a prophet—A woman anoints Jesus’ feet, and He forgives her sins.",
-        "jp": "Jesus heals the centurion’s servant—Jesus raises from death the son of the widow of Nain—He praises John the Baptist as more than a prophet—A woman anoints Jesus’ feet, and He forgives her sins.",
-        "kr": "Jesus heals the centurion’s servant—Jesus raises from death the son of the widow of Nain—He praises John the Baptist as more than a prophet—A woman anoints Jesus’ feet, and He forgives her sins."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -3630,9 +3630,9 @@
       "introduction": {
         "fr": "Jésus raconte et interprète la parabole du semeur. Il calme la tempête. Il chasse une légion de démons qui entrent alors dans des porcs. Il guérit une femme d’une perte de sang et il ramène à la vie la fille de Jaïrus.",
         "en": "Jesus gives and interprets the parable of the sower—He stills the tempest; casts out a legion of devils, who then enter the swine; heals a woman of an issue of blood; and raises Jairus’s daughter from death.",
-        "zh": "Jesus gives and interprets the parable of the sower—He stills the tempest; casts out a legion of devils, who then enter the swine; heals a woman of an issue of blood; and raises Jairus’s daughter from death.",
-        "jp": "Jesus gives and interprets the parable of the sower—He stills the tempest; casts out a legion of devils, who then enter the swine; heals a woman of an issue of blood; and raises Jairus’s daughter from death.",
-        "kr": "Jesus gives and interprets the parable of the sower—He stills the tempest; casts out a legion of devils, who then enter the swine; heals a woman of an issue of blood; and raises Jairus’s daughter from death."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4202,9 +4202,9 @@
       "introduction": {
         "fr": "Les douze sont envoyés prêcher. Jésus nourrit cinq mille personnes. Pierre témoigne du Christ. Jésus annonce sa mort et sa résurrection. Il est transfiguré sur la montagne. Il opère des guérisons et il enseigne.",
         "en": "The Twelve are sent out—Jesus feeds the five thousand—Peter testifies of Christ—Jesus foretells His death and resurrection—He is transfigured on the mount—He heals and teaches.",
-        "zh": "The Twelve are sent out—Jesus feeds the five thousand—Peter testifies of Christ—Jesus foretells His death and resurrection—He is transfigured on the mount—He heals and teaches.",
-        "jp": "The Twelve are sent out—Jesus feeds the five thousand—Peter testifies of Christ—Jesus foretells His death and resurrection—He is transfigured on the mount—He heals and teaches.",
-        "kr": "The Twelve are sent out—Jesus feeds the five thousand—Peter testifies of Christ—Jesus foretells His death and resurrection—He is transfigured on the mount—He heals and teaches."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -4834,9 +4834,9 @@
       "introduction": {
         "fr": "Jésus appelle les soixante-dix, leur donne du pouvoir et les instruit. Ils prêchent et ils guérissent les malades. Ceux qui reçoivent les disciples du Christ, reçoivent le Christ. Le Père est révélé par le Fils. Jésus enseigne la parabole du bon Samaritain.",
         "en": "Jesus calls, empowers, and instructs the Seventy—They preach and heal—Those who receive Christ’s disciples receive Christ—The Father is revealed by the Son—Jesus gives the parable of the good Samaritan.",
-        "zh": "Jesus calls, empowers, and instructs the Seventy—They preach and heal—Those who receive Christ’s disciples receive Christ—The Father is revealed by the Son—Jesus gives the parable of the good Samaritan.",
-        "jp": "Jesus calls, empowers, and instructs the Seventy—They preach and heal—Those who receive Christ’s disciples receive Christ—The Father is revealed by the Son—Jesus gives the parable of the good Samaritan.",
-        "kr": "Jesus calls, empowers, and instructs the Seventy—They preach and heal—Those who receive Christ’s disciples receive Christ—The Father is revealed by the Son—Jesus gives the parable of the good Samaritan."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5266,9 +5266,9 @@
       "introduction": {
         "fr": "Jésus enseigne la manière de prier. Il a une discussion sur l’expulsion des démons. Il se déclare plus grand que Jonas et Salomon. Il réprimande les pharisiens : leur génération devra rendre compte du sang des prophètes.",
         "en": "Jesus gives the Lord’s Prayer—He discusses the casting out of devils—He acclaims Himself as greater than Jonah and Solomon—He rebukes the Pharisees and says that the blood of all the prophets may be required of their generation.",
-        "zh": "Jesus gives the Lord’s Prayer—He discusses the casting out of devils—He acclaims Himself as greater than Jonah and Solomon—He rebukes the Pharisees and says that the blood of all the prophets may be required of their generation.",
-        "jp": "Jesus gives the Lord’s Prayer—He discusses the casting out of devils—He acclaims Himself as greater than Jonah and Solomon—He rebukes the Pharisees and says that the blood of all the prophets may be required of their generation.",
-        "kr": "Jesus gives the Lord’s Prayer—He discusses the casting out of devils—He acclaims Himself as greater than Jonah and Solomon—He rebukes the Pharisees and says that the blood of all the prophets may be required of their generation."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -5818,9 +5818,9 @@
       "introduction": {
         "fr": "Jésus enseigne de se garder de l’hypocrisie. Amassez des trésors dans les cieux plutôt que sur la terre. Préparez-vous pour la venue du Seigneur. On demandera beaucoup à qui l’on a beaucoup donné. Prêcher l’évangile provoque la division.",
         "en": "Jesus teaches, Beware of hypocrisy; lay up treasures in heaven rather than on earth; prepare for the coming of the Lord; where much is given, much is required; preaching the gospel causes division.",
-        "zh": "Jesus teaches, Beware of hypocrisy; lay up treasures in heaven rather than on earth; prepare for the coming of the Lord; where much is given, much is required; preaching the gospel causes division.",
-        "jp": "Jesus teaches, Beware of hypocrisy; lay up treasures in heaven rather than on earth; prepare for the coming of the Lord; where much is given, much is required; preaching the gospel causes division.",
-        "kr": "Jesus teaches, Beware of hypocrisy; lay up treasures in heaven rather than on earth; prepare for the coming of the Lord; where much is given, much is required; preaching the gospel causes division."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6420,9 +6420,9 @@
       "introduction": {
         "fr": "Jésus enseigne : Repentez-vous ou périssez. Il donne la parabole du figuier stérile, guérit une femme le jour du sabbat et compare le royaume de Dieu à une graine de moutarde. Il répond aux questions sur le nombre de ceux qui seront sauvés. Il se lamente sur Jérusalem.",
         "en": "Jesus teaches, Repent or perish—He gives the parable of the barren fig tree, heals a woman on the Sabbath, and likens the kingdom of God to a mustard seed—He discusses whether few or many are saved and laments over Jerusalem.",
-        "zh": "Jesus teaches, Repent or perish—He gives the parable of the barren fig tree, heals a woman on the Sabbath, and likens the kingdom of God to a mustard seed—He discusses whether few or many are saved and laments over Jerusalem.",
-        "jp": "Jesus teaches, Repent or perish—He gives the parable of the barren fig tree, heals a woman on the Sabbath, and likens the kingdom of God to a mustard seed—He discusses whether few or many are saved and laments over Jerusalem.",
-        "kr": "Jesus teaches, Repent or perish—He gives the parable of the barren fig tree, heals a woman on the Sabbath, and likens the kingdom of God to a mustard seed—He discusses whether few or many are saved and laments over Jerusalem."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -6782,9 +6782,9 @@
       "introduction": {
         "fr": "Jésus fait à nouveau une guérison le jour du sabbat. Il enseigne l’humilité ainsi que la parabole du grand dîner. Ceux qui le suivent doivent renoncer à tout le reste.",
         "en": "Jesus again heals on the Sabbath—He teaches humility and gives the parable of the great supper—Those who follow Him must forsake all else.",
-        "zh": "Jesus again heals on the Sabbath—He teaches humility and gives the parable of the great supper—Those who follow Him must forsake all else.",
-        "jp": "Jesus again heals on the Sabbath—He teaches humility and gives the parable of the great supper—Those who follow Him must forsake all else.",
-        "kr": "Jesus again heals on the Sabbath—He teaches humility and gives the parable of the great supper—Those who follow Him must forsake all else."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7144,9 +7144,9 @@
       "introduction": {
         "fr": "Jésus raconte la parabole de la brebis perdue, celle de la drachme perdue et celle du fils prodigue.",
         "en": "Jesus gives the parables of the lost sheep, the piece of silver, and the prodigal son.",
-        "zh": "Jesus gives the parables of the lost sheep, the piece of silver, and the prodigal son.",
-        "jp": "Jesus gives the parables of the lost sheep, the piece of silver, and the prodigal son.",
-        "kr": "Jesus gives the parables of the lost sheep, the piece of silver, and the prodigal son."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7476,9 +7476,9 @@
       "introduction": {
         "fr": "Jésus enseigne la parabole de l’intendant infidèle. Il enseigne le service et condamne le divorce. Il enseigne la parabole de l’homme riche et de Lazare.",
         "en": "Jesus gives the parable of the unjust steward—He teaches of service and condemns divorce—He gives the parable of the rich man and Lazarus.",
-        "zh": "Jesus gives the parable of the unjust steward—He teaches of service and condemns divorce—He gives the parable of the rich man and Lazarus.",
-        "jp": "Jesus gives the parable of the unjust steward—He teaches of service and condemns divorce—He gives the parable of the rich man and Lazarus.",
-        "kr": "Jesus gives the parable of the unjust steward—He teaches of service and condemns divorce—He gives the parable of the rich man and Lazarus."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -7798,9 +7798,9 @@
       "introduction": {
         "fr": "Jésus parle des occasions de chute, du pardon et de la foi. Même les fidèles sont des serviteurs inutiles. Guérison de dix lépreux. Jésus parle de la Seconde Venue.",
         "en": "Jesus speaks of offenses, forgiveness, and faith—Even the faithful are unprofitable servants—Ten lepers are healed—Jesus discourses on the Second Coming.",
-        "zh": "Jesus speaks of offenses, forgiveness, and faith—Even the faithful are unprofitable servants—Ten lepers are healed—Jesus discourses on the Second Coming.",
+        "zh": "-",
         "jp": "〔36 ふたりの男おとこが畑はたけにおれば、ひとりは取とり去さられ、他たのひとりは残のこされるであろう〕」。",
-        "kr": "Jesus speaks of offenses, forgiveness, and faith—Even the faithful are unprofitable servants—Ten lepers are healed—Jesus discourses on the Second Coming."
+        "kr": "-"
       },
       "verses": [
         {
@@ -8180,9 +8180,9 @@
       "introduction": {
         "fr": "Jésus raconte la parabole du juge inique, et celle du pharisien et du collecteur d’impôts. Il invite les petits enfants à venir à lui et enseigne comment obtenir la vie éternelle. Il parle de sa mort prochaine et de sa résurrection. Il rend la vue à un aveugle.",
         "en": "Jesus gives the parables of the unjust judge and the Pharisee and publican—He invites little children to come unto Him and teaches how to gain eternal life—He tells of His coming death and resurrection and gives sight to a blind man.",
-        "zh": "Jesus gives the parables of the unjust judge and the Pharisee and publican—He invites little children to come unto Him and teaches how to gain eternal life—He tells of His coming death and resurrection and gives sight to a blind man.",
-        "jp": "Jesus gives the parables of the unjust judge and the Pharisee and publican—He invites little children to come unto Him and teaches how to gain eternal life—He tells of His coming death and resurrection and gives sight to a blind man.",
-        "kr": "Jesus gives the parables of the unjust judge and the Pharisee and publican—He invites little children to come unto Him and teaches how to gain eternal life—He tells of His coming death and resurrection and gives sight to a blind man."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -8622,9 +8622,9 @@
       "introduction": {
         "fr": "Jésus est venu pour sauver les âmes. Il enseigne la parabole des mines. Il entre triomphalement dans Jérusalem, se lamente sur la ville et purifie à nouveau le temple.",
         "en": "Jesus came to save souls—He gives the parable of the pounds—He rides in triumph into Jerusalem, weeps over the city, and cleanses the temple again.",
-        "zh": "Jesus came to save souls—He gives the parable of the pounds—He rides in triumph into Jerusalem, weeps over the city, and cleanses the temple again.",
-        "jp": "Jesus came to save souls—He gives the parable of the pounds—He rides in triumph into Jerusalem, weeps over the city, and cleanses the temple again.",
-        "kr": "Jesus came to save souls—He gives the parable of the pounds—He rides in triumph into Jerusalem, weeps over the city, and cleanses the temple again."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -9114,9 +9114,9 @@
       "introduction": {
         "fr": "Les chefs des prêtres s’opposent à Jésus. Il raconte la parabole des méchants vignerons. Il faut rendre leur part à César et à Dieu. Jésus enseigne la loi du mariage.",
         "en": "The chief priests oppose Jesus—He gives the parable of the wicked husbandmen—Render unto Cæsar and God that which is theirs—Jesus teaches the law of marriage.",
-        "zh": "The chief priests oppose Jesus—He gives the parable of the wicked husbandmen—Render unto Cæsar and God that which is theirs—Jesus teaches the law of marriage.",
-        "jp": "The chief priests oppose Jesus—He gives the parable of the wicked husbandmen—Render unto Cæsar and God that which is theirs—Jesus teaches the law of marriage.",
-        "kr": "The chief priests oppose Jesus—He gives the parable of the wicked husbandmen—Render unto Cæsar and God that which is theirs—Jesus teaches the law of marriage."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -9596,9 +9596,9 @@
       "introduction": {
         "fr": "Jésus prédit la destruction du temple et celle de Jérusalem. Il décrit les signes qui précèderont sa Seconde Venue et enseigne la parabole du figuier.",
         "en": "Jesus foretells the destruction of the temple and of Jerusalem—He tells of the signs to precede His Second Coming and gives the parable of the fig tree.",
-        "zh": "Jesus foretells the destruction of the temple and of Jerusalem—He tells of the signs to precede His Second Coming and gives the parable of the fig tree.",
-        "jp": "Jesus foretells the destruction of the temple and of Jerusalem—He tells of the signs to precede His Second Coming and gives the parable of the fig tree.",
-        "kr": "Jesus foretells the destruction of the temple and of Jerusalem—He tells of the signs to precede His Second Coming and gives the parable of the fig tree."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -9988,9 +9988,9 @@
       "introduction": {
         "fr": "Jésus institue la Sainte-Cène. Il souffre à Gethsémané, il est trahi puis arrêté. Pierre nie le connaître. Jésus est frappé et l’on se moque de lui.",
         "en": "Jesus institutes the sacrament—He suffers in Gethsemane and is betrayed and arrested—Peter denies knowing Him—Jesus is smitten and mocked.",
-        "zh": "Jesus institutes the sacrament—He suffers in Gethsemane and is betrayed and arrested—Peter denies knowing Him—Jesus is smitten and mocked.",
-        "jp": "Jesus institutes the sacrament—He suffers in Gethsemane and is betrayed and arrested—Peter denies knowing Him—Jesus is smitten and mocked.",
-        "kr": "Jesus institutes the sacrament—He suffers in Gethsemane and is betrayed and arrested—Peter denies knowing Him—Jesus is smitten and mocked."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {
@@ -10710,9 +10710,9 @@
       "introduction": {
         "fr": "Jésus est mené devant Pilate, puis devant Hérode et de nouveau devant Pilate. Barabbas est relâché. Jésus est crucifié entre deux malfaiteurs. Son corps est déposé dans le tombeau de Joseph d’Arimathée.",
         "en": "Jesus is taken before Pilate, then to Herod, and then to Pilate again—Barabbas is released—Jesus is crucified between two thieves—He is buried in the tomb of Joseph of Arimathæa.",
-        "zh": "Jesus is taken before Pilate, then to Herod, and then to Pilate again—Barabbas is released—Jesus is crucified between two thieves—He is buried in the tomb of Joseph of Arimathæa.",
+        "zh": "-",
         "jp": "〔17 祭まつりごとにピラトがひとりの囚人しゅうじんをゆるしてやることになっていた。〕",
-        "kr": "Jesus is taken before Pilate, then to Herod, and then to Pilate again—Barabbas is released—Jesus is crucified between two thieves—He is buried in the tomb of Joseph of Arimathæa."
+        "kr": "-"
       },
       "verses": [
         {
@@ -11282,9 +11282,9 @@
       "introduction": {
         "fr": "Des anges annoncent la résurrection du Christ. Jésus marche sur le chemin d’Emmaüs. Il apparaît avec un corps de chair et d’os, témoigne de sa divinité et promet le Saint-Esprit. Le Christ monte au ciel.",
         "en": "Angels announce the resurrection of Christ—He walks on the Emmaus road—He appears with a body of flesh and bones, eats food, testifies of His divinity, and promises the Holy Ghost—He ascends into heaven.",
-        "zh": "Angels announce the resurrection of Christ—He walks on the Emmaus road—He appears with a body of flesh and bones, eats food, testifies of His divinity, and promises the Holy Ghost—He ascends into heaven.",
+        "zh": "-",
         "jp": "〔12 ペテロは立たって墓はかへ走はしって行いき、かがんで中なかを見みると、亜麻布あまぬのだけがそこにあったので、事ことの次第しだいを不思議ふしぎに思おもいながら帰かえって行いった。〕",
-        "kr": "Angels announce the resurrection of Christ—He walks on the Emmaus road—He appears with a body of flesh and bones, eats food, testifies of His divinity, and promises the Holy Ghost—He ascends into heaven."
+        "kr": "-"
       },
       "verses": [
         {

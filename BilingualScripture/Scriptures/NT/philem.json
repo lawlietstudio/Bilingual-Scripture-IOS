@@ -1,34 +1,34 @@
 {
   "book": {
     "fr": "PHILÉMON",
-    "en": "THE EPISTLE OF PAUL TO",
+    "en": "THE EPISTLE OF PAUL TO PHILEMON",
     "zh": "腓利門書",
     "jp": "ピレモンヘの手紙てがみ",
     "kr": "빌레몬서"
   },
   "theme": {
     "fr": "Chapitre 1",
-    "en": "",
+    "en": "Chapter 1",
     "zh": "第1章",
     "jp": "第1章",
     "kr": "제 1 장"
   },
   "introduction": {
-    "fr": "",
-    "en": "Chapter 1",
-    "zh": "",
-    "jp": "Chapter 1",
-    "kr": "Chapter 1"
+    "fr": "-",
+    "en": "The gospel changes a servant into a brother.",
+    "zh": "-",
+    "jp": "-",
+    "kr": "-"
   },
   "chapters": [
     {
       "number": 1,
       "introduction": {
-        "fr": "The gospel changes a servant into a brother.",
+        "fr": "-",
         "en": "The gospel changes a servant into a brother.",
-        "zh": "The gospel changes a servant into a brother.",
-        "jp": "The gospel changes a servant into a brother.",
-        "kr": "The gospel changes a servant into a brother."
+        "zh": "-",
+        "jp": "-",
+        "kr": "-"
       },
       "verses": [
         {

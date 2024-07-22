@@ -19,26 +19,6 @@ struct ChapterView: View {
             }
         }
         .safeAreaPadding(.bottom, 16)
-//        .listStyle(.plain)
-//        .toolbar {
-//            ToolbarItem(placement: .principal) {
-//                VStack(spacing: 0) {
-//                    Text("\(animeBook.engTitle) - Chapter \(chapter.number)")
-//                        .font(.caption2)
-//                        .textCase(.uppercase)
-//                    Text("\(animeBook.zhoTitle) - 第 \(chapter.number) 章")
-//                        .font(.caption2)
-//                }
-//            }
-//            
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                Button(action: {
-//                    SpeechUtil.share.stopSpeaking()
-//                }) {
-//                    Image(systemName: "stop.circle")
-//                }
-//            }
-//        }
         .onDisappear {
             SpeechUtil.share.stopSpeaking()
         }
