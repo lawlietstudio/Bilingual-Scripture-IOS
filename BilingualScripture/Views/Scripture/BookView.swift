@@ -148,7 +148,7 @@ struct BookView: View {
             
         }
         .onDisappear {
-            SpeechUtil.share.stopSpeaking()
+            SingleSpeechUtil.share.stopSpeaking()
         }
     }
     

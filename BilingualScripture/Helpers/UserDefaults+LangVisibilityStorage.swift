@@ -33,4 +33,5 @@ extension UserDefaults {
 extension Notification.Name {
     static let itemsDataDidChange = Notification.Name("itemsDataDidChange")
     static let highlightColorDidChange = Notification.Name("highlightColorDidChange")
+    static let currentVerseSpoke = Notification.Name("currentVerseSpoke")
 }

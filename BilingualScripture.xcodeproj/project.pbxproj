@@ -16,6 +16,7 @@
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
 		4D392F3C2C4651A300A68D17 /* ChapterTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */; };
 		4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */; };
+		4D392F812C61977500A68D17 /* ChapterSpeechUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */; };
 		4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39967E2BBD10DF00DA530B /* BooksView.swift */; };
 		4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */; };
 		4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996822BBD159600DA530B /* CustomCorners.swift */; };
@@ -35,7 +36,7 @@
 		4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DB22BBCF173001719A7 /* BookView.swift */; };
 		4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DB42BBCF173001719A7 /* Chapter.swift */; };
 		4DE07DB92BBCF183001719A7 /* Scriptures in Resources */ = {isa = PBXBuildFile; fileRef = 4DE07DB82BBCF183001719A7 /* Scriptures */; };
-		4DE07DBC2BBCF671001719A7 /* SpeechUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DBB2BBCF671001719A7 /* SpeechUtil.swift */; };
+		4DE07DBC2BBCF671001719A7 /* SingleSpeechUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */; };
 		4DE07DBF2BBCF750001719A7 /* SpeakButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DBE2BBCF750001719A7 /* SpeakButton.swift */; };
 		4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DC02BBCFDA6001719A7 /* SettingView.swift */; };
 		4DE07DC32BBCFDBA001719A7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DC22BBCFDBA001719A7 /* CustomTabView.swift */; };
@@ -51,6 +52,7 @@
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 		4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTabview.swift; sourceTree = "<group>"; };
 		4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
+		4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSpeechUtil.swift; sourceTree = "<group>"; };
 		4D39967E2BBD10DF00DA530B /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		4D3996822BBD159600DA530B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		4DE07DB22BBCF173001719A7 /* BookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		4DE07DB42BBCF173001719A7 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		4DE07DB82BBCF183001719A7 /* Scriptures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scriptures; sourceTree = "<group>"; };
-		4DE07DBB2BBCF671001719A7 /* SpeechUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechUtil.swift; sourceTree = "<group>"; };
+		4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSpeechUtil.swift; sourceTree = "<group>"; };
 		4DE07DBE2BBCF750001719A7 /* SpeakButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakButton.swift; sourceTree = "<group>"; };
 		4DE07DC02BBCFDA6001719A7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		4DE07DC22BBCFDBA001719A7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -188,7 +190,8 @@
 		4DE07DBA2BBCF65F001719A7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4DE07DBB2BBCF671001719A7 /* SpeechUtil.swift */,
+				4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */,
+				4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				21E0D6272BF79FA9009F153B /* ChapterSpeakSection.swift in Sources */,
 				4DE07DC32BBCFDBA001719A7 /* CustomTabView.swift in Sources */,
 				4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */,
+				4D392F812C61977500A68D17 /* ChapterSpeechUtil.swift in Sources */,
 				4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */,
 				4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */,
 				4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */,
@@ -304,7 +308,7 @@
 				4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */,
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
 				4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */,
-				4DE07DBC2BBCF671001719A7 /* SpeechUtil.swift in Sources */,
+				4DE07DBC2BBCF671001719A7 /* SingleSpeechUtil.swift in Sources */,
 				4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */,
 				4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */,
 			);

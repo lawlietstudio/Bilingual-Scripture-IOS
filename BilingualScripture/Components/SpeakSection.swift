@@ -62,8 +62,8 @@ struct SpeakSection: View {
     }
     
     func showThemeOrIntro(theme: String, intro: String) -> String {
-        var result = theme.count > intro.count ? theme : intro
-        if let matched = matchChapter(line: result) {
+        let result = theme.count > intro.count ? theme : intro
+        if matchChapter(line: result) != nil {
             return "-"
         }
         else {

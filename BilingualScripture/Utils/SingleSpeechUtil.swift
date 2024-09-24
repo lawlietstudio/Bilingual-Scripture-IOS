@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 import AVFoundation
 
 enum SpeechLang: String, Codable {
@@ -11,31 +12,48 @@ enum SpeechLang: String, Codable {
 
 protocol SpeechUtilDelegate: AnyObject {
     func didStartSpeaking()
+    func didStopSpeaking()
     func didFinishSpeaking()
 }
 
-class SpeechUtil: NSObject, AVSpeechSynthesizerDelegate {
-    static var share = SpeechUtil()
+extension SpeechUtilDelegate {
+    func didStopSpeaking() {
+        
+    }
+}
+
+class SingleSpeechUtil: NSObject, AVSpeechSynthesizerDelegate {
+    static let share = SingleSpeechUtil()
     
     let synthesizer = AVSpeechSynthesizer()
     weak var delegate: SpeechUtilDelegate?
-    private var isInterrupted = false
+    internal var isInterrupted = false
     
     override init() {
         super.init()
         synthesizer.delegate = self
     }
     
-    public func stopSpeaking() {
+    public func stopSpeaking(isStopOther: Bool = true) {
+        if isStopOther {
+            ChapterSpeechUtil.shared.stopSpeaking(isStopOther: false)
+        }
         isInterrupted = true
         delegate?.didFinishSpeaking()
         delegate = nil
         synthesizer.stopSpeaking(at: .word)
     }
     
-    public func speak(text: String, speechLang: SpeechLang, newDelegate: SpeechUtilDelegate) {
+    public func speak(text: String, speechLang: SpeechLang, newDelegate: SpeechUtilDelegate?) {
         self.stopSpeaking()
         
+        let utterance = createUtterance(text: text, speechLang: speechLang)
+
+        synthesizer.speak(utterance)
+        self.delegate = newDelegate
+    }
+    
+    internal func createUtterance(text: String, speechLang: SpeechLang) -> AVSpeechUtterance {
         let utterance = AVSpeechUtterance(string: text)
         switch speechLang {
         case .fr:
@@ -74,9 +92,8 @@ class SpeechUtil: NSObject, AVSpeechSynthesizerDelegate {
                 utterance.voice = voice
             }
         }
-
-        synthesizer.speak(utterance)
-        self.delegate = newDelegate
+        
+        return utterance
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {

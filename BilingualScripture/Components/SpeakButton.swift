@@ -17,15 +17,15 @@ struct SpeakButton: View {
     var body: some View {
         Button(action: {
             speakButtonViewModel.isReading = true
-            SpeechUtil.share.speak(text: text, speechLang: speechLang, newDelegate: self.speakButtonViewModel)
+            SingleSpeechUtil.share.speak(text: text, speechLang: speechLang, newDelegate: self.speakButtonViewModel)
         }) {
             VStack(alignment: .leading) {
                 Text(text)
                     .multilineTextAlignment(.leading)
                     .font(font)
-                    .italic(speakButtonViewModel.isHighlighted && speakButtonViewModel.isReading)
-                    .underline(speakButtonViewModel.isHighlighted && speakButtonViewModel.isReading)
-                    .foregroundColor((speakButtonViewModel.isHighlighted && speakButtonViewModel.isReading) ? speakButtonViewModel.highlightColor : .accentColor)
+                    .italic(speakButtonViewModel.isHighlighted && checkIsReading())
+                    .underline(speakButtonViewModel.isHighlighted && checkIsReading())
+                    .foregroundColor((speakButtonViewModel.isHighlighted && checkIsReading()) ? speakButtonViewModel.highlightColor : .accentColor)
             }
 //            .animation(.spring, value: speakButtonViewModel.isReading)
         }
@@ -37,6 +37,10 @@ struct SpeakButton: View {
 //        }
         .buttonStyle(.plain)
     }
+    
+    func checkIsReading() -> Bool {
+        return speakButtonViewModel.isReading || text == speakButtonViewModel.currentVerseSpoke
+    }
 }
 
 class SpeakButtonViewModel: ObservableObject, SpeechUtilDelegate {
@@ -44,6 +48,8 @@ class SpeakButtonViewModel: ObservableObject, SpeechUtilDelegate {
     @Published var highlightColor: Color = .blue
     @Published var isHighlighted: Bool = false
     private var cancellables: AnyCancellable?
+    @Published var currentVerseSpoke: String?
+    private var currentVerseSpokeCancellables: AnyCancellable?
     
     init() {
         bindUserDefaults()
@@ -66,6 +72,15 @@ class SpeakButtonViewModel: ObservableObject, SpeechUtilDelegate {
             .sink { _ in
                 self.setHighlightColor()
             }
+        
+        
+        currentVerseSpokeCancellables = NotificationCenter.default.publisher(for: .currentVerseSpoke)
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { notification in
+                if let text = notification.object as? String {
+                    self.currentVerseSpoke = text
+                }
+            })
     }
     
     func didStartSpeaking() {
@@ -74,6 +89,6 @@ class SpeakButtonViewModel: ObservableObject, SpeechUtilDelegate {
     
     func didFinishSpeaking() {
         self.isReading = false
-        SpeechUtil.share.delegate = nil
+        SingleSpeechUtil.share.delegate = nil
     }
 }

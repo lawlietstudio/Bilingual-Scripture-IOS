@@ -148,7 +148,7 @@ struct CustomTabView: View {
                 .padding(.bottom, 10)
                 .contentShape(.rect)
                 .onTapGesture {
-                    SpeechUtil.share.stopSpeaking()
+                    SingleSpeechUtil.share.stopSpeaking()
                     
                     withAnimation(.bouncy, completionCriteria: .logicallyComplete, {
                         activeTab = tab
@@ -240,7 +240,7 @@ struct TabItem: View {
             }
         })
         .onTapGesture {
-            SpeechUtil.share.stopSpeaking()
+            SingleSpeechUtil.share.stopSpeaking()
             
             activeTab = tab
             
