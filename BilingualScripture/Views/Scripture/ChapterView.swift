@@ -1,11 +1,11 @@
 import SwiftUI
+import Combine
 
 struct ChapterView: View {
     var chapter: Chapter  // Assume Chapter struct has necessary details
-    var animeBook: AnimeBook
     @Binding var currentSpeakingVerse: Int
-    
-    @Environment(\.presentationMode) var presentationMode
+    @Binding var selectedTab: Int
+    @StateObject var chapterViewModel: ChapterViewModel = ChapterViewModel()
 
     var body: some View {
         ScrollViewReader { proxy in
@@ -22,10 +22,35 @@ struct ChapterView: View {
                 }
             }
             .onChange(of: currentSpeakingVerse, { oldValue, newValue in
-                withAnimation {
-                    proxy.scrollTo("\(newValue)", anchor: .center)
+                if selectedTab == chapter.number {
+                    withAnimation {
+                        proxy.scrollTo("\(newValue)", anchor: .center)
+                    }
                 }
             })
+            .safeAreaPadding(.trailing, chapterViewModel.isShowVersesBar ? 16 : 0)
+            .overlay(alignment: .trailing) {
+                if chapterViewModel.isShowVersesBar {
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .center, spacing: 8) {
+                            ForEach(chapter.verses, id: \.key) { verse in
+                                Button {
+                                    withAnimation {
+                                        proxy.scrollTo(verse.key, anchor: .center)
+                                    }
+                                } label: {
+                                    Text("\(verse.key)")
+                                        .font(.subheadline)
+                                }
+                                
+                            }
+                        }
+                    }
+                    .safeAreaPadding(.top, 8)
+                    .frame(width: 32)
+                    .background(.listBackground)
+                }
+            }
         }
         .safeAreaPadding(.bottom, 16)
         .onDisappear {
@@ -34,3 +59,18 @@ struct ChapterView: View {
     }
 }
 
+class ChapterViewModel : ObservableObject
+{
+    var cancellables: AnyCancellable?
+    @AppStorage("isShowVersesBar") var isShowVersesBar: Bool = false
+    
+    init() {
+        cancellables = NotificationCenter.default.publisher(for: .isShowVersesBarDidChange)
+            .receive(on: RunLoop.main)
+            .sink { [self] notification in
+                if let isShow = notification.object as? Bool {
+                    isShowVersesBar = isShow
+                }
+            }
+    }
+}

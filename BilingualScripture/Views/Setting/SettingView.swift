@@ -34,6 +34,9 @@ struct SettingView: View {
     
     @StateObject private var itemStore = ItemStore()
     
+    @AppStorage("isShowVersesBar") private var isShowVersesBarStorage: Bool = true
+    @State private var isShowVersesBar: Bool = true
+    
     @AppStorage("isHighlighted") private var isHighlightedStorage: Bool = true
     @State private var isHighlighted: Bool = true
     
@@ -43,12 +46,21 @@ struct SettingView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink("Display Order") {
-                    LanguageOrderingView()
+                Section(header: Text("Verses")) {
+                    NavigationLink("Display Order") {
+                        LanguageOrderingView()
+                    }
+                    
+                    Toggle("Show Verses Bar", isOn: $isShowVersesBar)
+                        .toggleStyle(CheckmarkToggleStyle())
+                        .onChange(of: isShowVersesBar) { _, newValue in
+                            isShowVersesBarStorage = newValue
+                            NotificationCenter.default.post(name: .isShowVersesBarDidChange, object: newValue)
+                        }
                 }
                 
                 Section(header: Text("Highlight")) {
-                    Toggle("Show/Hide", isOn: $isHighlighted)
+                    Toggle("Show", isOn: $isHighlighted)
                         .toggleStyle(CheckmarkToggleStyle())
                         .onChange(of: isHighlighted) { _, newValue in
                             isHighlightedStorage = newValue
@@ -70,7 +82,7 @@ struct SettingView: View {
                 
                 ForEach($sections) { $section in
                     Section(header: Text(section.speechLang.rawValue)) {
-                        Toggle("Show/Hide", isOn: $section.isShow)
+                        Toggle("Show", isOn: $section.isShow)
                             .toggleStyle(CheckmarkToggleStyle())
                             .onChange(of: section.isShow) { _, newValue in
                                 if let index = itemStore.languageVisibilities.firstIndex(where: { $0.speechLang == section.speechLang }) {

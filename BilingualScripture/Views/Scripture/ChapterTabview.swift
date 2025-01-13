@@ -12,13 +12,13 @@ struct ChapterTabview: View {
     var chapters: [Chapter]
     var animeBook: AnimeBook
     @State var selectedTab = 1
-    @StateObject var chapterTabviewModel: ChapterTabviewModel = ChapterTabviewModel()
+    @StateObject var chapterTabViewModel: ChapterTabViewModel = ChapterTabViewModel()
     
     var body: some View {
         TabView(selection: $selectedTab) {
             ForEach(chapters) { chapter in
 //                Text("\(index)")
-                ChapterView(chapter: chapter, animeBook: animeBook, currentSpeakingVerse: $chapterTabviewModel.currentSpeakingVerse)
+                ChapterView(chapter: chapter, currentSpeakingVerse: $chapterTabViewModel.currentSpeakingVerse, selectedTab: $selectedTab)
                     .tabItem {
                         Text("\(chapter.number)")
                     }
@@ -28,16 +28,16 @@ struct ChapterTabview: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack(spacing: 0) {
-                    Text("\(animeBook.engTitle) - Chapter \(selectedTab)")
+                    Text("\(animeBook.engTitle) - \(selectedTab)")
                         .font(.caption2)
                         .textCase(.uppercase)
-                    Text("\(animeBook.zhoTitle) - 第 \(selectedTab) 章")
+                    Text("\(animeBook.zhoTitle) - \(selectedTab)")
                         .font(.caption2)
                 }
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {
-                if chapterTabviewModel.isSpeaking {
+                if chapterTabViewModel.isSpeaking {
                     Button(action: {
                         SingleSpeechUtil.share.stopSpeaking()
                     }) {
@@ -46,7 +46,7 @@ struct ChapterTabview: View {
                 }
                 else {
                     Menu {
-                        ForEach(chapterTabviewModel.languageVisibilities) { visibility in
+                        ForEach(chapterTabViewModel.languageVisibilities) { visibility in
                             if visibility.isShow {
                                 Button(action: {
                                     let chapter = chapters[selectedTab - 1]
@@ -64,8 +64,8 @@ struct ChapterTabview: View {
                                             return $0.text.zh
                                         }
                                     }
-                                    chapterTabviewModel.currentSpeakingVerse = 1
-                                    ChapterSpeechUtil.shared.speakVerses(verses: verses, speechLang: visibility.speechLang, newDelegate: chapterTabviewModel)
+                                    chapterTabViewModel.currentSpeakingVerse = 1
+                                    ChapterSpeechUtil.shared.speakVerses(verses: verses, speechLang: visibility.speechLang, newDelegate: chapterTabViewModel)
                                 }) {
                                     HStack {
                                         Text(visibility.speechLang.rawValue)
@@ -81,12 +81,12 @@ struct ChapterTabview: View {
                 }
             }
         }
-        .animation(.spring, value: chapterTabviewModel.isSpeaking)
+        .animation(.spring, value: chapterTabViewModel.isSpeaking)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Optional: if you want a page style
     }
 }
 
-class ChapterTabviewModel : ObservableObject, SpeechUtilDelegate
+class ChapterTabViewModel : ObservableObject, SpeechUtilDelegate
 {
     @Published var isSpeaking: Bool = false
     @Published var languageVisibilities: [LanguageVisibility] = UserDefaults.standard.load()

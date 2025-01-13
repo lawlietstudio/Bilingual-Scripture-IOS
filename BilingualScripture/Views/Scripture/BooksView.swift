@@ -43,7 +43,7 @@ struct BooksView: View {
                             }
 
                         
-                        Text("Bilingual Scripture")
+                        Text("EN-CN Bible")
                             .font(.title2.bold())
                             .onLongPressGesture(minimumDuration: 5) {
                                 withAnimation {
