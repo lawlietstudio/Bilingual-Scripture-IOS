@@ -30,8 +30,8 @@ struct ScrollableTabBar<content: View>: View {
         CustomTabBar()
         
         /// Main VIew
-        GeometryReader {
-            let size = $0.size
+        ResponsiveView { props in
+            let size = props.size
             
             // With ios 17, we can now create paging views more easily then ever before it. It is important to note that each tab view within the scrollview must be full screen width, else, paging will not work properly
             ScrollView(.horizontal) {
@@ -60,6 +60,26 @@ struct ScrollableTabBar<content: View>: View {
                     }
                 }
             }
+            .onChange(of: props.size, { oldValue, newValue in
+                mainViewScrollState = nil
+                tabBarScrollState = nil
+                DispatchQueue.main.asyncAfter(deadline: .now()) {
+                    withAnimation(.snappy(duration: 0.65)) {
+                        mainViewScrollState = activeTab
+                        tabBarScrollState = activeTab
+                    }
+                }
+            })
+//            .oncha { _ in
+//                mainViewScrollState = nil
+//                tabBarScrollState = nil
+//                DispatchQueue.main.asyncAfter(deadline: .now()) {
+//                    withAnimation(.snappy(duration: 0.65)) {
+//                        mainViewScrollState = activeTab
+//                        tabBarScrollState = activeTab
+//                    }
+//                }
+//            }
         }
     }
     

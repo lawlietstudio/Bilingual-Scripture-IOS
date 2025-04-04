@@ -19,15 +19,15 @@ struct ChapterSpeakSection: View {
                 if visibility.isShow {
                     switch visibility.speechLang {
                     case .fr:
-                        SpeakButton(text: multilingualText.fr, speechLang: .fr)
+                        SpeakButton(text: multilingualText.fr, speechLang: .fr, font: UIDevice.current.userInterfaceIdiom == .pad ? .title3 : .subheadline)
                     case .en:
-                        SpeakButton(text: multilingualText.en, speechLang: .en)
+                        SpeakButton(text: multilingualText.en, speechLang: .en, font: UIDevice.current.userInterfaceIdiom == .pad ? .title3 : .subheadline)
                     case .zh:
-                        SpeakButton(text: multilingualText.zh, speechLang: .zh)
+                        SpeakButton(text: multilingualText.zh, speechLang: .zh, font: UIDevice.current.userInterfaceIdiom == .pad ? .title3 : .subheadline)
                     case .jp:
-                        SpeakButton(text: multilingualText.jp, speechLang: .jp)
+                        SpeakButton(text: multilingualText.jp, speechLang: .jp, font: UIDevice.current.userInterfaceIdiom == .pad ? .title3 : .subheadline)
                     case .kr:
-                        SpeakButton(text: multilingualText.kr, speechLang: .kr)
+                        SpeakButton(text: multilingualText.kr, speechLang: .kr, font: UIDevice.current.userInterfaceIdiom == .pad ? .title3 : .subheadline)
                     }
                 }
             }

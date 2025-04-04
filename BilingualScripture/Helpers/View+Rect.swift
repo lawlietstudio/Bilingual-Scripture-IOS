@@ -21,6 +21,10 @@ extension View {
                     .onPreferenceChange(RectKey.self, perform: { rect in
                         value(rect)
                     })
+                    .onChange(of: geometry.size.width) { oldValue, newValue in
+                        let rect = geometry.frame(in: .global)
+                        value(rect)
+                    }
             })
         }
     }

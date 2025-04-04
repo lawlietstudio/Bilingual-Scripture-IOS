@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct BooksView: View {
-    static let cardHeight: CGFloat = 270
+    static let cardHeight: CGFloat = (UIScreen.main.bounds.width - 40) / 9 * 7
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
+    var isIpad: Bool {
+        horizontalSizeClass == .regular
+    }
+    
     /// View Properties
     @State private var carouselMode: Bool = false
     /// For Matched Geometry Effect
@@ -23,108 +30,100 @@ struct BooksView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 15) {
-                VStack(spacing: 0) {
-                    HStack {
-                        Image("Logo")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30)
-                            .clipShape(.rect)
-                            .cornerRadius(8)
-//                            .onTapGesture(perform: {
-//                                withAnimation {
-//                                    isShowLDS.toggle()
-//                                    isShowLDSAppStorage = isShowLDS
-//                                }
-//                            })
-                            .onAppear {
-                                isShowLDS = isShowLDSAppStorage
-                            }
-
-                        
-                        Text("EN-CN Bible")
-                            .font(.title2.bold())
-                            .onLongPressGesture(minimumDuration: 5) {
-                                withAnimation {
-                                    isShowLDS.toggle()
-                                    isShowLDSAppStorage = isShowLDS
-                                }
-                            }
-//                            .onTapGesture {
-//                                isShowLDS.toggle()
-//                            }
-                        
-//                        Text("英中經文")
-//                            .fontWeight(.semibold)
-//                            .padding(.leading, 15)
-//                            .foregroundColor(.gray)
-//                            .offset(y: 2)
-                        
-//                        Spacer(minLength: 10)
-                        
-                        //                    Menu {
-                        //                        Button("Toggle Carousel Mode (\(carouselMode ? "On" : "Off"))")
-                        //                        {
-                        //                            carouselMode.toggle()
-                        //                        }
-                        //                    } label: {
-                        //                        Image(systemName: "ellipsis")
-                        //                            .rotationEffect(.init(degrees: -90))
-                        //                            .foregroundColor(.gray)
-                        //                    }
-                        
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal, 5)
-                    .padding(.bottom, 5)
-                    .overlay(alignment: .bottom) {
-                        Rectangle()
-                            .fill(.gray.opacity(0.3))
-                            .frame(height: 1)
-                    }
+            ResponsiveView { props in
+                VStack(spacing: 15) {
                     
-                    if isShowLDS {
-                        ScrollableTabBar(tabContents: [
-                            buildScrollingBookView(animeBooks: sampleBOFM),
-                            buildScrollingBookView(animeBooks: sampleDC),
-                            buildScrollingBookView(animeBooks: samplePGP),
-                            buildScrollingBookView(animeBooks: sampleOT),
-                            buildScrollingBookView(animeBooks: sampleNT)
-                        ], tabs: [
-                            .init(id: TabModel.Tab.bofm),
-                            .init(id: TabModel.Tab.dc),
-                            .init(id: TabModel.Tab.pgp),
-                            .init(id: TabModel.Tab.ot),
-                            .init(id: TabModel.Tab.nt)
-                        ])
-                    } else {
-                        ScrollableTabBar(tabContents: [
-                            buildScrollingBookView(animeBooks: sampleOT),
-                            buildScrollingBookView(animeBooks: sampleNT)
-                        ], tabs: [
-                            .init(id: TabModel.Tab.ot),
-                            .init(id: TabModel.Tab.nt)
-                        ])
+                    VStack(spacing: 0) {
+                        HStack {
+                            Image("Logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30)
+                                .clipShape(.circle)
+                                .cornerRadius(16)
+                           
+                            
+                            Text("Bilingual Bible")
+                                .font(.title2.bold())
+                                .onLongPressGesture(minimumDuration: 5) {
+                                    withAnimation {
+                                        isShowLDS.toggle()
+                                        isShowLDSAppStorage = isShowLDS
+                                    }
+                                }
+                            
+                            //                    Menu {
+                            //                        Button("Toggle Carousel Mode (\(carouselMode ? "On" : "Off"))")
+                            //                        {
+                            //                            carouselMode.toggle()
+                            //                        }
+                            //                    } label: {
+                            //                        Image(systemName: "ellipsis")
+                            //                            .rotationEffect(.init(degrees: -90))
+                            //                            .foregroundColor(.gray)
+                            //                    }
+                            
+                        }
+                        .onLongPressGesture(minimumDuration: 5) {
+                            withAnimation {
+                                isShowLDS.toggle()
+                                isShowLDSAppStorage = isShowLDS
+                            }
+                        }
+                        .onAppear {
+                            isShowLDS = isShowLDSAppStorage
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 5)
+                        .padding(.bottom, 5)
+                        .overlay(alignment: .bottom) {
+                            Rectangle()
+                                .fill(.gray.opacity(0.3))
+                                .frame(height: 1)
+                        }
+                        
+                        if isShowLDS {
+                            ScrollableTabBar(tabContents: [
+                                buildScrollingBookView(animeBooks: sampleBOFM, props: props),
+                                buildScrollingBookView(animeBooks: sampleDC, props: props),
+                                buildScrollingBookView(animeBooks: samplePGP, props: props),
+                                buildScrollingBookView(animeBooks: sampleOT, props: props),
+                                buildScrollingBookView(animeBooks: sampleNT, props: props)
+                            ], tabs: [
+                                .init(id: TabModel.Tab.bofm),
+                                .init(id: TabModel.Tab.dc),
+                                .init(id: TabModel.Tab.pgp),
+                                .init(id: TabModel.Tab.ot),
+                                .init(id: TabModel.Tab.nt)
+                            ])
+                        } else {
+                            ScrollableTabBar(tabContents: [
+                                buildScrollingBookView(animeBooks: sampleOT, props: props),
+                                buildScrollingBookView(animeBooks: sampleNT, props: props)
+                            ], tabs: [
+                                .init(id: TabModel.Tab.ot),
+                                .init(id: TabModel.Tab.nt)
+                            ])
+                        }
                     }
                 }
-            }
-            .overlay {
-                if let selectedBook, showDetailView
-                {
-                    BookView(show: $showDetailView, animation: animation, animeBook: selectedBook)
-                    //                DetailView(show: $showDetailView, animation: animation, book: selectedBook)
-                    /// For More Fluent Animation Transition
-                        .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
-                }
-            }
-            .onChange(of: showDetailView) { _, newValue in
-                if !newValue {
-                    /// Resetting Book Animation
-                    /// When the detail view is closed, the book offset is rest to zero (this why the delay is used)
-                    withAnimation(.easeInOut(duration: 0.15).delay(0.4))
+                .overlay {
+                    if let selectedBook, showDetailView
                     {
-                        animationCurrentBook = false
+                        BookView(show: $showDetailView, animation: animation, animeBook: selectedBook)
+                        //                DetailView(show: $showDetailView, animation: animation, book: selectedBook)
+                        /// For More Fluent Animation Transition
+                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
+                    }
+                }
+                .onChange(of: showDetailView) { _, newValue in
+                    if !newValue {
+                        /// Resetting Book Animation
+                        /// When the detail view is closed, the book offset is rest to zero (this why the delay is used)
+                        withAnimation(.easeInOut(duration: 0.15).delay(0.4))
+                        {
+                            animationCurrentBook = false
+                        }
                     }
                 }
             }
@@ -132,17 +131,33 @@ struct BooksView: View {
     }
     
     @ViewBuilder
-    func buildScrollingBookView(animeBooks :[AnimeBook]) -> some View {
+    func buildScrollingBookView(animeBooks :[AnimeBook], props: Properties) -> some View {
+//        let row = props.size.width
+//        let iphoneColumns = [GridItem(.flexible())]
+        let columnCount = max(1, Int(floor(props.size.width / 300)))
+        let columns: [GridItem] = Array(repeating: .init(.flexible()), count: columnCount)
+//        let ipadLandscapeColumns = [
+//            GridItem(.flexible()),
+//            GridItem(.flexible()),
+//            GridItem(.flexible()),
+//            GridItem(.flexible())
+//        ]
+//        let ipadPortraitColumns = [
+//            GridItem(.flexible()),
+//            GridItem(.flexible())
+//        ]
+//        let columns = props.isIPad ? (props.isLandscape ? ipadLandscapeColumns : ipadPortraitColumns) : iphoneColumns
+        
         GeometryReader {
             let size = $0.size
             
             ScrollView(.vertical, showsIndicators: false) {
                 /// Books Card View
-                VStack(spacing: 35) {
+                LazyVGrid(columns: columns,spacing: 35) {
                     ForEach(animeBooks)
                     {
                         book in
-                        BookCardView(book)
+                        BookCardView(book, props: props)
                         /// Opening Detail View, When Ever Card is Tapped
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 0.2))
@@ -161,7 +176,7 @@ struct BooksView: View {
                 }
                 .padding(.horizontal, 15)
                 .padding(.vertical, 20)
-                .padding(.bottom, bottomPadding(size))
+                .padding(.bottom, bottomPadding(size, props: props))
                 .background {
                     ScrollViewDetector(carouselMode: $carouselMode, totalCardCount: animeBooks.count)
                 }
@@ -174,20 +189,19 @@ struct BooksView: View {
     }
     
     /// Bottom Padding for last card to move up to the top
-    func bottomPadding(_ size: CGSize = .zero) -> CGFloat {
-        let cardHeight: CGFloat = BooksView.cardHeight
+    func bottomPadding(_ size: CGSize = .zero, props: Properties) -> CGFloat {
         let scrollViewHeight: CGFloat = size.height
         
         /*
             Thus, we need to show the last card, so we're removing one card's height from the scrollview total height
             That -20 came from the vertical padding of 20, so if we remove the 40 (vertical padding 20), then we will have the top stating point, which is 20
          */
-        return scrollViewHeight - cardHeight - 40
+        return scrollViewHeight - props.cardHeight - 40
     }
     
     /// Book Card View
     @ViewBuilder
-    func BookCardView(_ book: AnimeBook) -> some View {
+    func BookCardView(_ book: AnimeBook, props: Properties) -> some View {
         GeometryReader {
             let size = $0.size
             let rect = $0.frame(in: .named("SCROLLVIEW"))
@@ -248,9 +262,17 @@ struct BooksView: View {
                 }
             }
             .frame(width: size.width)
-            .rotation3DEffect(.init(degrees: convertOffsetToRotation(rect)), axis: (x: 1, y: 0, z:0), anchor: .bottom, anchorZ: 1, perspective: 0.8)
+            .if(!isIpad) { view in
+                view.rotation3DEffect(
+                    .degrees(convertOffsetToRotation(rect)),
+                    axis: (x: 1, y: 0, z: 0),
+                    anchor: .bottom,
+                    anchorZ: 1,
+                    perspective: 0.8
+                )
+            }
         }
-        .frame(height: BooksView.cardHeight)
+        .frame(height: props.cardHeight)
     }
     
     /// Converting MinY to Rotation
