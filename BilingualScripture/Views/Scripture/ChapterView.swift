@@ -62,7 +62,7 @@ struct ChapterView: View {
 class ChapterViewModel : ObservableObject
 {
     var cancellables: AnyCancellable?
-    @AppStorage("isShowVersesBar") var isShowVersesBar: Bool = false
+    @AppStorage("isShowVersesBar") var isShowVersesBar: Bool = true
     
     init() {
         cancellables = NotificationCenter.default.publisher(for: .isShowVersesBarDidChange)

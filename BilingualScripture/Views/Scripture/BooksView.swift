@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 struct BooksView: View {
     static let cardHeight: CGFloat = (UIScreen.main.bounds.width - 40) / 9 * 7
@@ -171,6 +172,9 @@ struct BooksView: View {
                                         showDetailView = true
                                     }
                                 }
+                                Analytics.logEvent("open_book", parameters: [
+                                    "Book": book.bookName as NSObject
+                                ])
                             }
                     }
                 }
