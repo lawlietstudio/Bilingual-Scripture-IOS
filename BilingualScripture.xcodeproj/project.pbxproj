@@ -14,6 +14,8 @@
 		4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */; };
 		4D0160882BE06FAA00892516 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160872BE06FAA00892516 /* TabModel.swift */; };
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
+		4D0896242DAEE50B0029FE55 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */; };
+		4D0896282DAEF73C0029FE55 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */; };
 		4D15C3E82D9CDF13005C9BC8 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C3E72D9CDF13005C9BC8 /* View+If.swift */; };
 		4D15C4022D9CEE28005C9BC8 /* ResponsiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C4012D9CEE28005C9BC8 /* ResponsiveView.swift */; };
 		4D15C4262D9F4F33005C9BC8 /* View+onRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C4252D9F4F33005C9BC8 /* View+onRotate.swift */; };
@@ -21,7 +23,6 @@
 		4D15C4312DA4D3A4005C9BC8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4D15C4302DA4D3A4005C9BC8 /* FirebaseAnalytics */; };
 		4D392F3C2C4651A300A68D17 /* ChapterTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */; };
 		4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */; };
-		4D392F812C61977500A68D17 /* ChapterSpeechUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */; };
 		4D39967F2BBD10DF00DA530B /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39967E2BBD10DF00DA530B /* BooksView.swift */; };
 		4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */; };
 		4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3996822BBD159600DA530B /* CustomCorners.swift */; };
@@ -41,9 +42,8 @@
 		4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DB22BBCF173001719A7 /* BookView.swift */; };
 		4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DB42BBCF173001719A7 /* Chapter.swift */; };
 		4DE07DB92BBCF183001719A7 /* Scriptures in Resources */ = {isa = PBXBuildFile; fileRef = 4DE07DB82BBCF183001719A7 /* Scriptures */; };
-		4DE07DBC2BBCF671001719A7 /* SingleSpeechUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */; };
 		4DE07DBF2BBCF750001719A7 /* SpeakButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DBE2BBCF750001719A7 /* SpeakButton.swift */; };
-		4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DC02BBCFDA6001719A7 /* SettingView.swift */; };
+		4DE07DC12BBCFDA6001719A7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DC02BBCFDA6001719A7 /* SettingsView.swift */; };
 		4DE07DC32BBCFDBA001719A7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DC22BBCFDBA001719A7 /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +55,13 @@
 		4D0160852BE06E4C00892516 /* CGFloat+Interpolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Interpolate.swift"; sourceTree = "<group>"; };
 		4D0160872BE06FAA00892516 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
+		4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
 		4D15C3E72D9CDF13005C9BC8 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
 		4D15C4012D9CEE28005C9BC8 /* ResponsiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView.swift; sourceTree = "<group>"; };
 		4D15C4252D9F4F33005C9BC8 /* View+onRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+onRotate.swift"; sourceTree = "<group>"; };
 		4D392F3B2C4651A300A68D17 /* ChapterTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTabview.swift; sourceTree = "<group>"; };
 		4D392F3D2C4CBC0100A68D17 /* Color+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
-		4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSpeechUtil.swift; sourceTree = "<group>"; };
 		4D39967E2BBD10DF00DA530B /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		4D3996802BBD114B00DA530B /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		4D3996822BBD159600DA530B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
@@ -81,9 +82,8 @@
 		4DE07DB22BBCF173001719A7 /* BookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		4DE07DB42BBCF173001719A7 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		4DE07DB82BBCF183001719A7 /* Scriptures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scriptures; sourceTree = "<group>"; };
-		4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSpeechUtil.swift; sourceTree = "<group>"; };
 		4DE07DBE2BBCF750001719A7 /* SpeakButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakButton.swift; sourceTree = "<group>"; };
-		4DE07DC02BBCFDA6001719A7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		4DE07DC02BBCFDA6001719A7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4DE07DC22BBCFDBA001719A7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0896222DAEE4B90029FE55 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */,
+				4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4D8B84FD2BC016BA003D1D7F /* Scripture */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +124,13 @@
 			path = Scripture;
 			sourceTree = "<group>";
 		};
-		4D8B84FE2BC016D6003D1D7F /* Setting */ = {
+		4D8B84FE2BC016D6003D1D7F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				4DE07DC02BBCFDA6001719A7 /* SettingView.swift */,
+				4DE07DC02BBCFDA6001719A7 /* SettingsView.swift */,
 				4DCDBFA72BDE455600F32D8C /* LanguageOrderingView.swift */,
 			);
-			path = Setting;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		4D8B851E2BC26566003D1D7F /* Helpers */ = {
@@ -161,16 +170,16 @@
 		4DE07DA12BBCF12B001719A7 /* BilingualScripture */ = {
 			isa = PBXGroup;
 			children = (
+				4D15C4902DA5A072005C9BC8 /* Firebase */,
+				4DE07DB82BBCF183001719A7 /* Scriptures */,
 				4DE07DA22BBCF12B001719A7 /* BilingualScriptureApp.swift */,
 				4DE07DA62BBCF12D001719A7 /* Assets.xcassets */,
-				4DE07DB82BBCF183001719A7 /* Scriptures */,
 				4D8B851E2BC26566003D1D7F /* Helpers */,
-				4DE07DBA2BBCF65F001719A7 /* Utils */,
 				4DE07DBD2BBCF72F001719A7 /* Components */,
 				4DE07DB32BBCF173001719A7 /* Models */,
 				4DE07DB02BBCF173001719A7 /* Views */,
+				4D0896222DAEE4B90029FE55 /* ViewModels */,
 				4DE07DA82BBCF12D001719A7 /* Preview Content */,
-				4D15C4902DA5A072005C9BC8 /* Firebase */,
 			);
 			path = BilingualScripture;
 			sourceTree = "<group>";
@@ -188,7 +197,7 @@
 			children = (
 				4DE07DC22BBCFDBA001719A7 /* CustomTabView.swift */,
 				4D8B84FD2BC016BA003D1D7F /* Scripture */,
-				4D8B84FE2BC016D6003D1D7F /* Setting */,
+				4D8B84FE2BC016D6003D1D7F /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,15 +211,6 @@
 				4D414FCE2BF0E880000486C3 /* AnimatedTab.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		4DE07DBA2BBCF65F001719A7 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4DE07DBB2BBCF671001719A7 /* SingleSpeechUtil.swift */,
-				4D392F802C61977500A68D17 /* ChapterSpeechUtil.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		4DE07DBD2BBCF72F001719A7 /* Components */ = {
@@ -337,6 +337,7 @@
 				21E0D62B2BF7E7E8009F153B /* TabPosition.swift in Sources */,
 				4D0160862BE06E4C00892516 /* CGFloat+Interpolate.swift in Sources */,
 				4DE07DB52BBCF173001719A7 /* ChapterView.swift in Sources */,
+				4D0896282DAEF73C0029FE55 /* SpeechViewModel.swift in Sources */,
 				4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */,
 				21E0D6292BF7D862009F153B /* CheckmarkToggleStyle.swift in Sources */,
 				4DE07DA32BBCF12B001719A7 /* BilingualScriptureApp.swift in Sources */,
@@ -345,20 +346,19 @@
 				21E0D6272BF79FA9009F153B /* ChapterSpeakSection.swift in Sources */,
 				4DE07DC32BBCFDBA001719A7 /* CustomTabView.swift in Sources */,
 				4D3996832BBD159600DA530B /* CustomCorners.swift in Sources */,
-				4D392F812C61977500A68D17 /* ChapterSpeechUtil.swift in Sources */,
 				4D3996812BBD114B00DA530B /* ScrollViewDetector.swift in Sources */,
-				4DE07DC12BBCFDA6001719A7 /* SettingView.swift in Sources */,
+				4DE07DC12BBCFDA6001719A7 /* SettingsView.swift in Sources */,
 				4D15C3E82D9CDF13005C9BC8 /* View+If.swift in Sources */,
 				4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */,
 				4D15C4262D9F4F33005C9BC8 /* View+onRotate.swift in Sources */,
 				4D392F3C2C4651A300A68D17 /* ChapterTabview.swift in Sources */,
 				4D8B84FC2BBF79EC003D1D7F /* BackButton.swift in Sources */,
+				4D0896242DAEE50B0029FE55 /* SettingsViewModel.swift in Sources */,
 				4D15C4022D9CEE28005C9BC8 /* ResponsiveView.swift in Sources */,
 				21E0D62D2BF7E812009F153B /* TabShape.swift in Sources */,
 				4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */,
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
 				4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */,
-				4DE07DBC2BBCF671001719A7 /* SingleSpeechUtil.swift in Sources */,
 				4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */,
 				4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */,
 			);

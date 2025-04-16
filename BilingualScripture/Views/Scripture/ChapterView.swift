@@ -3,34 +3,39 @@ import Combine
 
 struct ChapterView: View {
     var chapter: Chapter  // Assume Chapter struct has necessary details
-    @Binding var currentSpeakingVerse: Int
     @Binding var selectedTab: Int
-    @StateObject var chapterViewModel: ChapterViewModel = ChapterViewModel()
+    @EnvironmentObject var speechViewModel: SpeechViewModel
+    @EnvironmentObject var settingsViewModel: SettingsViewModel
 
     var body: some View {
         ScrollViewReader { proxy in
-            List {
-                ChapterSpeakSection(title: "Intro", multilingualText: chapter.introduction)
-                
-                if let summary = chapter.summary {
-                    ChapterSpeakSection(title: "Summary", multilingualText: summary)
-                }
-                
-                ForEach(chapter.verses, id: \.key) { verse in
-                    ChapterSpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
-                        .id(verse.key)
-                }
-            }
-            .onChange(of: currentSpeakingVerse, { oldValue, newValue in
-                if selectedTab == chapter.number {
-                    withAnimation {
-                        proxy.scrollTo("\(newValue)", anchor: .center)
+            ScrollView {
+                LazyVStack(spacing: 36) {
+                    ChapterSpeakSection(title: "Intro", multilingualText: chapter.introduction)
+                    
+                    if let summary = chapter.summary {
+                        ChapterSpeakSection(title: "Summary", multilingualText: summary)
+                    }
+                    
+                    ForEach(chapter.verses, id: \.key) { verse in
+                        ChapterSpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
+                            .id(verse.key)
                     }
                 }
+                .padding(20)
+                .frame(maxWidth: .infinity)
+                .background(Color("ListBackgroundColor"))
+            }
+            .scrollIndicators(.hidden)
+            .onChange(of: speechViewModel.speakVersesPackage?.currentParagraphIndex ?? -1, { oldValue, newValue in
+                guard newValue >= 0, selectedTab == chapter.number else { return }
+                withAnimation {
+                    proxy.scrollTo("\(newValue + 1)", anchor: .center)
+                }
             })
-            .safeAreaPadding(.trailing, chapterViewModel.isShowVersesBar ? 16 : 0)
+            .padding(.trailing, settingsViewModel.isVersesBarVisible ? 16 : 0)
             .overlay(alignment: .trailing) {
-                if chapterViewModel.isShowVersesBar {
+                if settingsViewModel.isVersesBarVisible {
                     ScrollView(showsIndicators: false) {
                         VStack(alignment: .center, spacing: 8) {
                             ForEach(chapter.verses, id: \.key) { verse in
@@ -52,25 +57,10 @@ struct ChapterView: View {
                 }
             }
         }
+        .background(Color(.systemGroupedBackground))
         .safeAreaPadding(.bottom, 16)
         .onDisappear {
-            SingleSpeechUtil.share.stopSpeaking()
+            speechViewModel.stopSpeaking()
         }
-    }
-}
-
-class ChapterViewModel : ObservableObject
-{
-    var cancellables: AnyCancellable?
-    @AppStorage("isShowVersesBar") var isShowVersesBar: Bool = true
-    
-    init() {
-        cancellables = NotificationCenter.default.publisher(for: .isShowVersesBarDidChange)
-            .receive(on: RunLoop.main)
-            .sink { [self] notification in
-                if let isShow = notification.object as? Bool {
-                    isShowVersesBar = isShow
-                }
-            }
     }
 }

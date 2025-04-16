@@ -3,6 +3,7 @@ import Combine
 
 struct BookView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @EnvironmentObject var speechViewModel: SpeechViewModel
     
     var isIpad: Bool {
         horizontalSizeClass == .regular
@@ -157,7 +158,7 @@ struct BookView: View {
                 
             }
             .onDisappear {
-                SingleSpeechUtil.share.stopSpeaking()
+                speechViewModel.stopSpeaking()
             }
         }
     }

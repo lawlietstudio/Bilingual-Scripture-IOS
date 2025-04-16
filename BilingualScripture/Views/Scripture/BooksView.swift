@@ -12,6 +12,7 @@ struct BooksView: View {
     static let cardHeight: CGFloat = (UIScreen.main.bounds.width - 40) / 9 * 7
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @EnvironmentObject var settingsViewModel: SettingsViewModel
     
     var isIpad: Bool {
         horizontalSizeClass == .regular
@@ -25,9 +26,6 @@ struct BooksView: View {
     @State private var showDetailView: Bool = false
     @State private var selectedBook: AnimeBook?
     @State private var animationCurrentBook: Bool = false
-    
-    @AppStorage("isShowLDS") private var isShowLDSAppStorage: Bool = false
-    @State private var isShowLDS: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -43,36 +41,8 @@ struct BooksView: View {
                                 .clipShape(.circle)
                                 .cornerRadius(16)
                            
-                            
                             Text("Bilingual Bible")
                                 .font(.title2.bold())
-                                .onLongPressGesture(minimumDuration: 5) {
-                                    withAnimation {
-                                        isShowLDS.toggle()
-                                        isShowLDSAppStorage = isShowLDS
-                                    }
-                                }
-                            
-                            //                    Menu {
-                            //                        Button("Toggle Carousel Mode (\(carouselMode ? "On" : "Off"))")
-                            //                        {
-                            //                            carouselMode.toggle()
-                            //                        }
-                            //                    } label: {
-                            //                        Image(systemName: "ellipsis")
-                            //                            .rotationEffect(.init(degrees: -90))
-                            //                            .foregroundColor(.gray)
-                            //                    }
-                            
-                        }
-                        .onLongPressGesture(minimumDuration: 5) {
-                            withAnimation {
-                                isShowLDS.toggle()
-                                isShowLDSAppStorage = isShowLDS
-                            }
-                        }
-                        .onAppear {
-                            isShowLDS = isShowLDSAppStorage
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 5)
@@ -83,7 +53,7 @@ struct BooksView: View {
                                 .frame(height: 1)
                         }
                         
-                        if isShowLDS {
+                        if settingsViewModel.isLdsBooksVisible {
                             ScrollableTabBar(tabContents: [
                                 buildScrollingBookView(animeBooks: sampleBOFM, props: props),
                                 buildScrollingBookView(animeBooks: sampleDC, props: props),
@@ -133,21 +103,7 @@ struct BooksView: View {
     
     @ViewBuilder
     func buildScrollingBookView(animeBooks :[AnimeBook], props: Properties) -> some View {
-//        let row = props.size.width
-//        let iphoneColumns = [GridItem(.flexible())]
-        let columnCount = max(1, Int(floor(props.size.width / 300)))
-        let columns: [GridItem] = Array(repeating: .init(.flexible()), count: columnCount)
-//        let ipadLandscapeColumns = [
-//            GridItem(.flexible()),
-//            GridItem(.flexible()),
-//            GridItem(.flexible()),
-//            GridItem(.flexible())
-//        ]
-//        let ipadPortraitColumns = [
-//            GridItem(.flexible()),
-//            GridItem(.flexible())
-//        ]
-//        let columns = props.isIPad ? (props.isLandscape ? ipadLandscapeColumns : ipadPortraitColumns) : iphoneColumns
+        let columns: [GridItem] = Array(repeating: .init(.flexible()), count: props.columnCount)
         
         GeometryReader {
             let size = $0.size

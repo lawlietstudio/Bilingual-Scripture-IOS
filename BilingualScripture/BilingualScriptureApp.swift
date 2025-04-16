@@ -26,10 +26,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct BilingualScriptureApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var speechViewModel = SpeechViewModel()
+    @StateObject var settingsViewModel = SettingsViewModel()
     
     var body: some Scene {
         WindowGroup {
             CustomTabView()
+                .environmentObject(speechViewModel)
+                .environmentObject(settingsViewModel)
         }
     }
 }

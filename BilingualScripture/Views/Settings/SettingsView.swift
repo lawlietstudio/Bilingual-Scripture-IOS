@@ -15,7 +15,9 @@ struct SectionData: Identifiable {
     }
 }
 
-struct SettingView: View {
+struct SettingsView: View {
+    @EnvironmentObject var settingsViewModel: SettingsViewModel
+    
     @AppStorage("fraVoiceIdentifier") private var selectedFraVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "fr-CA")!.identifier
     @AppStorage("engVoiceIdentifier") private var selectedEngVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "en-US")!.identifier
     @AppStorage("zhoVoiceIdentifier") private var selectedZhoVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "zh-TW")!.identifier
@@ -33,15 +35,6 @@ struct SettingView: View {
     @State private var isEditing = false
     
     @StateObject private var itemStore = ItemStore()
-    
-    @AppStorage("isShowVersesBar") private var isShowVersesBarStorage: Bool = true
-    @State private var isShowVersesBar: Bool = true
-    
-    @AppStorage("isHighlighted") private var isHighlightedStorage: Bool = true
-    @State private var isHighlighted: Bool = true
-    
-    @AppStorage("highlightColor") private var highlightColorHex: String = "#0000FF" // Default to blue
-    @State private var highlightColor: Color = .blue
 
     var body: some View {
         NavigationStack {
@@ -51,32 +44,15 @@ struct SettingView: View {
                         LanguageOrderingView()
                     }
                     
-                    Toggle("Show Verses Bar", isOn: $isShowVersesBar)
+                    Toggle("Show Verses Bar", isOn: $settingsViewModel.isVersesBarVisible)
                         .toggleStyle(CheckmarkToggleStyle())
-                        .onChange(of: isShowVersesBar) { _, newValue in
-                            isShowVersesBarStorage = newValue
-                            NotificationCenter.default.post(name: .isShowVersesBarDidChange, object: newValue)
-                        }
                 }
                 
                 Section(header: Text("Highlight")) {
-                    Toggle("Show", isOn: $isHighlighted)
+                    Toggle("Show", isOn: $settingsViewModel.isVerseHighlighted)
                         .toggleStyle(CheckmarkToggleStyle())
-                        .onChange(of: isHighlighted) { _, newValue in
-                            isHighlightedStorage = newValue
-                            NotificationCenter.default.post(name: .highlightColorDidChange, object: nil)
-                        }
                     
-                    ColorPicker("Color", selection: $highlightColor)
-                        .onChange(of: highlightColor, { _, newValue in
-                            highlightColorHex = newValue.hexString
-                            NotificationCenter.default.post(name: .highlightColorDidChange, object: nil)
-                            print(highlightColorHex)
-                        })
-                        .onAppear {
-                            print("onAppear\(highlightColorHex)")
-                            highlightColor = Color(hex: highlightColorHex)
-                        }
+                    ColorPicker("Color", selection: $settingsViewModel.verseHighlightedColor)
                 }
                 
                 
@@ -107,14 +83,13 @@ struct SettingView: View {
                     .font(.subheadline)
             }
             .safeAreaPadding(.bottom, 16)
-            .navigationTitle("Setting")
+            .navigationTitle(Tab.settings.title)
         }
     }
     
     func getAppVersion() -> String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
-        return "Version \(version) (Build \(build))"
+        return "Version \(version)"
     }
     
     private func selectionBinding(for speechLang: SpeechLang) -> Binding<String> {

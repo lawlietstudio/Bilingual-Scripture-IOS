@@ -45,7 +45,7 @@ extension View {
     
     @MainActor
     @ViewBuilder
-    func createImages(toggleDarkMode: Bool, currentImage: Binding<UIImage?>, previousImage: Binding<UIImage?>, activeateDarkMode: Binding<Bool>) -> some View {
+    func createImages(toggleDarkMode: Bool, currentImage: Binding<UIImage?>, previousImage: Binding<UIImage?>, activateDarkMode: Binding<Bool>) -> some View {
         self
             .onChange(of: toggleDarkMode) { oldValue, newValue in
                 /// So in order to capture the screen, I'm going to find the active key window via UIApplication connectedSessions. Once the window has been found, I will start captureing the views.
@@ -63,11 +63,11 @@ extension View {
                             let sleepTime = 0.2
                             let frameSize = rootView.frame.size
                             /// Creating Snapshots
-                            activeateDarkMode.wrappedValue = !newValue
+                            activateDarkMode.wrappedValue = !newValue
                             previousImage.wrappedValue = rootView.image(frameSize)
                             try await Task.sleep(for: .seconds(sleepTime))
                             /// New One with Updated Trait State
-                            activeateDarkMode.wrappedValue = newValue
+                            activateDarkMode.wrappedValue = newValue
                             /// Giving some time to complete the transition
                             try await Task.sleep(for: .seconds(sleepTime))
                             currentImage.wrappedValue = rootView.image(frameSize)

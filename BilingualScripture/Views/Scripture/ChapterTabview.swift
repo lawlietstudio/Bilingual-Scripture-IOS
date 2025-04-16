@@ -13,12 +13,13 @@ struct ChapterTabview: View {
     var animeBook: AnimeBook
     @State var selectedTab = 1
     @StateObject var chapterTabViewModel: ChapterTabViewModel = ChapterTabViewModel()
+    @EnvironmentObject var speechViewModel: SpeechViewModel
     
     var body: some View {
         TabView(selection: $selectedTab) {
             ForEach(chapters) { chapter in
 //                Text("\(index)")
-                ChapterView(chapter: chapter, currentSpeakingVerse: $chapterTabViewModel.currentSpeakingVerse, selectedTab: $selectedTab)
+                ChapterView(chapter: chapter, selectedTab: $selectedTab)
                     .tabItem {
                         Text("\(chapter.number)")
                     }
@@ -37,9 +38,9 @@ struct ChapterTabview: View {
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {
-                if chapterTabViewModel.isSpeaking {
+                if speechViewModel.currentSpeakingText != nil {
                     Button(action: {
-                        SingleSpeechUtil.share.stopSpeaking()
+                        speechViewModel.stopSpeaking()
                     }) {
                         Image(systemName: "stop.circle")
                     }
@@ -64,8 +65,7 @@ struct ChapterTabview: View {
                                             return $0.text.zh
                                         }
                                     }
-                                    chapterTabViewModel.currentSpeakingVerse = 1
-                                    ChapterSpeechUtil.shared.speakVerses(verses: verses, speechLang: visibility.speechLang, newDelegate: chapterTabViewModel)
+                                    speechViewModel.speakVerses(verses: verses, speechLang: visibility.speechLang)
                                 }) {
                                     HStack {
                                         Text(visibility.speechLang.rawValue)
@@ -81,16 +81,14 @@ struct ChapterTabview: View {
                 }
             }
         }
-        .animation(.spring, value: chapterTabViewModel.isSpeaking)
+        .animation(.spring, value: speechViewModel.currentSpeakingText)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Optional: if you want a page style
     }
 }
 
-class ChapterTabViewModel : ObservableObject, SpeechUtilDelegate
+class ChapterTabViewModel: ObservableObject
 {
-    @Published var isSpeaking: Bool = false
     @Published var languageVisibilities: [LanguageVisibility] = UserDefaults.standard.load()
-    @Published var currentSpeakingVerse: Int = 0
     private var cancellables: AnyCancellable?
     
     init() {
@@ -103,18 +101,5 @@ class ChapterTabViewModel : ObservableObject, SpeechUtilDelegate
             .sink { _ in
                 self.languageVisibilities = UserDefaults.standard.load()
             }
-    }
-    
-    func didStartSpeaking() {
-        isSpeaking = true
-    }
-    
-    func didStopSpeaking() {
-        isSpeaking = false
-    }
-    
-    func didFinishSpeaking() {
-        currentSpeakingVerse += 1
-        isSpeaking = false
     }
 }

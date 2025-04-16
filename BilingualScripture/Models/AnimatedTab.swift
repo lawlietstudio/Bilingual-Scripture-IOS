@@ -10,21 +10,14 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case scripture = "books.vertical.fill"
-    case setting = "gearshape.fill"
+    case settings = "gearshape.fill"
     
     var title: String {
         switch self {
         case .scripture:
             return "Scripture"
-        case .setting:
-            return "Setting"
+        case .settings:
+            return "Settings"
         }
     }
-}
-
-/// Animated SF Tab Model
-struct AnimatedTab: Identifiable {
-    var id: UUID = .init()
-    var tab: Tab
-    var isAnimating: Bool?
 }
