@@ -23,15 +23,15 @@ struct SpeakButton: View {
                 Text(text)
                     .multilineTextAlignment(.leading)
                     .font(font)
-                    .italic(settingsViewModel.isVerseHighlighted && checkIsSpeakinging())
-                    .underline(settingsViewModel.isVerseHighlighted && checkIsSpeakinging())
-                    .foregroundColor((settingsViewModel.isVerseHighlighted && checkIsSpeakinging()) ? settingsViewModel.verseHighlightedColor : .accentColor)
+                    .italic(isHighlighted)
+                    .underline(isHighlighted)
+                    .foregroundColor(isHighlighted ? settingsViewModel.verseHighlightedColor : .accentColor)
             }
         }
         .buttonStyle(.plain)
     }
     
-    func checkIsSpeakinging() -> Bool {
-        return text == speechViewModel.currentSpeakingText
+    var isHighlighted: Bool {
+        settingsViewModel.isVerseHighlighted && text == speechViewModel.currentSpeakingText
     }
 }

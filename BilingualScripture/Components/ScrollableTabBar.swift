@@ -70,16 +70,6 @@ struct ScrollableTabBar<content: View>: View {
                     }
                 }
             })
-//            .oncha { _ in
-//                mainViewScrollState = nil
-//                tabBarScrollState = nil
-//                DispatchQueue.main.asyncAfter(deadline: .now()) {
-//                    withAnimation(.snappy(duration: 0.65)) {
-//                        mainViewScrollState = activeTab
-//                        tabBarScrollState = activeTab
-//                    }
-//                }
-//            }
         }
     }
     

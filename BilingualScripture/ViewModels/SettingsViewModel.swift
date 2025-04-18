@@ -63,7 +63,7 @@ class SettingsViewModel: ObservableObject {
         isActivatedDarkMode = Self.loadBool(forKey: isActivatedDarkModeKey, default: isDarkModeFromOs)
         isVersesBarVisible = Self.loadBool(forKey: isVersesBarVisibleKey, default: true)
         isVerseHighlighted = Self.loadBool(forKey: isVerseHighlightedKey, default: true)
-        verseHighlightedColor = Self.loadColor(forKey: verseHighlightedColorKey, default: .blue)
+        verseHighlightedColor = Self.loadColor(forKey: verseHighlightedColorKey, default: isDarkModeFromOs ? .yellow : .blue)
     }
 
     // MARK: - Static Helper

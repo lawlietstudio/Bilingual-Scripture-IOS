@@ -37,15 +37,24 @@ struct ChapterTabview: View {
                 }
             }
             
-            ToolbarItem(placement: .navigationBarTrailing) {
-                if speechViewModel.currentSpeakingText != nil {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                if let _ = speechViewModel.currentSpeakingText {
+                    Button(action: {
+                        if speechViewModel.isPaused {
+                            speechViewModel.resumeSpeaking()
+                        } else {
+                            speechViewModel.pauseSpeaking()
+                        }
+                    }) {
+                        Image(systemName: speechViewModel.isPaused ? "play.circle" : "pause.circle")
+                    }
+
                     Button(action: {
                         speechViewModel.stopSpeaking()
                     }) {
                         Image(systemName: "stop.circle")
                     }
-                }
-                else {
+                } else {
                     Menu {
                         ForEach(chapterTabViewModel.languageVisibilities) { visibility in
                             if visibility.isShow {
@@ -53,16 +62,11 @@ struct ChapterTabview: View {
                                     let chapter = chapters[selectedTab - 1]
                                     let verses = chapter.verses.map {
                                         switch visibility.speechLang {
-                                        case .en:
-                                            return $0.text.en
-                                        case .fr:
-                                            return $0.text.fr
-                                        case .jp:
-                                            return $0.text.jp
-                                        case .kr:
-                                            return $0.text.kr
-                                        case .zh:
-                                            return $0.text.zh
+                                        case .en: return $0.text.en
+                                        case .fr: return $0.text.fr
+                                        case .jp: return $0.text.jp
+                                        case .kr: return $0.text.kr
+                                        case .zh: return $0.text.zh
                                         }
                                     }
                                     speechViewModel.speakVerses(verses: verses, speechLang: visibility.speechLang)
