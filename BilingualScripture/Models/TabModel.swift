@@ -34,5 +34,20 @@ struct TabModel: Identifiable {
                 return "NT"
             }
         }
+        
+        func title(using languageViewModel: LanguagesViewModel) -> String {
+            switch self {
+            case .bofm:
+                return languageViewModel.localized("book_tab_bofm")
+            case .dc:
+                return languageViewModel.localized("book_tab_dc")
+            case .pgp:
+                return languageViewModel.localized("book_tab_pgp")
+            case .ot:
+                return languageViewModel.localized("book_tab_ot")
+            case .nt:
+                return languageViewModel.localized("book_tab_nt")
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ struct BooksView: View {
     static let cardHeight: CGFloat = (UIScreen.main.bounds.width - 40) / 9 * 7
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     
     var isIpad: Bool {
@@ -41,7 +42,7 @@ struct BooksView: View {
                                 .clipShape(.circle)
                                 .cornerRadius(16)
                            
-                            Text("Bilingual Bible")
+                            Text(languagesViewModel.localized("app_name"))
                                 .font(.title2.bold())
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -172,12 +173,12 @@ struct BooksView: View {
             HStack(spacing: -25) {
                 /// Book Detail Card
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(book.engTitle)
+                    Text(languagesViewModel.localized(book.localizedBookName))
                         .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    Text(book.zhoTitle)
+                    Text(languagesViewModel.localized(book.localizedBookName, isSecondary: true))
                         .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)

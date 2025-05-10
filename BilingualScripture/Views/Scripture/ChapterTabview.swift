@@ -12,7 +12,7 @@ struct ChapterTabview: View {
     var chapters: [Chapter]
     var animeBook: AnimeBook
     @State var selectedTab = 1
-    @StateObject var chapterTabViewModel: ChapterTabViewModel = ChapterTabViewModel()
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var speechViewModel: SpeechViewModel
     
     var body: some View {
@@ -29,10 +29,10 @@ struct ChapterTabview: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack(spacing: 0) {
-                    Text("\(animeBook.engTitle) - \(selectedTab)")
+                    Text("\(languagesViewModel.localized(animeBook.localizedBookName)) - \(selectedTab)")
                         .font(.caption2)
-                        .textCase(.uppercase)
-                    Text("\(animeBook.zhoTitle) - \(selectedTab)")
+                    
+                    Text("\(languagesViewModel.localized(animeBook.localizedBookName, isSecondary: true)) - \(selectedTab)")
                         .font(.caption2)
                 }
             }
@@ -56,28 +56,9 @@ struct ChapterTabview: View {
                     }
                 } else {
                     Menu {
-                        ForEach(chapterTabViewModel.languageVisibilities) { visibility in
-                            if visibility.isShow {
-                                Button(action: {
-                                    let chapter = chapters[selectedTab - 1]
-                                    let verses = chapter.verses.map {
-                                        switch visibility.speechLang {
-                                        case .en: return $0.text.en
-                                        case .fr: return $0.text.fr
-                                        case .jp: return $0.text.jp
-                                        case .kr: return $0.text.kr
-                                        case .zh: return $0.text.zh
-                                        }
-                                    }
-                                    speechViewModel.speakVerses(verses: verses, speechLang: visibility.speechLang)
-                                }) {
-                                    HStack {
-                                        Text(visibility.speechLang.rawValue)
-                                        Image(systemName: "play.circle")
-                                    }
-                                }
-                            }
-                        }
+                        buildSpeakVersesButton(localization: languagesViewModel.primaryLanguage)
+                        
+                        buildSpeakVersesButton(localization: languagesViewModel.secondaryLanguage)
                     } label: {
                         Image(systemName: "ellipsis.circle")
                             .imageScale(.large)
@@ -88,22 +69,22 @@ struct ChapterTabview: View {
         .animation(.spring, value: speechViewModel.currentSpeakingText)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Optional: if you want a page style
     }
-}
-
-class ChapterTabViewModel: ObservableObject
-{
-    @Published var languageVisibilities: [LanguageVisibility] = UserDefaults.standard.load()
-    private var cancellables: AnyCancellable?
     
-    init() {
-        bindUserDefaults()
-    }
-    
-    private func bindUserDefaults() {
-        cancellables = NotificationCenter.default.publisher(for: .itemsDataDidChange)
-            .receive(on: RunLoop.main)
-            .sink { _ in
-                self.languageVisibilities = UserDefaults.standard.load()
+    @ViewBuilder
+    func buildSpeakVersesButton(localization: String) -> some View {
+        let speechLang = SpeechLang.speechLang(for: localization)
+        let chapter = chapters[selectedTab - 1]
+        let verses = chapter.verses.map {
+            $0.text.getText(lang: speechLang)
+        }
+        
+        Button(action: {
+            speechViewModel.speakVerses(verses: verses, speechLang: speechLang)
+        }) {
+            HStack {
+                Text(languagesViewModel.displayName(for: localization))
+                Image(systemName: "play.circle")
             }
+        }
     }
 }

@@ -8,12 +8,56 @@
 import SwiftUI
 import AVFoundation
 
-enum SpeechLang: String, Codable {
-    case fr = "Française"
-    case en = "English"
-    case zh = "中文"
-    case jp = "日本語"
-    case kr = "한국어"
+enum SpeechLang: String, Codable, CaseIterable {
+    case fr = "fr-CA"
+    case en = "en-US"
+    case zh_Hans = "zh-CN"
+    case zh_Hant = "zh-TW"
+    case jp = "ja-JP"
+    case kr = "ko-KR"
+    
+    var availableVoices: [AVSpeechSynthesisVoice] {
+        let baseLangCode = rawValue.split(separator: "-").first.map(String.init) ?? rawValue
+        return AVSpeechSynthesisVoice.speechVoices().filter { $0.language.hasPrefix(baseLangCode) }
+    }
+
+    var userDefaultsKey: String {
+        "\(self.rawValue)\(LanguagesViewModel.voiceIdentifierKey)"
+    }
+
+    var preferredVoiceMatches: [(language: String, name: String?)] {
+        switch self {
+        case .fr: return [("fr-CA", "Samantha"), ("fr-CA", nil), ("fr-FR", nil)]
+        case .en: return [("en-US", "Samantha"), ("en-US", nil)]
+        case .zh_Hans: return [("zh-CN", nil)]
+        case .zh_Hant: return [("zh-HK", "Sinji"), ("zh-HK", nil)]
+        case .jp: return [("ja-JP", nil)]
+        case .kr: return [("ko-KR", nil)]
+        }
+    }
+    
+    static func speechLang(for localizationCode: String) -> SpeechLang {
+        switch localizationCode {
+        case "en": return .en
+        case "zh-Hans": return .zh_Hans
+        case "zh-Hant": return .zh_Hant
+        case "fr": return .fr
+        case "ja": return .jp
+        case "ko": return .kr
+        default: return .en
+        }
+    }
+    
+    static func selectionBinding(for speechLang: SpeechLang, languageViewModel: Binding<LanguagesViewModel>) -> Binding<String> {
+        Binding<String>(
+            get: {
+                languageViewModel.wrappedValue.selectedVoiceIdentifiers[speechLang] ?? ""
+            },
+            set: { newValue in
+                languageViewModel.wrappedValue.selectedVoiceIdentifiers[speechLang] = newValue
+            }
+        )
+    }
 }
 
 struct SpeakVersesPackage {
@@ -52,52 +96,22 @@ class SpeechViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
 
     private func createUtterance(text: String, speechLang: SpeechLang, id: UUID) -> AVSpeechUtterance {
         let utterance = TaggedUtterance(text: text, id: id)
-        switch speechLang {
-        case .fr:
-            if let voiceIdentifier = UserDefaults.standard.string(forKey: "fraVoiceIdentifier"),
-               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "fr-CA" && $0.name == "Samantha" }) {
-                // fr-CA || fr-FR
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "fr-CA" }) { 
-                // fr-CA || fr-FR
-                utterance.voice = voice
-            }
-        case .en:
-            if let voiceIdentifier = UserDefaults.standard.string(forKey: "engVoiceIdentifier"),
-               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "en-US" && $0.name == "Samantha" }) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "en-US"}) {
-                utterance.voice = voice
-            }
-        case .zh:
-            if let voiceIdentifier = UserDefaults.standard.string(forKey: "zhoVoiceIdentifier"),
-               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "zh-HK" && $0.name == "Sinji" }) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "zh-HK" }) {
-                utterance.voice = voice
-            }
-        case .jp:
-            if let voiceIdentifier = UserDefaults.standard.string(forKey: "jpnVoiceIdentifier"),
-               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "ja-JP"}) {
-                utterance.voice = voice
-            }
-        case .kr:
-            if let voiceIdentifier = UserDefaults.standard.string(forKey: "korVoiceIdentifier"),
-               let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
-                utterance.voice = voice
-            } else if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: { $0.language == "ko-KR" }) {
-                utterance.voice = voice
+
+        let key = speechLang.userDefaultsKey
+        if let voiceIdentifier = UserDefaults.standard.string(forKey: key),
+           let voice = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
+            utterance.voice = voice
+        } else {
+            for match in speechLang.preferredVoiceMatches {
+                if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: {
+                    $0.language == match.language && (match.name == nil || $0.name == match.name!)
+                }) {
+                    utterance.voice = voice
+                    break
+                }
             }
         }
-        
+
         return utterance
     }
     
@@ -143,7 +157,7 @@ class SpeechViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
         }
     }
     
-    public func stopSpeaking() {      
+    public func stopSpeaking() {
         synthesizer.stopSpeaking(at: .word)
         resetAll()
     }

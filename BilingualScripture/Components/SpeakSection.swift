@@ -9,10 +9,10 @@ import SwiftUI
 import Combine
 
 struct SpeakSection: View {
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     var title: String?
     var themeMultilingualText: MultilingualText
     var introMultilingualText: MultilingualText
-    @StateObject var vm = CommSpeakSectionViewModel()
     
     var body: some View {
         if let title {
@@ -22,22 +22,12 @@ struct SpeakSection: View {
                 .textCase(.uppercase)
         }
         
-        ForEach(vm.languageVisibilities) { visibility in
-            if visibility.isShow {
-                switch visibility.speechLang {
-                case .fr:
-                    SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.fr, intro: introMultilingualText.fr), speechLang: .fr)
-                case .en:
-                    SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.en, intro: introMultilingualText.en), speechLang: .en)
-                case .zh:
-                    SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.zh, intro: introMultilingualText.zh), speechLang: .zh)
-                case .jp:
-                    SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.jp, intro: introMultilingualText.jp), speechLang: .jp)
-                case .kr:
-                    SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.kr, intro: introMultilingualText.kr), speechLang: .kr)
-                }
-            }
-        }
+        let primarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.primaryLanguage)
+        let secondarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.secondaryLanguage)
+        
+        SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.getText(lang: primarySpeechLang), intro: introMultilingualText.getText(lang: primarySpeechLang)), speechLang: primarySpeechLang)
+        
+        SpeakButton(text: showThemeOrIntro(theme: themeMultilingualText.getText(lang: secondarySpeechLang), intro: introMultilingualText.getText(lang: secondarySpeechLang)), speechLang: secondarySpeechLang)
     }
     
     func matchChapter(line: String) -> String? {
@@ -69,22 +59,5 @@ struct SpeakSection: View {
         else {
             return result
         }
-    }
-}
-
-class SpeakSectionViewModel: ObservableObject {
-    @Published var languageVisibilities: [LanguageVisibility] = UserDefaults.standard.load()
-    private var cancellables: AnyCancellable?
-    
-    init() {
-        bindUserDefaults()
-    }
-    
-    private func bindUserDefaults() {
-        cancellables = NotificationCenter.default.publisher(for: .itemsDataDidChange)
-            .receive(on: RunLoop.main)
-            .sink { _ in
-                self.languageVisibilities = UserDefaults.standard.load()
-            }
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScrollableTabBar<content: View>: View {
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     /// View Properties
     @State private var activeTab: TabModel.Tab
     @State private var tabBarScrollState: TabModel.Tab?
@@ -86,7 +87,7 @@ struct ScrollableTabBar<content: View>: View {
                             mainViewScrollState = tab.id
                         }
                     } label: {
-                        Text(tab.id.rawValue)
+                        Text(tab.id.title(using: languagesViewModel))
                             .padding(.vertical, 12)
                             .foregroundColor(activeTab == tab.id ? Color.primary : .gray)
                             .contentShape(.rect)

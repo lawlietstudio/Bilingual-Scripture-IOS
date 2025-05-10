@@ -151,6 +151,7 @@ struct CustomTabView: View {
 
 /// Tab Bar Item
 struct TabItem: View {
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var speechViewModel: SpeechViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     
@@ -177,7 +178,7 @@ struct TabItem: View {
                     }
                 }
             
-            Text(tab.title)
+            Text(tab.title(using: languagesViewModel))
                 .font(.caption)
                 .foregroundColor(activeTab == tab ? .accentColor : .gray)
         }

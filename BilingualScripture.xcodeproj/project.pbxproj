@@ -16,6 +16,8 @@
 		4D01608A2BE0705E00892516 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0160892BE0705E00892516 /* ScrollableTabBar.swift */; };
 		4D0896242DAEE50B0029FE55 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */; };
 		4D0896282DAEF73C0029FE55 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */; };
+		4D0896C22DB769870029FE55 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4D0896C12DB769870029FE55 /* Localizable.xcstrings */; };
+		4D0896C42DB76C8E0029FE55 /* LanguagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0896C32DB76C8E0029FE55 /* LanguagesViewModel.swift */; };
 		4D15C3E82D9CDF13005C9BC8 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C3E72D9CDF13005C9BC8 /* View+If.swift */; };
 		4D15C4022D9CEE28005C9BC8 /* ResponsiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C4012D9CEE28005C9BC8 /* ResponsiveView.swift */; };
 		4D15C4262D9F4F33005C9BC8 /* View+onRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15C4252D9F4F33005C9BC8 /* View+onRotate.swift */; };
@@ -32,7 +34,6 @@
 		4D8B85202BC26586003D1D7F /* View+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B851F2BC26586003D1D7F /* View+Rect.swift */; };
 		4D8B85222BC265A4003D1D7F /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B85212BC265A4003D1D7F /* RectKey.swift */; };
 		4DCDBFA62BDE450500F32D8C /* LanguageVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA52BDE450500F32D8C /* LanguageVisibility.swift */; };
-		4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA72BDE455600F32D8C /* LanguageOrderingView.swift */; };
 		4DCDBFAA2BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */; };
 		4DCDBFAC2BDE497100F32D8C /* SpeakSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDBFAB2BDE497100F32D8C /* SpeakSection.swift */; };
 		4DE07DA32BBCF12B001719A7 /* BilingualScriptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE07DA22BBCF12B001719A7 /* BilingualScriptureApp.swift */; };
@@ -57,6 +58,8 @@
 		4D0160892BE0705E00892516 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 		4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		4D0896C12DB769870029FE55 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		4D0896C32DB76C8E0029FE55 /* LanguagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewModel.swift; sourceTree = "<group>"; };
 		4D15C3E72D9CDF13005C9BC8 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
 		4D15C4012D9CEE28005C9BC8 /* ResponsiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView.swift; sourceTree = "<group>"; };
 		4D15C4252D9F4F33005C9BC8 /* View+onRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+onRotate.swift"; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		4D8B851F2BC26586003D1D7F /* View+Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Rect.swift"; sourceTree = "<group>"; };
 		4D8B85212BC265A4003D1D7F /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
 		4DCDBFA52BDE450500F32D8C /* LanguageVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVisibility.swift; sourceTree = "<group>"; };
-		4DCDBFA72BDE455600F32D8C /* LanguageOrderingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOrderingView.swift; sourceTree = "<group>"; };
 		4DCDBFA92BDE461E00F32D8C /* UserDefaults+LangVisibilityStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+LangVisibilityStorage.swift"; sourceTree = "<group>"; };
 		4DCDBFAB2BDE497100F32D8C /* SpeakSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSection.swift; sourceTree = "<group>"; };
 		4DE07D9F2BBCF12B001719A7 /* BilingualScripture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BilingualScripture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 			children = (
 				4D0896272DAEF73C0029FE55 /* SpeechViewModel.swift */,
 				4D0896232DAEE50B0029FE55 /* SettingsViewModel.swift */,
+				4D0896C32DB76C8E0029FE55 /* LanguagesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -128,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				4DE07DC02BBCFDA6001719A7 /* SettingsView.swift */,
-				4DCDBFA72BDE455600F32D8C /* LanguageOrderingView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 				4DE07DB02BBCF173001719A7 /* Views */,
 				4D0896222DAEE4B90029FE55 /* ViewModels */,
 				4DE07DA82BBCF12D001719A7 /* Preview Content */,
+				4D0896C12DB769870029FE55 /* Localizable.xcstrings */,
 			);
 			path = BilingualScripture;
 			sourceTree = "<group>";
@@ -273,6 +276,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
+				"zh-Hans",
+				ko,
+				fr,
+				ja,
 				Base,
 			);
 			mainGroup = 4DE07D962BBCF12B001719A7;
@@ -295,6 +303,7 @@
 			files = (
 				4DE07DAA2BBCF12D001719A7 /* Preview Assets.xcassets in Resources */,
 				4DE07DB92BBCF183001719A7 /* Scriptures in Resources */,
+				4D0896C22DB769870029FE55 /* Localizable.xcstrings in Resources */,
 				4DE07DA72BBCF12D001719A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0896C42DB76C8E0029FE55 /* LanguagesViewModel.swift in Sources */,
 				4D414FCF2BF0E881000486C3 /* AnimatedTab.swift in Sources */,
 				4DCDBFAC2BDE497100F32D8C /* SpeakSection.swift in Sources */,
 				4DE07DBF2BBCF750001719A7 /* SpeakButton.swift in Sources */,
@@ -358,7 +368,6 @@
 				21E0D62D2BF7E812009F153B /* TabShape.swift in Sources */,
 				4DE07DB62BBCF173001719A7 /* BookView.swift in Sources */,
 				4DE07DB72BBCF173001719A7 /* Chapter.swift in Sources */,
-				4DCDBFA82BDE455600F32D8C /* LanguageOrderingView.swift in Sources */,
 				4D392F3E2C4CBC0100A68D17 /* Color+HexString.swift in Sources */,
 				4D414FD12BF0E91C000486C3 /* View+SetupTab.swift in Sources */,
 			);
@@ -426,6 +435,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Uat;
@@ -441,7 +451,7 @@
 				DEVELOPMENT_TEAM = 44Y5KSFRJB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bilingual Bible - Uat";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bilingual Bible - Dev";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -524,6 +534,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Dev;
@@ -580,6 +591,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Prod;
@@ -631,7 +643,7 @@
 				DEVELOPMENT_TEAM = 44Y5KSFRJB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bilingual Bible";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bilingual Bible - Dev";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -3,6 +3,7 @@ import Combine
 
 struct BookView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var speechViewModel: SpeechViewModel
     
     var isIpad: Bool {
@@ -59,9 +60,9 @@ struct BookView: View {
                         
                         /// Book Details
                         VStack(alignment: .leading, spacing: 8) {
-                            SpeakButton(text: animeBook.engTitle, speechLang: .en, font: .title2)
+                            SpeakButton(text: languagesViewModel.localized(animeBook.localizedBookName), speechLang: SpeechLang.speechLang(for: languagesViewModel.primaryLanguage), font: .title2)
                             
-                            SpeakButton(text: animeBook.zhoTitle, speechLang: .zh, font: .title2)
+                            SpeakButton(text: languagesViewModel.localized(animeBook.localizedBookName, isSecondary: true), speechLang: SpeechLang.speechLang(for: languagesViewModel.secondaryLanguage), font: .title2)
                             
                             SpeakButton(text: animeBook.period, speechLang: .en, font: .caption)
                                 .foregroundColor(.gray)
@@ -69,9 +70,9 @@ struct BookView: View {
                             Spacer()
                             
                             Picker("Options", selection: $selectedSegment) {
-                                Text("Intro")
+                                Text(languagesViewModel.localized("Intro"))
                                     .tag(0)
-                                Text("Chapters")
+                                Text(languagesViewModel.localized("Chapters"))
                                     .tag(1)
                             }
                             .pickerStyle(.segmented)

@@ -28,12 +28,14 @@ struct BilingualScriptureApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var speechViewModel = SpeechViewModel()
     @StateObject var settingsViewModel = SettingsViewModel()
+    @StateObject var languagesViewModel = LanguagesViewModel()
     
     var body: some Scene {
         WindowGroup {
             CustomTabView()
                 .environmentObject(speechViewModel)
                 .environmentObject(settingsViewModel)
+                .environmentObject(languagesViewModel)
         }
     }
 }

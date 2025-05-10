@@ -1,21 +1,8 @@
 import SwiftUI
 import AVFoundation
 
-struct SectionData: Identifiable {
-    let id = UUID()
-    let voices: [AVSpeechSynthesisVoice]
-    let speechLang: SpeechLang
-    var isShow: Bool = false
-    
-    init(voices: [AVSpeechSynthesisVoice], speechLang: SpeechLang) {
-        self.voices = voices
-        self.speechLang = speechLang
-        let languageVisibilities = UserDefaults.standard.load()
-        self.isShow = languageVisibilities.first { $0.speechLang == self.speechLang }?.isShow ?? false
-    }
-}
-
 struct SettingsView: View {
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     
     @AppStorage("fraVoiceIdentifier") private var selectedFraVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "fr-CA")!.identifier
@@ -23,87 +10,93 @@ struct SettingsView: View {
     @AppStorage("zhoVoiceIdentifier") private var selectedZhoVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "zh-TW")!.identifier
     @AppStorage("jpnVoiceIdentifier") private var selectedJpnVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ja-JP")!.identifier
     @AppStorage("korVoiceIdentifier") private var selectedKorVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ko-KR")!.identifier
-    
-    @State private var sections: [SectionData] = [
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("fr") }, speechLang: .fr),
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("en") }, speechLang: .en),
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("zh") }, speechLang: .zh),
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("ja") }, speechLang: .jp),
-        SectionData(voices: AVSpeechSynthesisVoice.speechVoices().filter { $0.language.contains("ko") }, speechLang: .kr)
-    ]
-    
-    @State private var isEditing = false
-    
-    @StateObject private var itemStore = ItemStore()
 
     var body: some View {
         NavigationStack {
             List {
-                Section(header: Text("Verses")) {
-                    NavigationLink("Display Order") {
-                        LanguageOrderingView()
-                    }
-                    
-                    Toggle("Show Verses Bar", isOn: $settingsViewModel.isVersesBarVisible)
-                        .toggleStyle(CheckmarkToggleStyle())
-                }
-                
-                Section(header: Text("Highlight")) {
-                    Toggle("Show", isOn: $settingsViewModel.isVerseHighlighted)
-                        .toggleStyle(CheckmarkToggleStyle())
-                    
-                    ColorPicker("Color", selection: $settingsViewModel.verseHighlightedColor)
-                }
-                
-                
-                ForEach($sections) { $section in
-                    Section(header: Text(section.speechLang.rawValue)) {
-                        Toggle("Show", isOn: $section.isShow)
-                            .toggleStyle(CheckmarkToggleStyle())
-                            .onChange(of: section.isShow) { _, newValue in
-                                if let index = itemStore.languageVisibilities.firstIndex(where: { $0.speechLang == section.speechLang }) {
-                                    itemStore.languageVisibilities[index].isShow = newValue
-                                    itemStore.saveItems()
-                                }
+                Section(
+                    header:
+                        HStack {
+                            Text(languagesViewModel.localized("Languages"))
+                            Spacer()
+                            Button {
+                                let temp = languagesViewModel.primaryLanguage
+                                languagesViewModel.primaryLanguage = languagesViewModel.secondaryLanguage
+                                languagesViewModel.secondaryLanguage = temp
+                            } label: {
+                                Image(systemName: "arrow.left.arrow.right")
                             }
-                        
-                        Picker("Voice", selection: selectionBinding(for: section.speechLang)) {
-                            ForEach(section.voices.map { $0.identifier }, id: \.self) { identifier in
-                                let voice = AVSpeechSynthesisVoice(identifier: identifier)!
+                            .font(.caption)
+                            .foregroundColor(.primary)
+                        }
+                ) {
+                    Picker(languagesViewModel.localized("Primary Language"), selection: $languagesViewModel.primaryLanguage) {
+                        ForEach(languagesViewModel.supportedLanguages, id: \.self) { lang in
+                            Text(languagesViewModel.displayName(for: lang)).tag(lang)
+                        }
+                    }
+                    .pickerStyle(.navigationLink)
+                    
+                    Picker(languagesViewModel.localized("Secondary Language"), selection: $languagesViewModel.secondaryLanguage) {
+                        ForEach(languagesViewModel.supportedLanguages, id: \.self) { lang in
+                            Text(languagesViewModel.displayName(for: lang)).tag(lang)
+                        }
+                    }
+                    .pickerStyle(.navigationLink)
+                }
+                
+                Section(languagesViewModel.localized("settings.voices")) {
+                    let primarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.primaryLanguage)
+                    
+                    Picker(languagesViewModel.displayName(for: languagesViewModel.primaryLanguage), selection: SpeechLang.selectionBinding(for: primarySpeechLang, languageViewModel: Binding(get: { languagesViewModel }, set: { _ in }))) {
+                        ForEach(primarySpeechLang.availableVoices.map { $0.identifier }, id: \.self) { identifier in
+                            if let voice = AVSpeechSynthesisVoice(identifier: identifier) {
                                 Text("\(voice.name) (\(voice.language))")
                                     .tag(identifier)
                             }
                         }
-                        .pickerStyle(.navigationLink)
                     }
+                    .pickerStyle(.navigationLink)
+                    
+                    let secondarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.secondaryLanguage)
+                    
+                    Picker(languagesViewModel.displayName(for: languagesViewModel.secondaryLanguage), selection: SpeechLang.selectionBinding(for: secondarySpeechLang, languageViewModel: Binding(get: { languagesViewModel }, set: { _ in }))) {
+                        ForEach(secondarySpeechLang.availableVoices.map { $0.identifier }, id: \.self) { identifier in
+                            if let voice = AVSpeechSynthesisVoice(identifier: identifier) {
+                                Text("\(voice.name) (\(voice.language))")
+                                    .tag(identifier)
+                            }
+                        }
+                    }
+                    .pickerStyle(.navigationLink)
                 }
                 
-                Text(getAppVersion())
-                    .frame(alignment: .center)
-                    .font(.subheadline)
+                Section(languagesViewModel.localized("settings.verses_bar")) {
+                    Toggle(languagesViewModel.localized("settings.show"), isOn: $settingsViewModel.isVersesBarVisible)
+                        .toggleStyle(CheckmarkToggleStyle())
+                }
+                
+                Section(languagesViewModel.localized("settings.highlight_while_speaking")) {
+                    Toggle(languagesViewModel.localized("settings.show"), isOn: $settingsViewModel.isVerseHighlighted)
+                        .toggleStyle(CheckmarkToggleStyle())
+                    
+                    ColorPicker(languagesViewModel.localized("settings.color"), selection: $settingsViewModel.verseHighlightedColor)
+                }
+
+
+                Section(languagesViewModel.localized("settings.version")) {
+                    Text(getAppVersion())
+                        .frame(alignment: .center)
+                        .font(.subheadline)
+                }
             }
             .safeAreaPadding(.bottom, 16)
-            .navigationTitle(Tab.settings.title)
+            .navigationTitle(Tab.settings.title(using: languagesViewModel))
         }
     }
     
     func getAppVersion() -> String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
-        return "Version \(version)"
-    }
-    
-    private func selectionBinding(for speechLang: SpeechLang) -> Binding<String> {
-        switch speechLang {
-        case .fr:
-            return $selectedFraVoiceIdentifier
-        case .en:
-            return $selectedEngVoiceIdentifier
-        case .zh:
-            return $selectedZhoVoiceIdentifier
-        case .jp:
-            return $selectedJpnVoiceIdentifier
-        case .kr:
-            return $selectedKorVoiceIdentifier
-        }
+        return "\(languagesViewModel.localized("settings.version")) \(version)"
     }
 }

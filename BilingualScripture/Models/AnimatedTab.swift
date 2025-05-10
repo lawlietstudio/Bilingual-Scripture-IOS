@@ -12,12 +12,12 @@ enum Tab: String, CaseIterable {
     case scripture = "books.vertical.fill"
     case settings = "gearshape.fill"
     
-    var title: String {
+    func title(using languageViewModel: LanguagesViewModel) -> String {
         switch self {
         case .scripture:
-            return "Scripture"
+            return languageViewModel.localized("tab_scripture")
         case .settings:
-            return "Settings"
+            return languageViewModel.localized("tab_settings")
         }
     }
 }

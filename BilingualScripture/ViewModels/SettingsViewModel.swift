@@ -67,7 +67,7 @@ class SettingsViewModel: ObservableObject {
     }
 
     // MARK: - Static Helper
-    private static func loadBool(forKey key: String, default defaultValue: Bool) -> Bool {
+    public static func loadBool(forKey key: String, default defaultValue: Bool) -> Bool {
         let defaults = UserDefaults.standard
         if defaults.object(forKey: key) != nil {
             return defaults.bool(forKey: key)
@@ -77,7 +77,7 @@ class SettingsViewModel: ObservableObject {
         }
     }
 
-    private static func loadString(forKey key: String, default defaultValue: String) -> String {
+    public static func loadString(forKey key: String, default defaultValue: String) -> String {
         let defaults = UserDefaults.standard
         if let value = defaults.string(forKey: key) {
             return value
@@ -87,7 +87,7 @@ class SettingsViewModel: ObservableObject {
         }
     }
     
-    private static func loadColor(forKey key: String, default defaultValue: Color) -> Color {
+    public static func loadColor(forKey key: String, default defaultValue: Color) -> Color {
         let defaults = UserDefaults.standard
         if let value = defaults.string(forKey: key) {
             return Color(hex: value)
