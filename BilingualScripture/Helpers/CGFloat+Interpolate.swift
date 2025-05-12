@@ -13,6 +13,7 @@ extension CGFloat {
         let x = self
         let length = inputRange.count - 1
         if x <= inputRange[0] { return outputRange[0] }
+        if (length == 0) { return outputRange[0] }
         
         for index in 1...length {
             let x1 = inputRange[index - 1]

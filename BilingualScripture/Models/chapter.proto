@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package scriptures;
+
+// This message represents one verse and its translations
+message VerseProto {
+  int32 number = 1;
+  map<string, string> translations = 2;
+}
+
+// This message represents an entire chapter
+message ChapterProto {
+  map<string, string> intro = 1;
+  map<string, string> summary = 2;
+  repeated VerseProto verses = 3;
+}

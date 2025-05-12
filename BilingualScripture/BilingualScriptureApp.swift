@@ -5,10 +5,10 @@ import FirebaseAnalytics
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        UserDefaults.standard.setValue(true, forKey: "FIRDebugEnabled")
-        UserDefaults.standard.setValue(true, forKey: "FIRAnalyticsDebugEnabled")
-        UserDefaults.standard.set(true, forKey: "/google/firebase/debug_mode")
-        UserDefaults.standard.set(true, forKey: "/google/measurement/debug_mode")
+        UserDefaults.standard.setValue(false, forKey: "FIRDebugEnabled")
+        UserDefaults.standard.setValue(false, forKey: "FIRAnalyticsDebugEnabled")
+        UserDefaults.standard.set(false, forKey: "/google/firebase/debug_mode")
+        UserDefaults.standard.set(false, forKey: "/google/measurement/debug_mode")
 
         
         FirebaseApp.configure()

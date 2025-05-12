@@ -56,11 +56,11 @@ struct BooksView: View {
                         
                         if settingsViewModel.isLdsBooksVisible {
                             ScrollableTabBar(tabContents: [
-                                buildScrollingBookView(animeBooks: sampleBOFM, props: props),
-                                buildScrollingBookView(animeBooks: sampleDC, props: props),
-                                buildScrollingBookView(animeBooks: samplePGP, props: props),
-                                buildScrollingBookView(animeBooks: sampleOT, props: props),
-                                buildScrollingBookView(animeBooks: sampleNT, props: props)
+                                buildScrollingBookView(animeBooks: categoryBOFM, props: props),
+                                buildScrollingBookView(animeBooks: categoryDC, props: props),
+                                buildScrollingBookView(animeBooks: categoryPGP, props: props),
+                                buildScrollingBookView(animeBooks: categoryOT, props: props),
+                                buildScrollingBookView(animeBooks: categoryNT, props: props)
                             ], tabs: [
                                 .init(id: TabModel.Tab.bofm),
                                 .init(id: TabModel.Tab.dc),
@@ -70,8 +70,8 @@ struct BooksView: View {
                             ])
                         } else {
                             ScrollableTabBar(tabContents: [
-                                buildScrollingBookView(animeBooks: sampleOT, props: props),
-                                buildScrollingBookView(animeBooks: sampleNT, props: props)
+                                buildScrollingBookView(animeBooks: categoryOT, props: props),
+                                buildScrollingBookView(animeBooks: categoryNT, props: props)
                             ], tabs: [
                                 .init(id: TabModel.Tab.ot),
                                 .init(id: TabModel.Tab.nt)

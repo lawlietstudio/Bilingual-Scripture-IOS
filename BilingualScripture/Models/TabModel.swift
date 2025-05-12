@@ -23,15 +23,15 @@ struct TabModel: Identifiable {
         var short: String {
             switch self {
             case .bofm:
-                return "BOFM"
+                return "bofm"
             case .dc:
-                return "DC"
+                return "dc-testament"
             case .pgp:
-                return "PGP"
+                return "pgp"
             case .ot:
-                return "OT"
+                return "ot"
             case .nt:
-                return "NT"
+                return "nt"
             }
         }
         

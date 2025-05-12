@@ -12,14 +12,18 @@ struct BookView: View {
     
     @State private var animatoinContent: Bool = false
     @State private var offsetAnimation: Bool = false
+    @State private var isLoadingChapters = true
+    @State private var chapterLoadProgress: Double = 0
+    
+    @State private var totalIODuration: Double = 0
+    @State private var totalParsingDuration: Double = 0
     
     @Binding var show: Bool
     var animation: Namespace.ID
     var animeBook: AnimeBook
     
-    @State private var selectedSegment = 1
-    
-    @State private var book: Book = Book(book: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), theme: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), introduction: MultilingualText(fr: "", en: "", zh: "", jp: "", kr: ""), chapters: [])
+    @State private var chapterNames: [Int] = []
+    @State var chapters: [Chapter] = []
     
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5)
     
@@ -68,15 +72,6 @@ struct BookView: View {
                                 .foregroundColor(.gray)
                             
                             Spacer()
-                            
-                            Picker("Options", selection: $selectedSegment) {
-                                Text(languagesViewModel.localized("Intro"))
-                                    .tag(0)
-                                Text(languagesViewModel.localized("Chapters"))
-                                    .tag(1)
-                            }
-                            .pickerStyle(.segmented)
-                            .frame(maxWidth: 300)
                         }
                         .padding(.trailing, 15)
                         .padding(.top, 30)
@@ -92,17 +87,24 @@ struct BookView: View {
                     .fill(Color.background)
                     .ignoresSafeArea()
                     .overlay(alignment: .top, content: {
-                        if selectedSegment == 0 {
-                            List {
-                                SpeakSection(themeMultilingualText: book.theme, introMultilingualText: book.introduction)
+                        if isLoadingChapters {
+                            VStack(spacing: 12) {
+//                                ProgressView()
+//                                ProgressView(value: chapterLoadProgress)
+//                                    .progressViewStyle(LinearProgressViewStyle())
+//                                    .padding()
+//                                Text("\(Int(chapterLoadProgress * 100))%")
+//                                    .font(.caption)
+//                                    .foregroundColor(.gray)
                             }
-                            .listStyle(.plain)
+                            .frame(maxWidth: 150, maxHeight: .infinity)
                         } else {
                             ScrollView(showsIndicators: false) {
+                                
                                 LazyVGrid(columns: columns) {
-                                    ForEach(book.chapters) { chapter in
-                                        NavigationLink(destination: ChapterTabview(chapters: book.chapters, animeBook: animeBook, selectedTab: chapter.number)) {
-                                            Text("\(chapter.number)")
+                                    ForEach(chapters, id: \.id) { chapter in
+                                        NavigationLink(destination: ChapterTabview(animeBook: animeBook, chapters: chapters, selectedTab: chapter.id)) {
+                                            Text("\(chapter.id)")
                                                 .frame(minWidth: 50, maxWidth: .infinity, minHeight: 50)
                                                 .foregroundColor(Color(UIColor.systemBackground))
                                                 .background(
@@ -133,7 +135,7 @@ struct BookView: View {
                     }
             )
             .safeAreaPadding(.bottom, 16)
-            .animation(.linear, value: selectedSegment)
+            .animation(.linear, value: isLoadingChapters)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .background {
                 Rectangle()
@@ -142,21 +144,24 @@ struct BookView: View {
                     .opacity(animatoinContent ? 1 : 0)
             }
             .task {
-                await loadChapters()
-                
-                withAnimation(.easeInOut(duration: 0.35))
-                {
+                withAnimation(.easeInOut(duration: 0.25)) {
                     animatoinContent = true
                 }
-                withAnimation(.easeInOut(duration: 0.35).delay(0.1))
-                {
+
+                withAnimation(.easeInOut(duration: 0.35)) {
                     offsetAnimation = true
                 }
-                UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(named: "AccentColor")
-                UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "BackgroundColor") ?? .black], for: .selected)
-                UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "AccentColor") ?? .black], for: .normal)
-                /// The book details use different animations rather than opacity ones, so why a new variable? Since we need to display the details with a little delay, we introduced a new state rather than mixing the old one.
-                
+
+                if self.chapters.isEmpty {
+                    isLoadingChapters = true
+                    Task.detached(priority: .background) {
+                        await loadChaptersFromProtobuf()
+                        try? await Task.sleep(nanoseconds: 50_000_000) // 0.1 second delay
+                        await MainActor.run {
+                            isLoadingChapters = false
+                        }
+                    }
+                }
             }
             .onDisappear {
                 speechViewModel.stopSpeaking()
@@ -164,12 +169,8 @@ struct BookView: View {
         }
     }
     
-    func showThemeOrIntro(theme: MultilingualText, intro: MultilingualText) -> MultilingualText {
-        return theme.en.count > intro.en.count ? theme : intro
-    }
-    
     func dismissBook() {
-        withAnimation(.easeOut(duration: 0.2)) {
+        withAnimation(.easeOut(duration: 0.35)) {
             offsetAnimation = false
         }
         
@@ -180,18 +181,74 @@ struct BookView: View {
         }
     }
     
-    func loadChapters() async {
-        guard let fileUrl = Bundle.main.url(forResource: animeBook.bookName, withExtension: "json", subdirectory: "Scriptures/\(animeBook.scriptureName)") else {
-            print("File \(animeBook.bookName) not found in the bundle.")
+    func loadChaptersFromProtobuf() async {
+        let folderPath = "protobuf/\(animeBook.category)/\(animeBook.bookName)"
+
+        guard let folderURL = Bundle.main.url(forResource: folderPath, withExtension: nil) else {
+            print("Folder not found.")
             return
         }
-        
+
         do {
-            let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-            let book = try JSONDecoder().decode(Book.self, from: data)
-            self.book = book
+            let sortedFileNames = try await Task.detached(priority: .background) {
+                let files = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil)
+                return files
+                    .filter { $0.pathExtension == "bin" }
+                    .map { $0.deletingPathExtension().lastPathComponent }
+                    .compactMap { Int($0) }
+                    .sorted()
+                    .map { String($0) }
+            }.value
+
+            for (index, fileName) in sortedFileNames.enumerated() {
+                if let chapter = await loadChapterFromProtobuf(fileName: fileName) {
+                    await MainActor.run {
+                        self.chapters.append(chapter)
+                        self.chapterLoadProgress = Double(index + 1) / Double(sortedFileNames.count)
+                    }
+                }
+            }
+
+            print("📊 Total I/O time: \(totalIODuration) seconds")
+            print("📊 Total parsing time: \(totalParsingDuration) seconds")
+
         } catch {
-            print("Error loading chapters: \(error)")
+            print("Error reading Protobuf directory: \(error)")
+        }
+    }
+
+    func loadChapterFromProtobuf(fileName: String) async -> Chapter? {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "bin", subdirectory: "protobuf/\(animeBook.category)/\(animeBook.bookName)") else {
+            print("Protobuf file not found: \(fileName)")
+            return nil
+        }
+
+        do {
+            let parseStartTime = CFAbsoluteTimeGetCurrent()
+            let data = try Data(contentsOf: url)
+            let protoChapter = try Scriptures_ChapterProto(serializedBytes: data)
+
+//            let intro = protoChapter.intro.mapValues { $0.isEmpty == true ? nil : $0 }
+            let intro = protoChapter.intro.mapValues { $0 }
+//            let summary = protoChapter.summary.mapValues { $0.isEmpty == true ? nil : $0 }
+            let summary = protoChapter.summary.mapValues { $0 }
+            let verses: [[String: String?]] = protoChapter.verses.map { verse in
+//                var dict = verse.translations.mapValues { $0.isEmpty == true ? nil : $0 }
+                var dict = verse.translations.mapValues { $0 }
+                dict["verse"] = "\(verse.number)"
+                return dict
+            }
+
+            let parseDuration = CFAbsoluteTimeGetCurrent() - parseStartTime
+            await MainActor.run {
+                self.totalParsingDuration += parseDuration
+            }
+
+            return Chapter(id: Int(fileName)!, intro: intro, summary: summary, verses: verses)
+
+        } catch {
+            print("Failed to decode Protobuf for file \(fileName): \(error)")
+            return nil
         }
     }
 }

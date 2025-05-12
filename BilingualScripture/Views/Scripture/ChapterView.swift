@@ -6,20 +6,27 @@ struct ChapterView: View {
     @Binding var selectedTab: Int
     @EnvironmentObject var speechViewModel: SpeechViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
+    @EnvironmentObject var languagesViewModel: LanguagesViewModel
 
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 LazyVStack(spacing: 36) {
-                    ChapterSpeakSection(title: "Intro", multilingualText: chapter.introduction)
-                    
-                    if let summary = chapter.summary {
-                        ChapterSpeakSection(title: "Summary", multilingualText: summary)
+                    let intro = chapter.intro.compactMapValues { $0 }
+                    if !intro.isEmpty {
+                        NewChapterSpeakSection(title: languagesViewModel.localized("label.intro"), verse: intro)
                     }
                     
-                    ForEach(chapter.verses, id: \.key) { verse in
-                        ChapterSpeakSection(title: "Verse \(verse.key)", multilingualText: verse.text)
-                            .id(verse.key)
+                    let summary = chapter.summary.compactMapValues { $0 }
+                    if !summary.isEmpty {
+                        NewChapterSpeakSection(title: languagesViewModel.localized("label.summary"), verse: summary)
+                    }
+                    
+                    ForEach(Array(chapter.verses.enumerated()), id: \.offset) { index, verse in
+                        let checkedVerse = verse.compactMapValues { $0 }
+                        let title = String.init(format: languagesViewModel.localized("label.verse_with_number"), index + 1)
+                        NewChapterSpeakSection(title: title, verse: checkedVerse)
+                            .id("\(index + 1)")
                     }
                 }
                 .padding(20)
@@ -28,7 +35,7 @@ struct ChapterView: View {
             }
             .scrollIndicators(.hidden)
             .onChange(of: speechViewModel.speakVersesPackage?.currentParagraphIndex ?? -1, { oldValue, newValue in
-                guard newValue >= 0, selectedTab == chapter.number else { return }
+                guard newValue >= 0, selectedTab == chapter.id else { return }
                 withAnimation {
                     proxy.scrollTo("\(newValue + 1)", anchor: .center)
                 }
@@ -38,13 +45,13 @@ struct ChapterView: View {
                 if settingsViewModel.isVersesBarVisible {
                     ScrollView(showsIndicators: false) {
                         VStack(alignment: .center, spacing: 8) {
-                            ForEach(chapter.verses, id: \.key) { verse in
+                            ForEach(Array(chapter.verses.enumerated()), id: \.offset) { index, _ in
                                 Button {
                                     withAnimation {
-                                        proxy.scrollTo(verse.key, anchor: .center)
+                                        proxy.scrollTo(index + 1, anchor: .center)
                                     }
                                 } label: {
-                                    Text("\(verse.key)")
+                                    Text("\(index + 1)")
                                         .font(.subheadline)
                                 }
                                 
