@@ -17,9 +17,18 @@ enum SpeechLang: String, Codable, CaseIterable {
     case kr = "ko-KR"
     case es = "es-ES"
     
-    var availableVoices: [AVSpeechSynthesisVoice] {
-        let baseLangCode = rawValue.split(separator: "-").first.map(String.init) ?? rawValue
-        return AVSpeechSynthesisVoice.speechVoices().filter { $0.language.hasPrefix(baseLangCode) }
+    private var languagePrefixes: [String] {
+        let base = rawValue.split(separator: "-").first.map(String.init) ?? rawValue
+        switch self {
+        case .zh_Hans, .zh_Hant: return ["zh", "yue"]
+        default: return [base]
+        }
+    }
+
+    func getAvailableVoices(allVoices: [AVSpeechSynthesisVoice]) -> [AVSpeechSynthesisVoice] {
+        allVoices.filter { v in
+            languagePrefixes.contains { v.language.hasPrefix($0) }
+        }
     }
 
     var userDefaultsKey: String {

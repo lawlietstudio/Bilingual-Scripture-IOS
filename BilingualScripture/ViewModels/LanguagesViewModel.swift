@@ -9,6 +9,8 @@ import SwiftUI
 import AVFoundation
 
 class LanguagesViewModel: ObservableObject {
+    public lazy var allVoices: [AVSpeechSynthesisVoice] = AVSpeechSynthesisVoice.speechVoices()
+    
     @Published var primaryLanguage: String {
         didSet {
             UserDefaults.standard.set(primaryLanguage, forKey: primaryLanguageKey)

@@ -4,12 +4,6 @@ import AVFoundation
 struct SettingsView: View {
     @EnvironmentObject var languagesViewModel: LanguagesViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
-    
-    @AppStorage("fraVoiceIdentifier") private var selectedFraVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "fr-CA")!.identifier
-    @AppStorage("engVoiceIdentifier") private var selectedEngVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "en-US")!.identifier
-    @AppStorage("zhoVoiceIdentifier") private var selectedZhoVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "zh-TW")!.identifier
-    @AppStorage("jpnVoiceIdentifier") private var selectedJpnVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ja-JP")!.identifier
-    @AppStorage("korVoiceIdentifier") private var selectedKorVoiceIdentifier: String = AVSpeechSynthesisVoice(language: "ko-KR")!.identifier
 
     var body: some View {
         NavigationStack {
@@ -47,25 +41,23 @@ struct SettingsView: View {
                 
                 Section(languagesViewModel.localized("settings.voices")) {
                     let primarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.primaryLanguage)
+                    let primarySpeechLangVoices = primarySpeechLang.getAvailableVoices(allVoices: languagesViewModel.allVoices)
                     
                     Picker(languagesViewModel.displayName(for: languagesViewModel.primaryLanguage), selection: SpeechLang.selectionBinding(for: primarySpeechLang, languageViewModel: Binding(get: { languagesViewModel }, set: { _ in }))) {
-                        ForEach(primarySpeechLang.availableVoices.map { $0.identifier }, id: \.self) { identifier in
-                            if let voice = AVSpeechSynthesisVoice(identifier: identifier) {
-                                Text("\(voice.name) (\(voice.language))")
-                                    .tag(identifier)
-                            }
+                        ForEach(primarySpeechLangVoices, id: \.self) { voice in
+                            Text("\(voice.name) (\(voice.language))")
+                                .tag(voice.identifier)
                         }
                     }
                     .pickerStyle(.navigationLink)
                     
                     let secondarySpeechLang = SpeechLang.speechLang(for: languagesViewModel.secondaryLanguage)
+                    let secondarySpeechLangVoices = secondarySpeechLang.getAvailableVoices(allVoices: languagesViewModel.allVoices)
                     
                     Picker(languagesViewModel.displayName(for: languagesViewModel.secondaryLanguage), selection: SpeechLang.selectionBinding(for: secondarySpeechLang, languageViewModel: Binding(get: { languagesViewModel }, set: { _ in }))) {
-                        ForEach(secondarySpeechLang.availableVoices.map { $0.identifier }, id: \.self) { identifier in
-                            if let voice = AVSpeechSynthesisVoice(identifier: identifier) {
-                                Text("\(voice.name) (\(voice.language))")
-                                    .tag(identifier)
-                            }
+                        ForEach(secondarySpeechLangVoices, id: \.self) { voice in
+                            Text("\(voice.name) (\(voice.language))")
+                                .tag(voice.identifier)
                         }
                     }
                     .pickerStyle(.navigationLink)

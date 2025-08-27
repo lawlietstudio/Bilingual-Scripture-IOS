@@ -29,6 +29,8 @@ class TaggedUtterance: AVSpeechUtterance {
 
 @MainActor
 class SpeechViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
+    public lazy var allVoices: [AVSpeechSynthesisVoice] = AVSpeechSynthesisVoice.speechVoices()
+    
     private var currentUtteranceID: UUID?
     private var synthesizer = AVSpeechSynthesizer()
     
@@ -51,7 +53,7 @@ class SpeechViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
             utterance.voice = voice
         } else {
             for match in speechLang.preferredVoiceMatches {
-                if let voice = AVSpeechSynthesisVoice.speechVoices().first(where: {
+                if let voice = allVoices.first(where: {
                     $0.language == match.language && (match.name == nil || $0.name == match.name!)
                 }) {
                     utterance.voice = voice

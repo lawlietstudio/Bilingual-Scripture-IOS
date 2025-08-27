@@ -143,7 +143,7 @@ struct BookView: View {
                     .ignoresSafeArea()
                     .opacity(animatoinContent ? 1 : 0)
             }
-            .task {
+            .onAppear {
                 withAnimation(.easeInOut(duration: 0.25)) {
                     animatoinContent = true
                 }
@@ -151,7 +151,8 @@ struct BookView: View {
                 withAnimation(.easeInOut(duration: 0.35)) {
                     offsetAnimation = true
                 }
-
+            }
+            .task {
                 if self.chapters.isEmpty {
                     isLoadingChapters = true
                     Task.detached(priority: .background) {
